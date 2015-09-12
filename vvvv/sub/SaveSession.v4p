@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1020" top="465" width="15240" height="14730">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="1020" top="465" width="13650" height="7275">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
