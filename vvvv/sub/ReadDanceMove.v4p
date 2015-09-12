@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ReadDanceMove.v4p" systemname="ReadDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ReadDanceMove.v4p">
-   <BOUNDS type="Window" left="9270" top="960" width="11865" height="11490">
+   <BOUNDS type="Window" left="16935" top="2340" width="11865" height="11490">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -168,46 +168,16 @@
    </NODE>
    <LINK srcnodeid="23" srcpinname="Output String" dstnodeid="22" dstpinname="Name">
    </LINK>
-   <NODE systemname="GetElements (XElement ByName)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByName)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="885" top="5745" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Element" visible="1">
-   </PIN>
-   <PIN pinname="Name" visible="1">
-   </PIN>
-   <PIN pinname="Elements" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Elements" dstnodeid="25" dstpinname="Element">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1080" top="5400" width="1290" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1080" top="5400" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="DirectionVector">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="MyChildTag">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="25" dstpinname="Name">
-   </LINK>
    <NODE systemname="GetAttributes (XElement ByName)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetAttributes (XElement ByName)" componentmode="Hidden" id="27">
    <BOUNDS type="Node" left="870" top="6645" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Element" visible="1">
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Name" visible="1">
    </PIN>
    <PIN pinname="Attributes" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="Elements" dstnodeid="27" dstpinname="Element">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="28" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1035" top="6360" width="285" height="240">
    </BOUNDS>
@@ -275,10 +245,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="32" dstpinname="Name">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Elements" dstnodeid="30" dstpinname="Element">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Elements" dstnodeid="32" dstpinname="Element">
    </LINK>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="870" top="7605" width="100" height="100">
@@ -363,5 +329,11 @@
    <LINK srcnodeid="22" srcpinname="Elements Bin Size" dstnodeid="5" dstpinname="Y Input Value">
    <LINKPOINT x="4275" y="5670">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Elements" dstnodeid="27" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Elements" dstnodeid="30" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Elements" dstnodeid="32" dstpinname="Element">
    </LINK>
    </PATCH>

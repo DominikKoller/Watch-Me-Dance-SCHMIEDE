@@ -1,0 +1,25 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\DirectionVectors (Kinect2 Skeleton).v4p" systemname="DirectionVectors (Kinect2 Skeleton)" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\DirectionVectors (Kinect2 Skeleton).v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2460" top="3105" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="1365" top="975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1365" top="975" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect2">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1365" top="1590" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="1" dstpinname="Kinect Runtime">
+   </LINK>
+   </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="D:\vvvv\WatchMeDance\CompareSkeletons.v4p" systemname="CompareSkeletons" filename="D:\vvvv\WatchMeDance\CompareSkeletons.v4p" scrollx="0" scrolly="1080">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\compare\CompareSkeletons.v4p" systemname="CompareSkeletons" filename="D:\vvvv\WatchMeDance\CompareSkeletons.v4p" scrollx="0" scrolly="1080">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3705" top="4170" width="100" height="100">
    </BOUNDS>
@@ -181,7 +181,7 @@
    </PIN>
    </NODE>
    <NODE systemname="CreateEnum (Enumerations)" nodename="CreateEnum (Enumerations)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="10305" top="7785" width="100" height="100">
+   <BOUNDS type="Node" left="10305" top="8160" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Enum Name" slicecount="1" values="|Kinect v2 JointEnum|">
    </PIN>
@@ -235,7 +235,7 @@
    <NODE componentmode="InABox" id="20" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="0" left="10305" top="2505" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="5130" left="10305" top="2505" type="Box" width="2025">
+   <BOUNDS height="5370" left="10305" top="2505" type="Box" width="2085">
    </BOUNDS>
    <BOUNDS height="160" left="6480" top="6345" type="Window" width="215">
    </BOUNDS>
@@ -372,7 +372,7 @@
    </LINK>
    <BOUNDS type="Window" left="13905" top="1995" width="12780" height="13230">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input 2">
    </LINK>

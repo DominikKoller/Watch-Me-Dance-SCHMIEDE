@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="0" scrolly="-2160">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="3000" top="510" width="14565" height="11400">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3010" top="45" width="3100" height="3655">
    </BOUNDS>
-   <BOUNDS type="Window" left="9270" top="960" width="11865" height="11490">
+   <BOUNDS type="Window" left="16935" top="2340" width="11865" height="11490">
    </BOUNDS>
    <PIN pinname="DanceMoveData" visible="1">
    </PIN>
@@ -133,9 +133,9 @@
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Skeleton1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9390" top="1230" width="795" height="240">
+   <BOUNDS type="Box" left="7905" top="810" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9390" top="1230" width="0" height="0">
+   <BOUNDS type="Node" left="7905" top="810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -260,7 +260,7 @@
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" componentmode="Hidden" id="29" nodename="sub\SaveSession.v4p">
+   <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" componentmode="InAWindow" id="29" nodename="sub\SaveSession.v4p">
    <BOUNDS type="Node" left="1095" top="8460" width="4995" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1095" top="8460" width="4800" height="3600">
@@ -409,9 +409,9 @@
    <LINK srcnodeid="37" srcpinname="Output String" dstnodeid="5" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6540" top="495" width="480" height="480">
+   <BOUNDS type="Box" left="6285" top="420" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6540" top="495" width="0" height="0">
+   <BOUNDS type="Node" left="6285" top="420" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
