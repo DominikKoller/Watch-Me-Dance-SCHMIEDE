@@ -1,25 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="2220" top="1005" width="24360" height="13605">
+   <BOUNDS type="Window" left="2745" top="600" width="16515" height="13605">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="CompareSkeletons" filename="sub\CompareSkeletons.v4p" componentmode="Hidden" id="0" nodename="sub\CompareSkeletons.v4p">
-   <BOUNDS type="Node" left="4665" top="6855" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4665" top="6855" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4065" top="2100" width="9000" height="9375">
-   </BOUNDS>
-   <PIN pinname="Skeleton2" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton1" visible="1" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Epsilon" visible="1">
-   </PIN>
-   <PIN pinname="Equals" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="ReadDanceMove" filename="sub\ReadDanceMove.v4p" nodename="sub\ReadDanceMove.v4p" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="8160" top="3967" width="0" height="0">
    </BOUNDS>
@@ -110,8 +94,6 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="6" dstpinname="Bin Size">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="0" dstpinname="Skeleton2">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="11370" top="1305" width="795" height="240">
    </BOUNDS>
@@ -125,13 +107,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Epsilon (Accuracy)|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Epsilon" linkstyle="VHV">
-   <LINKPOINT x="11400" y="6705">
-   </LINKPOINT>
-   <LINKPOINT x="6195" y="6705">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="18">
    <BOUNDS type="Node" left="1875" top="435" width="100" height="100">
    </BOUNDS>
@@ -249,10 +227,10 @@
    </PIN>
    <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="SaveFrame" slicecount="1" values="0" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Equals" dstnodeid="29" dstpinname="SaveFrame">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Current Frame">
    </LINK>
@@ -301,7 +279,7 @@
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -309,8 +287,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="34" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Equals" dstnodeid="34" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input 1">
    </LINK>
@@ -476,8 +452,6 @@
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="0" dstpinname="Skeleton1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="48" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4740" top="1815" width="2010" height="270">
    </BOUNDS>
@@ -506,4 +480,34 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="AND (Boolean Spectral)" nodename="AND (Boolean Spectral)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="4560" top="6615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="34" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="53" nodename="sub\compare\CompareSkeletons.v4p">
+   <BOUNDS type="Node" left="4545" top="6105" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4545" top="6105" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4065" top="2100" width="9000" height="9375">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Matches" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Epsilon" linkstyle="VHV">
+   <LINKPOINT x="11400" y="5955">
+   </LINKPOINT>
+   <LINKPOINT x="6075" y="5955">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="53" dstpinname="CurrentSkeleton">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="53" dstpinname="RecordedSkeleton">
+   </LINK>
    </PATCH>
