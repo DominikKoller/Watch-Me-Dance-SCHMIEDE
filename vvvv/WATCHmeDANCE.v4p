@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="0">
    <BOUNDS type="Window" left="12900" top="825" width="11055" height="13155">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -159,7 +159,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3075" top="5325" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.24">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.28">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -301,9 +301,9 @@
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="30" dstpinname="Input String">
    </LINK>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="1980" top="11460" width="100" height="100">
+   <BOUNDS type="Node" left="1320" top="11445" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1980" top="11460" width="2400" height="1800">
+   <BOUNDS type="Box" left="1320" top="11445" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="1530" top="2835" width="6240" height="5085">
    </BOUNDS>
@@ -342,7 +342,7 @@
    <PIN pinname="Matches" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="48">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="1320" top="10200" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1320" top="10200" width="6000" height="4500">
@@ -354,6 +354,10 @@
    <PIN pinname="Fullscreen" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
@@ -523,9 +527,9 @@
    <LINK srcnodeid="50" srcpinname="Transform Out" dstnodeid="48" dstpinname="Projection">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3585" top="11445" width="345" height="270">
+   <BOUNDS type="Node" left="2925" top="11430" width="345" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3585" top="11445" width="345" height="270">
+   <BOUNDS type="Box" left="2925" top="11430" width="345" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="tty">
    </PIN>
@@ -536,12 +540,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Session Manager" filename="Session Manager.v4p" componentmode="Hidden" id="62" nodename="Session Manager.v4p">
+   <NODE systemname="Session Manager" filename="Session Manager.v4p" componentmode="InAWindow" id="62" nodename="Session Manager.v4p">
    <BOUNDS type="Node" left="1470" top="6735" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1470" top="6735" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2325" top="1365" width="15480" height="13605">
+   <BOUNDS type="Window" left="2325" top="1365" width="16620" height="12900">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
@@ -560,7 +564,7 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Joint Matches" dstnodeid="45" dstpinname="Matches">
    </LINK>
-   <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
+   <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="InAWindow" id="63" nodename="GLOBALS.v4p">
    <BOUNDS type="Node" left="7515" top="1935" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="7515" top="1935" width="4800" height="3600">

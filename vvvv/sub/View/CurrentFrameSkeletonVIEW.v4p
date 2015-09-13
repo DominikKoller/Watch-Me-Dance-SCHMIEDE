@@ -1,59 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentFrameSkeletonVIEW.v4p" systemname="CurrentFrameSkeletonVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentFrameSkeletonVIEW.v4p">
-   <BOUNDS type="Window" left="14655" top="1860" width="4665" height="5655">
+   <BOUNDS type="Window" left="14655" top="1860" width="4665" height="5640">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="1335" top="1845" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1350" top="2310" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="XYZ" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="2" dstpinname="Transform In">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2220" top="2040" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2220" top="2040" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="2" dstpinname="XYZ">
-   </LINK>
-   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1245" top="2895" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1575" top="585" width="795" height="720">
+   <BOUNDS type="Box" left="960" top="495" width="795" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="585" width="0" height="0">
+   <BOUNDS type="Node" left="960" top="495" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
@@ -70,12 +24,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="XYZ">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1170" top="4230" width="795" height="240">
+   <BOUNDS type="Box" left="1005" top="3300" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1170" top="4230" width="0" height="0">
+   <BOUNDS type="Node" left="1005" top="3300" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -83,17 +35,45 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1185" top="3765" width="100" height="100">
+   <BOUNDS type="Node" left="1020" top="2835" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 1">
+   <NODE systemname="Stickman (Kinect2 DX11)" filename="Stickman (Kinect2 DX11).v4p" nodename="Stickman (Kinect2 DX11)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="990" top="2220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Joint PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Show Joints" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Bone Color" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion XYZW" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="5640" top="540" width="18375" height="11700">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Joint PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="8" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Layer Out" dstnodeid="6" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="10" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="1350" top="1605" width="2400" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1350" top="1605" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.74605,0.74605,0.74605,0.20018|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Color Output" dstnodeid="9" dstpinname="Bone Color">
    </LINK>
    </PATCH>
