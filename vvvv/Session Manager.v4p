@@ -588,12 +588,12 @@
    <PIN pinname="Y Input Value" slicecount="25" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
-   <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="InAWindow" id="61" nodename="sub\compare\CompareSkeletons.v4p">
+   <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="61" nodename="sub\compare\CompareSkeletons.v4p">
    <BOUNDS type="Node" left="4545" top="6105" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4545" top="6105" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4065" top="2100" width="10080" height="9375">
+   <BOUNDS type="Window" left="15615" top="0" width="6555" height="9375">
    </BOUNDS>
    <PIN pinname="Matches" visible="1">
    </PIN>

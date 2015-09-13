@@ -1,0 +1,209 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="4230" top="2055" width="8970" height="9795">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="CreateEnum (Enumerations)" nodename="CreateEnum (Enumerations)" componentmode="Hidden" id="1" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="5940" top="7480" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum Name" slicecount="1" values="|Kinect v2 JointEnum|">
+   </PIN>
+   <PIN pinname="Strings" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="0" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0">
+   <BOUNDS height="0" left="5940" top="2190" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="5130" left="5940" top="2190" type="Box" width="2030">
+   </BOUNDS>
+   <BOUNDS height="160" left="6480" top="6345" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="25">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="25" values="SpineBase,SpineMid,Neck,Head,ShoulderLeft,ElbowLeft,WristLeft,HandLeft,ShoulderRight,ElbowRight,WristRight,HandRight,HipLeft,KneeLeft,AnkleLeft,FootLeft,HipRight,KneeRight,AnkleRight,FootRight,SpineShoulder,HandTipLeft,ThumbLeft,HandTipRight,ThumbRight">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="1" dstpinname="Strings">
+   </LINK>
+   <NODE id="7" componentmode="InABox" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)" exposed="0" hiddenwhenlocked="0">
+   <BOUNDS type="Node" height="0" left="620" top="2145" width="0">
+   </BOUNDS>
+   <BOUNDS type="Box" height="4390" left="620" top="2145" width="1820">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="24" visible="1" values="SpineBase,SpineMid,SpineShoulder,Neck,SpineBase,HipLeft,KneeLeft,AnkleLeft,SpineBase,HipRight,KneeRight,AnkleRight,SpineShoulder,ShoulderLeft,ElbowLeft,WristLeft,HandLeft,WristLeft,SpineShoulder,ShoulderRight,ElbowRight,WristRight,HandRight,WristRight">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="24">
+   </PIN>
+   <BOUNDS type="Window" height="160" left="7530" top="12180" width="215">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" values="PullDown">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="NULL (Enumerations)" nodename="NULL (Enumerations)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3870" top="6785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Enum" slicecount="1" pintype="Input" visible="1" values="|Kinect v2 JointEnum|">
+   </PIN>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE id="5" componentmode="InABox" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)" exposed="0" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" height="0" left="2780" top="2145" width="0">
+   </BOUNDS>
+   <BOUNDS type="Box" height="4390" left="2780" top="2145" width="1820">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Input Enum" slicecount="24" visible="1" pintype="Input" values="SpineMid,SpineShoulder,Neck,Head,HipLeft,KneeLeft,AnkleLeft,FootLeft,HipRight,KneeRight,AnkleRight,FootRight,ShoulderLeft,ElbowLeft,WristLeft,HandLeft,HandTipLeft,ThumbLeft,ShoulderRight,ElbowRight,WristRight,HandRight,HandTipRight,ThumbRight">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <BOUNDS type="Window" height="160" left="7530" top="12180" width="215">
+   </BOUNDS>
+   <PIN pinname="Output Enum" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="24">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" pintype="Configuration" values="PullDown">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="4" componentmode="Hidden" nodename="Enum2Ord (Enumerations)" systemname="Enum2Ord (Enumerations)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" height="0" left="2780" top="6785" width="0">
+   </BOUNDS>
+   <PIN pinname="Ord Value" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Enum" visible="1" slicecount="15" pintype="Input" values="(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil)">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enum Name" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Enum Count" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="NULL (Enumerations)" nodename="NULL (Enumerations)" componentmode="Hidden" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1770" top="6785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Receive" visible="1">
+   </PIN>
+   <PIN pinname="Enum" slicecount="1" values="|Kinect v2 JointEnum|">
+   </PIN>
+   </NODE>
+   <NODE id="2" componentmode="Hidden" nodename="Enum2Ord (Enumerations)" systemname="Enum2Ord (Enumerations)" hiddenwhenlocked="0">
+   <BOUNDS type="Node" height="0" left="615" top="6755" width="0">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1" slicecount="15" values="(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil),(nil)">
+   </PIN>
+   <PIN pinname="Ord Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="2" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="3" dstpinname="Receive">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="4" dstpinname="Enum">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="6" dstpinname="Receive">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="615" top="7785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="600" top="7380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Ord Value" dstnodeid="9" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Ord Value" dstnodeid="9" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="8" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2820" top="7815" width="1875" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2820" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SkeletonHirachyFromTo">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="devnul">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="8" dstpinname="Send String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="600" top="840" width="12615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="840" width="4200" height="1110">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|these MUST remain the same, do not change them here! AlignProportions patch cannot handle the hirachy dynamically, and is hardpatched to handle this very specific hirachy.&cr;&lf;v                                                   v|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
