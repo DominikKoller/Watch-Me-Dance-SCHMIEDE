@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\PositionsToDirection.v4p" systemname="PositionsToDirection" filename="C:\Users\Vorland\Documents\VVVV\WatchMeDance\PositionsToDirection.v4p" scrollx="405" scrolly="0">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1170" top="4380" width="100" height="100">
+   <BOUNDS type="Node" left="1305" top="4365" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bin Size" slicecount="1" values="3">
    </PIN>
@@ -25,7 +25,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2070" top="5010" width="885" height="270">
+   <BOUNDS type="Node" left="1305" top="5040" width="885" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -35,7 +35,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Normalize (3d Vector)" nodename="Normalize (3d Vector)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2145" top="5955" width="100" height="100">
+   <BOUNDS type="Node" left="1305" top="5985" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1" slicecount="12" values="0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -67,9 +67,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
-   <BOUNDS type="Node" left="2130" top="6510" width="100" height="100">
+   <BOUNDS type="Node" left="1305" top="6540" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2130" top="6510" width="825" height="240">
+   <BOUNDS type="Box" left="1305" top="6540" width="825" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
@@ -84,7 +84,7 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="4920" top="1530" width="10230" height="8085">
+   <BOUNDS type="Window" left="4920" top="1530" width="6600" height="8085">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -117,7 +117,7 @@
    <LINK srcnodeid="19" srcpinname="Output 2" dstnodeid="1" dstpinname="Index">
    </LINK>
    <NODE systemname="Polar (3d Vector)" nodename="Polar (3d Vector)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="5115" top="5400" width="100" height="100">
+   <BOUNDS type="Node" left="2925" top="5355" width="600" height="270">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1">
    </PIN>
@@ -129,7 +129,7 @@
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="20" dstpinname="XYZ">
    </LINK>
    <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="5100" top="5805" width="100" height="100">
+   <BOUNDS type="Node" left="2910" top="5760" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -143,9 +143,9 @@
    <LINK srcnodeid="20" srcpinname="Yaw" dstnodeid="21" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5100" top="6585" width="795" height="240">
+   <BOUNDS type="Box" left="2910" top="6540" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5100" top="6585" width="0" height="0">
+   <BOUNDS type="Node" left="2910" top="6540" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -613,7 +613,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4545" top="6105" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="15615" top="0" width="9345" height="11250">
+   <BOUNDS type="Window" left="2310" top="0" width="22650" height="13590">
    </BOUNDS>
    <PIN pinname="Matches" visible="1">
    </PIN>

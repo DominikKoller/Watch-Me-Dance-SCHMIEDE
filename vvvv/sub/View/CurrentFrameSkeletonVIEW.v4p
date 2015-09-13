@@ -59,6 +59,8 @@
    </PIN>
    <BOUNDS type="Window" left="5640" top="540" width="18375" height="11700">
    </BOUNDS>
+   <PIN pinname="Show Joint IDs" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Joint PositionXYZ">
    </LINK>

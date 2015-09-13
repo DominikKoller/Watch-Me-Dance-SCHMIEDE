@@ -159,7 +159,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3075" top="5325" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.28">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.15">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -342,10 +342,10 @@
    <PIN pinname="Matches" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="1320" top="10200" width="100" height="100">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="48">
+   <BOUNDS type="Node" left="1320" top="10440" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1320" top="10200" width="6000" height="4500">
+   <BOUNDS type="Box" left="1320" top="10440" width="6000" height="4500">
    </BOUNDS>
    <BOUNDS type="Window" left="28680" top="-120" width="19440" height="15600">
    </BOUNDS>
@@ -465,9 +465,9 @@
    <LINK srcnodeid="52" srcpinname="Output" dstnodeid="54" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7530" top="4665" width="480" height="480">
+   <BOUNDS type="Box" left="7155" top="4815" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7530" top="4665" width="0" height="0">
+   <BOUNDS type="Node" left="7155" top="4815" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -483,7 +483,7 @@
    <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Record">
    </LINK>
    <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="7560" top="3630" width="100" height="100">
+   <BOUNDS type="Node" left="7155" top="3780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -491,9 +491,11 @@
    </PIN>
    <PIN pinname="Set" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="7155" top="3780">
+   </BOUNDS>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="7560" top="4170" width="100" height="100">
+   <BOUNDS type="Node" left="7155" top="4320" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -505,9 +507,9 @@
    <LINK srcnodeid="57" srcpinname="Up Edge" dstnodeid="55" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7500" top="2745" width="480" height="480">
+   <BOUNDS type="Box" left="7155" top="3135" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="2745" width="0" height="0">
+   <BOUNDS type="Node" left="7155" top="3135" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -540,7 +542,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Session Manager" filename="Session Manager.v4p" componentmode="InAWindow" id="62" nodename="Session Manager.v4p">
+   <NODE systemname="Session Manager" filename="Session Manager.v4p" componentmode="Hidden" id="62" nodename="Session Manager.v4p">
    <BOUNDS type="Node" left="1470" top="6735" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1470" top="6735" width="4800" height="3600">
@@ -564,12 +566,12 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Joint Matches" dstnodeid="45" dstpinname="Matches">
    </LINK>
-   <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="InAWindow" id="63" nodename="GLOBALS.v4p">
-   <BOUNDS type="Node" left="7515" top="1935" width="100" height="100">
+   <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
+   <BOUNDS type="Node" left="7170" top="2085" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7515" top="1935" width="4800" height="3600">
+   <BOUNDS type="Box" left="7170" top="2085" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4230" top="2055" width="8970" height="9795">
+   <BOUNDS type="Window" left="6195" top="3345" width="9000" height="9015">
    </BOUNDS>
    </NODE>
    </PATCH>

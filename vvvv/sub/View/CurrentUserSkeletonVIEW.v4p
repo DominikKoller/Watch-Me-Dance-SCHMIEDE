@@ -85,7 +85,7 @@
    </PIN>
    <PIN pinname="Bone Color" visible="1">
    </PIN>
-   <PIN pinname="Show Joint IDs" slicecount="1" values="1">
+   <PIN pinname="Show Joint IDs" slicecount="1" values="0">
    </PIN>
    <BOUNDS type="Window" left="11040" top="1005" width="16260" height="11700">
    </BOUNDS>

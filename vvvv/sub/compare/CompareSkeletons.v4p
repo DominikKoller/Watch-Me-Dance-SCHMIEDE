@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\CompareSkeletons.v4p" systemname="CompareSkeletons" filename="D:\vvvv\WatchMeDance\CompareSkeletons.v4p" scrollx="0" scrolly="720">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\CompareSkeletons.v4p" systemname="CompareSkeletons" filename="D:\vvvv\WatchMeDance\CompareSkeletons.v4p" scrollx="0" scrolly="0">
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="1920" top="4680" width="100" height="100">
    </BOUNDS>
@@ -158,7 +158,7 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="12" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="15615" top="0" width="9345" height="11250">
+   <BOUNDS type="Window" left="2310" top="0" width="22650" height="13590">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -189,7 +189,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="270" top="225" width="7350" height="8440">
    </BOUNDS>
-   <BOUNDS type="Window" left="4920" top="1530" width="10230" height="8085">
+   <BOUNDS type="Window" left="4920" top="1530" width="6600" height="8085">
    </BOUNDS>
    <PIN pinname="AbsoluteJointPositions" visible="1">
    </PIN>
@@ -298,4 +298,18 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="7" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8235" top="1650" width="1620" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8235" top="1650" width="1620" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Compare Algorithms|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
