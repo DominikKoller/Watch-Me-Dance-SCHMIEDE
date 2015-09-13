@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ReadDanceMove.v4p" systemname="ReadDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ReadDanceMove.v4p">
-   <BOUNDS type="Window" left="9705" top="1545" width="11865" height="11490">
+   <BOUNDS type="Window" left="13695" top="1875" width="11865" height="11490">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
