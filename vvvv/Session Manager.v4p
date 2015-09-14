@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="15" scrolly="75">
    <BOUNDS type="Window" left="2325" top="1365" width="16620" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -187,9 +187,9 @@
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Simulate">
    </LINK>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" componentmode="Hidden" id="29" nodename="sub\SaveSession.v4p">
-   <BOUNDS type="Node" left="1950" top="11145" width="4995" height="270">
+   <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="1950" top="11145" width="4800" height="3600">
+   <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="1020" top="465" width="13650" height="7275">
    </BOUNDS>
@@ -205,7 +205,7 @@
    </PIN>
    <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="SaveFrame" slicecount="1" visible="1" values="0">
+   <PIN pinname="SaveFrame" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
@@ -215,7 +215,7 @@
    <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="29" dstpinname="Kinect">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="2805" top="8730" width="100" height="100">
+   <BOUNDS type="Node" left="2850" top="7800" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -227,7 +227,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="3285" top="6660" width="100" height="100">
+   <BOUNDS type="Node" left="3330" top="5730" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -237,9 +237,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3810" top="6660" width="285" height="240">
+   <BOUNDS type="Box" left="3855" top="5730" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3810" top="6660" width="0" height="0">
+   <BOUNDS type="Node" left="3855" top="5730" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -253,11 +253,11 @@
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="2760" top="7545" width="100" height="100">
+   <BOUNDS type="Node" left="2805" top="6615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -273,15 +273,15 @@
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="31" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Output 1" dstnodeid="8" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="1535" y="8960">
+   <LINKPOINT x="1565" y="8340">
    </LINKPOINT>
-   <LINKPOINT x="2155" y="3040">
+   <LINKPOINT x="2170" y="2730">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3105" top="8385" width="285" height="240">
+   <BOUNDS type="Box" left="3150" top="7455" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3105" top="8385" width="0" height="0">
+   <BOUNDS type="Node" left="3150" top="7455" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -297,9 +297,9 @@
    <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7005" top="11145" width="4695" height="270">
+   <BOUNDS type="Node" left="7050" top="10185" width="4695" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7005" top="11145" width="5130" height="315">
+   <BOUNDS type="Box" left="7050" top="10185" width="5130" height="315">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; This will be reworked once we have the external Camera input.|">
    </PIN>
@@ -454,50 +454,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="AND (Boolean Spectral)" nodename="AND (Boolean Spectral)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="4560" top="6615" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="5430" top="6645" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5910" top="7185" width="285" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5910" top="7185" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="24">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="4575" top="7110" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="58" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="29" dstpinname="SaveFrame">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5070" top="3840" width="795" height="240">
    </BOUNDS>
@@ -526,8 +482,6 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="60" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="34" dstpinname="Switch">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9405" top="4800" width="795" height="240">
    </BOUNDS>
@@ -543,9 +497,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12555" top="11400" width="480" height="480">
+   <BOUNDS type="Box" left="12600" top="10440" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12555" top="11400" width="0" height="0">
+   <BOUNDS type="Node" left="12600" top="10440" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -561,9 +515,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13785" top="11730" width="795" height="240">
+   <BOUNDS type="Box" left="13830" top="10770" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13785" top="11730" width="0" height="0">
+   <BOUNDS type="Node" left="13830" top="10770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -592,50 +546,36 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Index">
    </LINK>
-   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="5415" top="7140" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="55" srcpinname="Count" dstnodeid="56" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="58" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="61" nodename="sub\compare\CompareSkeletons.v4p">
-   <BOUNDS type="Node" left="4545" top="6105" width="100" height="100">
+   <BOUNDS type="Node" left="4590" top="5820" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4545" top="6105" width="4800" height="3600">
+   <BOUNDS type="Box" left="4590" top="5820" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2310" top="0" width="22650" height="13590">
+   <BOUNDS type="Window" left="14220" top="1200" width="15645" height="13590">
    </BOUNDS>
    <PIN pinname="Matches" visible="1">
    </PIN>
    <PIN pinname="Measure Accuracy" visible="1">
    </PIN>
+   <PIN pinname="Skeleton Match" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="61" srcpinname="Matches" dstnodeid="52" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Epsilon" linkstyle="VHV">
-   <LINKPOINT x="11400" y="5955">
+   <LINKPOINT x="11415" y="5860">
    </LINKPOINT>
-   <LINKPOINT x="6075" y="5955">
+   <LINKPOINT x="6105" y="5765">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="61" dstpinname="CurrentSkeleton">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="61" dstpinname="RecordedSkeleton">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Matches" dstnodeid="55" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Matches" dstnodeid="64" dstpinname="Y Input Value">
+   <LINK srcnodeid="61" srcpinname="Bone Matches" dstnodeid="64" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="61" srcpinname="Measure Accuracy" dstnodeid="65" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="29" dstpinname="SaveFrame">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="34" dstpinname="Switch">
    </LINK>
    </PATCH>

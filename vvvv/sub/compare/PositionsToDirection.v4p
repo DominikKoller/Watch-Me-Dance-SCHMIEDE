@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\PositionsToDirection.v4p" systemname="PositionsToDirection" filename="C:\Users\Vorland\Documents\VVVV\WatchMeDance\PositionsToDirection.v4p" scrollx="405" scrolly="0">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\PositionsToDirection.v4p" systemname="PositionsToDirection" filename="C:\Users\Vorland\Documents\VVVV\WatchMeDance\PositionsToDirection.v4p" scrollx="405" scrolly="-360">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1305" top="4365" width="100" height="100">
    </BOUNDS>
@@ -84,7 +84,7 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="4920" top="1530" width="6600" height="8085">
+   <BOUNDS type="Window" left="4485" top="1125" width="6330" height="8220">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

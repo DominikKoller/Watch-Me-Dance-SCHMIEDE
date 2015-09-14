@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6195" top="3345" width="9000" height="9015">
+   <BOUNDS type="Window" left="6195" top="3345" width="20145" height="11535">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -157,7 +157,7 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
-   <PIN pinname="Send String" visible="1">
+   <PIN pinname="Send String" visible="1" slicecount="1" values="SkeletonHirachyFromTo">
    </PIN>
    </NODE>
    <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="44">
@@ -176,22 +176,6 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="45" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="43" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2655" top="7275" width="1875" height="285">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2655" top="7275" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="SkeletonHirachyFromTo">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="devnul">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="43" srcpinname="Output String" dstnodeid="45" dstpinname="Send String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="42" systemname="IOBox (String)">
    <BOUNDS type="Node" left="435" top="300" width="12615" height="270">
    </BOUNDS>
@@ -206,4 +190,114 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="9135" top="7155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" visible="1" slicecount="1" values="|Bone Importance|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="24" values="0,0.461538461538462,0,0.00312499999999993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="57">
+   <BOUNDS type="Node" left="12930" top="4710" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12930" top="4710" width="6105" height="5505">
+   </BOUNDS>
+   <BOUNDS type="Window" left="18930" top="9210" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9120" top="1320" width="1830" height="4860">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9120" top="1320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="24" visible="-1" values="0.615384615384615,0,0.538461538461538,0.692307692307692,0.461538461538461,0,0,0,0,0.153846153846154,1,1,0,0,0,1,1,1,0.307692307692308,0.538461538461539,0,1,1,0.384615384615384" pintype="Input">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="24">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="scY">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="24" values="1,1,1,1,1,1,0.5,0.377049180327869,1,1,0.713114754098361,0.401639344262295,1,1,1,0,0,0.360655737704918,1,1,1,0,0,0.467213114754098" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceOffset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="12960" top="3240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Hue" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="24" visible="1" values="0,0.461538461538462,0,0.00312499999999993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Stickman (Kinect2 DX11)" filename="sub\View\Stickman (Kinect2 DX11).v4p" nodename="Stickman (Kinect2 DX11)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="12945" top="4185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Show Joint IDs" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Bone Color" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Layer Out" dstnodeid="57" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="69" dstpinname="Bone Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="70" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="11010" top="7185" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11010" top="7185" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="24" values="0,0.461538461538462,0,0.00312499999999993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="X Output Value" dstnodeid="70" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="X Output Value" dstnodeid="54" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="X Output Value" dstnodeid="68" dstpinname="Saturation" linkstyle="Bezier">
+   <LINKPOINT x="12045" y="7935">
+   </LINKPOINT>
+   <LINKPOINT x="11940" y="1950">
+   </LINKPOINT>
+   </LINK>
    </PATCH>

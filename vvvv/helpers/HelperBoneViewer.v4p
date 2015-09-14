@@ -1,63 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperBoneViewer.v4p" systemname="HelperBoneViewer" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperBoneViewer.v4p" scrollx="0" scrolly="390">
-   <BOUNDS type="Window" left="12525" top="1785" width="10635" height="13560">
+   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperBoneViewer.v4p" systemname="HelperBoneViewer" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperBoneViewer.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="7665" top="3210" width="10635" height="7935">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE id="20" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="7305" top="6030" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Inital Distance" slicecount="1" pintype="Input" visible="1" values="1.77">
-   </PIN>
-   <PIN pinname="Projection" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="View" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Box" left="315" top="0" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10680" top="2100" width="17160" height="13275">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Initial Interest" pintype="Input" visible="1" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Initial Yaw" pintype="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Initial Pitch" pintype="Input" visible="1" slicecount="1" values="0.05">
-   </PIN>
-   <PIN pinname="Initial FOV" pintype="Input" visible="1" slicecount="1" values="0.2">
-   </PIN>
-   <PIN pinname="Distortion" pintype="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Near Plane" pintype="Input" visible="1" slicecount="1" values="0.10001">
-   </PIN>
-   <PIN pinname="Far Plane" pintype="Input" visible="1" slicecount="1" values="100">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="View Projection" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Inverse View" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Inverse Interest" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Inverse Rotation" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Position" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Interest" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="FOV" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="Distance" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <NODE id="19" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Box" left="8910" top="585" width="795" height="240">
    </BOUNDS>
@@ -188,24 +134,6 @@
    <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Input" slicecount="1" values="0">
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <NODE id="15" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox">
-   <BOUNDS type="Node" left="2610" top="6705" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2610" top="6705" width="6555" height="5820">
-   </BOUNDS>
-   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="6375" top="10980" width="6240" height="5085">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
    </NODE>
    <NODE id="14" nodename="IOBox (Color)" componentmode="InABox" systemname="IOBox (Color)" hiddenwhenlocked="0" managers="">
@@ -349,7 +277,7 @@
    <NODE id="9" systemname="Stickman (Kinect2 DX11)" filename="sub\View\Stickman (Kinect2 DX11).v4p" nodename="Stickman (Kinect2 DX11)" componentmode="Hidden">
    <BOUNDS type="Node" left="3180" top="5610" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Show Joint IDs" slicecount="1" values="1">
+   <PIN pinname="Show Joint IDs" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Joints Color" visible="1">
    </PIN>
@@ -756,8 +684,6 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="9" dstpinname="Joints Color">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="15" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Index">
@@ -769,10 +695,6 @@
    <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="13" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="13" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Projection" dstnodeid="15" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="View" dstnodeid="15" dstpinname="View">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="17" dstpinname="Input">
    </LINK>
@@ -793,5 +715,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3180" top="6210" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3180" top="6210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Layer Out" dstnodeid="21" dstpinname="Input Node">
    </LINK>
    </PATCH>
