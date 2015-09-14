@@ -324,7 +324,7 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="29" dstpinname="Set">
    </LINK>
-   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="Hidden" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
+   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="InAWindow" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
    <BOUNDS type="Node" left="1470" top="8580" width="1680" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1470" top="8580" width="4800" height="3600">
@@ -385,7 +385,7 @@
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="45" dstpinname="Kinect">
    </LINK>
    <NODE systemname="Perspective (Transform FOV)" filename="%VVVV%\addonpack\lib\nodes\modules\Transform\Perspective (Transform FOV).v4p" nodename="Perspective (Transform FOV)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="2760" top="9690" width="100" height="100">
+   <BOUNDS type="Node" left="2760" top="9750" width="100" height="100">
    </BOUNDS>
    <PIN pinname="FOV" visible="1">
    </PIN>
