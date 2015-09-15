@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentUserSkeletonVIEW.v4p" systemname="CurrentUserSkeleton" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentUserSkeleton.v4p" locked="0" scrollx="270" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentUserSkeletonVIEW.v4p" systemname="CurrentUserSkeleton" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\CurrentUserSkeleton.v4p" locked="0" scrollx="270" scrolly="0">
    <BOUNDS type="Window" left="9630" top="2280" width="7965" height="7845">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -143,7 +143,7 @@
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -153,18 +153,6 @@
    <LINK srcnodeid="12" srcpinname="Output" dstnodeid="18" dstpinname="Go To Position">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Position Out" dstnodeid="14" dstpinname="Hue">
-   </LINK>
-   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="4200" top="1050" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="12" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4815" top="1725" width="795" height="240">
@@ -251,5 +239,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="25" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="4200" top="1050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="12" dstpinname="Switch">
    </LINK>
    </PATCH>

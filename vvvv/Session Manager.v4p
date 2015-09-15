@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="36" scrolly="1440">
-   <BOUNDS type="Window" left="3264" top="180" width="16044" height="10476">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="36" scrolly="-360">
+   <BOUNDS type="Window" left="7440" top="744" width="16044" height="10476">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

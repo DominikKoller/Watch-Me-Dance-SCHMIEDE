@@ -263,7 +263,7 @@
    <NODE systemname="QualifySkeleton" filename="QualifySkeleton.v4p" nodename="QualifySkeleton.v4p" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="2733" top="6330" width="1776" height="276">
    </BOUNDS>
-   <BOUNDS type="Window" left="5556" top="1752" width="7188" height="7140">
+   <BOUNDS type="Window" left="5556" top="1752" width="7452" height="7656">
    </BOUNDS>
    <PIN pinname="Bone Matches" visible="1">
    </PIN>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\QualifySkeleton.v4p" scrollx="0" scrolly="1080" systemname="QualifySkeleton" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\QualifySkeleton.v4p">
-   <BOUNDS type="Window" left="5556" top="1752" width="7188" height="7140">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\QualifySkeleton.v4p" scrollx="0" scrolly="-360" systemname="QualifySkeleton" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\compare\QualifySkeleton.v4p">
+   <BOUNDS type="Window" left="5556" top="1752" width="7452" height="7656">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -53,7 +53,7 @@
    <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="2100" top="3105" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Source Minimum" visible="1">
    </PIN>
@@ -166,21 +166,7 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="58" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="InAWindow" id="61">
-   <BOUNDS type="Node" left="2085" top="1980" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="24" values="1,1,1,1,1,1,0.5,0.377049180327869,1,1,0.713114754098361,0.401639344262295,1,1,1,0,0,0.360655737704918,1,1,1,0,0,0.467213114754098">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="12" srcpinname="Input Value" dstnodeid="58" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="6" dstpinname="Input">
    </LINK>
    <NODE systemname="AND (Boolean Spectral)" nodename="AND (Boolean Spectral)" componentmode="Hidden" id="62">
    <BOUNDS type="Node" left="1647" top="5481" width="100" height="100">
@@ -287,5 +273,19 @@
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="62" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="67" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="61">
+   <BOUNDS type="Node" left="2085" top="1980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="24" values="1,1,1,1,1,1,0.5,0.377049180327869,1,1,0.713114754098361,0.401639344262295,1,1,1,0,0,0.360655737704918,1,1,1,0,0,0.467213114754098">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="6" dstpinname="Input">
    </LINK>
    </PATCH>
