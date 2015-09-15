@@ -493,7 +493,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Joint Matches|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Match|">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
@@ -507,7 +507,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Joint Match Accuracy|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Error|">
    </PIN>
    <PIN pinname="Y Input Value">
    </PIN>

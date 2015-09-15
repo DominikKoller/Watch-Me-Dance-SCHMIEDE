@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="12">
-   <BOUNDS type="Window" left="1536" top="756" width="13644" height="7272">
+   <BOUNDS type="Window" left="1536" top="756" width="9408" height="5316">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -78,26 +78,22 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Update">
    </LINK>
-   <NODE systemname="Writer (EX9.Texture AVI)" nodename="Writer (EX9.Texture AVI)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1548" top="5040" width="100" height="100">
+   <NODE systemname="ShellExecute (Windows)" nodename="ShellExecute (Windows)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="1524" top="3312" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Texture" visible="1">
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2616" top="3348" width="1332" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2616" top="3348" width="4224" height="288">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; this will call an external program which writes a video file|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="FileTexture (EX9.Texture)" filename="" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1512" top="3408" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Reload" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Filenames" dstnodeid="8" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Reload">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Texture Out" dstnodeid="2" dstpinname="Texture">
-   </LINK>
    </PATCH>

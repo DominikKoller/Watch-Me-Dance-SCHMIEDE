@@ -1,0 +1,239 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p" systemname="ActiveSessionView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p">
+   <NODE systemname="Player (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Player (Kinect2 Microsoft)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1644" top="2532" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1209" top="3132" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.32994,0.32994,0.32994,0.49490|">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3603" top="4020" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="CurrentUserSkeletonVIEW" filename="CurrentUserSkeletonVIEW.v4p" nodename="CurrentUserSkeletonVIEW.v4p" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3468" top="3207" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="9630" top="2280" width="7965" height="7845">
+   </BOUNDS>
+   <PIN pinname="Matches" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion XYZW" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="CurrentFrameSkeletonVIEW" filename="CurrentFrameSkeletonVIEW.v4p" componentmode="Hidden" id="4" nodename="CurrentFrameSkeletonVIEW.v4p">
+   <BOUNDS type="Node" left="6003" top="3252" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6003" top="3252" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14655" top="1860" width="4665" height="5640">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Quaternion XYZW" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AlignProportions" filename="..\AlignProportions\AlignProportions.v4p" nodename="..\AlignProportions\AlignProportions.v4p" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="5979" top="1863" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="User Joints XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Target Joints YXZ" visible="1">
+   </PIN>
+   <PIN pinname="Aligned Target Joints XYZ" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="16380">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="6009" top="2538" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1" slicecount="75" values="0.1544,0.0193,1.8612,0.1614,0.354,1.8813,0.1663,0.6729,1.8883,0.1845,0.824,1.8787,-0.0105,0.5373,1.8787,-0.1784,0.345,1.8305,-0.2251,0.0864,1.6914,-0.2231,0.0088,1.6556,0.342,0.5257,1.8872,0.4411,0.2816,1.8784,0.4723,0.015,1.7461,0.475,-0.052,1.7134,0.0709,0.0219,1.822,0.0014,-0.4596,1.831,-0.033,-0.8237,1.7985,-0.0737,-0.8804,1.698,0.2312,0.0158,1.8222,0.2774,-0.4178,1.8706,0.2935,-0.816,1.8897,0.3319,-0.8865,1.761,0.1653,0.5953,1.8887,-0.2277,-0.0718,1.5916,-0.1479,0.0041,1.673,0.4758,-0.1321,1.6608,0.5283,-0.0648,1.6648">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6219" top="2208" width="384" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6219" top="2208" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2469" top="2217" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2469" top="2217" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="7539" top="1548" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="7554" top="2043" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Current User Skeleton|">
+   </PIN>
+   <BOUNDS type="Box" left="2940" top="392" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2940" top="392" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="XYZ">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Match|">
+   </PIN>
+   <BOUNDS type="Box" left="7908" top="212" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7908" top="212" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Matches" linkstyle="VHV">
+   <LINKPOINT x="7932" y="804">
+   </LINKPOINT>
+   <LINKPOINT x="5520" y="804">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 3">
+   </LINK>
+   <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
+   </PIN>
+   <BOUNDS type="Box" left="3615" top="4440" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3615" top="4440" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Layer Out" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Current Frame Skeleton|">
+   </PIN>
+   <BOUNDS type="Box" left="6051" top="188" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6051" top="188" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Target Joints YXZ">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="5" dstpinname="User Joints XYZ">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Position Out" dstnodeid="4" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Aligned Target Joints XYZ" dstnodeid="6" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="FilterTime">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="6" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="OnChange" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Texture" dstnodeid="1" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Enabled">
+   </LINK>
+   <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
+   </PIN>
+   <BOUNDS type="Box" left="1572" top="452" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1572" top="452" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output Node" dstnodeid="0" dstpinname="Kinect Runtime">
+   </LINK>
+   <BOUNDS type="Window" left="456" top="1368" width="12264" height="7368">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10776" top="264" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10776" top="264" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
+   <LINKPOINT x="9606" y="3978">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

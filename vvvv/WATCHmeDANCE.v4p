@@ -119,9 +119,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5439" top="4269" width="795" height="240">
+   <BOUNDS type="Box" left="6807" top="2241" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5439" top="4269" width="0" height="0">
+   <BOUNDS type="Node" left="6807" top="2241" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="RecordedDanceMoves\TestMove.xml">
    </PIN>
@@ -134,30 +134,10 @@
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5439" top="6099" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5439" top="6099" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5439" top="5469" width="795" height="240">
+   <BOUNDS type="Box" left="6807" top="3441" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5439" top="5469" width="0" height="0">
+   <BOUNDS type="Node" left="6807" top="3441" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.15">
    </PIN>
@@ -167,9 +147,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6279" top="4224" width="1635" height="270">
+   <BOUNDS type="Node" left="7647" top="2196" width="1635" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6279" top="4224" width="1635" height="270">
+   <BOUNDS type="Box" left="7647" top="2196" width="1635" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; DanceMove Savefile|">
    </PIN>
@@ -181,9 +161,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6279" top="5439" width="1560" height="270">
+   <BOUNDS type="Node" left="7647" top="3411" width="1560" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6279" top="5439" width="1560" height="270">
+   <BOUNDS type="Box" left="7647" top="3411" width="1560" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Epsilon (accuracy)|">
    </PIN>
@@ -195,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5439" top="4719" width="480" height="480">
+   <BOUNDS type="Box" left="6807" top="2691" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5439" top="4719" width="0" height="0">
+   <BOUNDS type="Node" left="6807" top="2691" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -213,9 +193,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6279" top="4809" width="1455" height="270">
+   <BOUNDS type="Node" left="7647" top="2781" width="1455" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6279" top="4809" width="1455" height="270">
+   <BOUNDS type="Box" left="7647" top="2781" width="1455" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Read DanceMove|">
    </PIN>
@@ -227,9 +207,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6279" top="6219" width="1155" height="270">
+   <BOUNDS type="Node" left="6783" top="6651" width="1155" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6279" top="6219" width="1155" height="270">
+   <BOUNDS type="Box" left="6783" top="6651" width="1155" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; New Session|">
    </PIN>
@@ -324,12 +304,12 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="29" dstpinname="Set">
    </LINK>
-   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="Hidden" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
+   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="InAWindow" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
    <BOUNDS type="Node" left="3834" top="8724" width="1680" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6015" top="3750" width="9675" height="9510">
+   <BOUNDS type="Window" left="4224" top="780" width="15960" height="9504">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="1" values="0">
    </PIN>
@@ -340,6 +320,8 @@
    <PIN pinname="Kinect" visible="1">
    </PIN>
    <PIN pinname="Matches" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Session Active" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
@@ -551,13 +533,15 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p">
-   <BOUNDS type="Node" left="3834" top="6879" width="100" height="100">
+   <BOUNDS type="Node" left="4194" top="6915" width="2436" height="276">
    </BOUNDS>
-   <BOUNDS type="Box" left="3834" top="6879" width="4800" height="3600">
+   <BOUNDS type="Box" left="4194" top="6915" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
+   </PIN>
+   <PIN pinname="New Session" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
@@ -566,15 +550,13 @@
    </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Epsilon (Accuracy)">
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="62" dstpinname="New Session">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Read Dancemove">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="45" dstpinname="Current User Skeleton">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Joint Matches" dstnodeid="45" dstpinname="Matches">
+   <LINK srcnodeid="62" srcpinname="Bones Match" dstnodeid="45" dstpinname="Bones Match">
    </LINK>
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
    <BOUNDS type="Node" left="1788" top="3324" width="100" height="100">
@@ -585,15 +567,19 @@
    </PIN>
    <PIN pinname="Kinect" visible="1">
    </PIN>
+   <PIN pinname="Session Active" visible="1">
+   </PIN>
+   <PIN pinname="New Session" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="6312" top="8664" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1536" top="756" width="13644" height="7272">
+   <BOUNDS type="Window" left="1536" top="756" width="9408" height="5316">
    </BOUNDS>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="69">
-   <BOUNDS type="Node" left="2568" top="7500" width="100" height="100">
+   <BOUNDS type="Node" left="1908" top="7524" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -603,9 +589,9 @@
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="69" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output 1" dstnodeid="64" dstpinname="Current Session Done" linkstyle="Bezier">
-   <LINKPOINT x="336" y="7764">
+   <LINKPOINT x="136" y="7780">
    </LINKPOINT>
-   <LINKPOINT x="504" y="1296">
+   <LINKPOINT x="284" y="1304">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
@@ -618,4 +604,12 @@
    <BOUNDS type="Node" left="9468" top="10704" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
+   <LINKPOINT x="1812" y="8532">
+   </LINKPOINT>
+   <LINKPOINT x="5532" y="8532">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="62" dstpinname="New Session">
+   </LINK>
    </PATCH>
