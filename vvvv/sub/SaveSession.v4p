@@ -1,7 +1,103 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="1020" top="465" width="13650" height="7275">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="12">
+   <BOUNDS type="Window" left="1536" top="756" width="13644" height="7272">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="504" top="300" width="4620" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="504" top="300" width="5112" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|This will take all images recorded during a session and create a video.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1668" top="1248" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Images Dump Path|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1500" top="2616" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Mask" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Input Value" dstnodeid="3" dstpinname="Directory">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="852" top="1248" width="660" height="852">
+   </BOUNDS>
+   <BOUNDS type="Node" left="852" top="1248" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="3" visible="1" values="*.jpg,*.bmp,*.png">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="3" dstpinname="Mask">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Node" left="4380" top="1140" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4380" top="1140" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Save">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Update">
+   </LINK>
+   <NODE systemname="Writer (EX9.Texture AVI)" nodename="Writer (EX9.Texture AVI)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1548" top="5040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (EX9.Texture)" filename="" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1512" top="3408" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Filenames" dstnodeid="8" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Reload">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Texture Out" dstnodeid="2" dstpinname="Texture">
+   </LINK>
    </PATCH>

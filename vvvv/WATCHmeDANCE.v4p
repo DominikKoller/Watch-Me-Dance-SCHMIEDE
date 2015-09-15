@@ -589,7 +589,7 @@
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="6312" top="8664" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="2340" top="1800" width="13644" height="7272">
+   <BOUNDS type="Window" left="1536" top="756" width="13644" height="7272">
    </BOUNDS>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="69">
@@ -610,4 +610,12 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
+   <NODE systemname="Writer (EX9.Texture)" nodename="Writer (EX9.Texture)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="7752" top="10128" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Writer (EX9.Texture AVI)" nodename="Writer (EX9.Texture AVI)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="9468" top="10704" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>
