@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="60" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="60" scrolly="0">
    <BOUNDS type="Window" left="6015" top="3750" width="9675" height="9510">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -100,7 +100,7 @@
    <PIN pinname="Quaternion XYZW" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="CurrentFrameSkeletonVIEW" filename="CurrentFrameSkeletonVIEW.v4p" componentmode="InAWindow" id="16" nodename="CurrentFrameSkeletonVIEW.v4p">
+   <NODE systemname="CurrentFrameSkeletonVIEW" filename="CurrentFrameSkeletonVIEW.v4p" componentmode="Hidden" id="16" nodename="CurrentFrameSkeletonVIEW.v4p">
    <BOUNDS type="Node" left="3885" top="5295" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3885" top="5295" width="4800" height="3600">
