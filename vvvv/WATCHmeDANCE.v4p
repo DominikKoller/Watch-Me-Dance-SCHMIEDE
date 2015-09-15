@@ -555,7 +555,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1470" top="6735" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2664" top="120" width="16620" height="12900">
+   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
@@ -580,8 +580,8 @@
    <BOUNDS type="Window" left="7440" top="744" width="16044" height="10476">
    </BOUNDS>
    </NODE>
-   <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="3576" top="7656" width="100" height="100">
+   <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="3912" top="8688" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>
