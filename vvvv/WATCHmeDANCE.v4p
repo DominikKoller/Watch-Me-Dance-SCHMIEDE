@@ -550,7 +550,7 @@
    <BOUNDS type="Window" left="156" top="984" width="20136" height="11532">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p">
+   <NODE systemname="Session" filename="Session.v4p" componentmode="InAWindow" id="62" nodename="Session.v4p">
    <BOUNDS type="Node" left="1470" top="6735" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1470" top="6735" width="4800" height="3600">
@@ -574,8 +574,10 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Joint Matches" dstnodeid="45" dstpinname="Matches">
    </LINK>
-   <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="5580" top="3168" width="100" height="100">
+   <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="InAWindow" id="64">
+   <BOUNDS type="Node" left="5352" top="3168" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3264" top="180" width="16044" height="10476">
    </BOUNDS>
    </NODE>
    </PATCH>
