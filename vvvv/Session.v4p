@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="-360">
-   <BOUNDS type="Window" left="2664" top="120" width="16620" height="12900">
+   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -186,7 +186,7 @@
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" componentmode="Hidden" id="29" nodename="sub\SaveSession.v4p">
+   <NODE systemname="ShootPicture" filename="sub\ShootPicture.v4p" componentmode="Hidden" id="29" nodename="sub\ShootPicture.v4p">
    <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
@@ -210,12 +210,10 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
    </LINK>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Current Frame">
-   </LINK>
    <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="29" dstpinname="Kinect">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="2850" top="7800" width="100" height="100">
+   <BOUNDS type="Node" left="2598" top="8148" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -273,15 +271,15 @@
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="31" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Output 1" dstnodeid="8" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="1565" y="8340">
+   <LINKPOINT x="1644" y="8652">
    </LINKPOINT>
-   <LINKPOINT x="2170" y="2730">
+   <LINKPOINT x="2088" y="2844">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3150" top="7455" width="285" height="240">
+   <BOUNDS type="Box" left="2898" top="7803" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3150" top="7455" width="0" height="0">
+   <BOUNDS type="Node" left="2898" top="7803" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -294,14 +292,14 @@
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Default 1">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize">
+   <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7050" top="10185" width="4695" height="270">
+   <BOUNDS type="Node" left="1962" top="10605" width="4695" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7050" top="10185" width="5130" height="315">
+   <BOUNDS type="Box" left="1962" top="10605" width="5130" height="315">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; This will be reworked once we have the external Camera input.|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|This will be reworked once we have the external Camera input.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -329,9 +327,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10020" top="990" width="480" height="480">
+   <BOUNDS type="Box" left="9648" top="930" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10020" top="990" width="0" height="0">
+   <BOUNDS type="Node" left="9648" top="930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -483,9 +481,9 @@
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="60" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12600" top="10440" width="480" height="480">
+   <BOUNDS type="Box" left="15252" top="10644" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12600" top="10440" width="0" height="0">
+   <BOUNDS type="Node" left="15252" top="10644" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -501,9 +499,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13830" top="10770" width="795" height="240">
+   <BOUNDS type="Box" left="16482" top="10878" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13830" top="10770" width="0" height="0">
+   <BOUNDS type="Node" left="16482" top="10878" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -558,9 +556,9 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="61" dstpinname="RecordedSkeleton">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Bones Match" dstnodeid="64" dstpinname="Y Input Value">
+   <LINK srcnodeid="61" srcpinname="Bones Match" dstnodeid="64" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="61" srcpinname="Bones Error" dstnodeid="65" dstpinname="Y Input Value">
+   <LINK srcnodeid="61" srcpinname="Bones Error" dstnodeid="65" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="29" dstpinname="SaveFrame">
    </LINK>
@@ -611,5 +609,41 @@
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="68" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="69" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13764" top="10560" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13764" top="10560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Match|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10668" top="10944" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10668" top="10944" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Session Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="74" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="29" dstpinname="Current Frame">
    </LINK>
    </PATCH>
