@@ -561,7 +561,7 @@
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
    <BOUNDS type="Node" left="1788" top="3324" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1416" top="-96" width="12024" height="12456">
+   <BOUNDS type="Window" left="1824" top="0" width="11976" height="10992">
    </BOUNDS>
    <PIN pinname="Current Session Done" visible="1">
    </PIN>
