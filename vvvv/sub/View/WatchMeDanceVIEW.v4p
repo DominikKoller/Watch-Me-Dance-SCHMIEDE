@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="408" scrolly="0">
-   <BOUNDS type="Window" left="4224" top="780" width="15960" height="9504">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-240" top="0" width="15336" height="9504">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -74,24 +74,16 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="12444" top="1224" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="30" dstpinname="Kinect Runtime">
-   </LINK>
    <NODE systemname="ActiveSessionView" filename="ActiveSessionView.v4p" nodename="ActiveSessionView.v4p" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="1608" top="4908" width="0" height="0">
+   <BOUNDS type="Node" left="3840" top="4908" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="2212" width="9201" height="5392">
+   <BOUNDS type="Box" left="2232" top="2212" width="9201" height="5392">
    </BOUNDS>
-   <BOUNDS type="Window" left="456" top="1368" width="12264" height="7368">
+   <BOUNDS type="Window" left="456" top="1368" width="12864" height="8160">
    </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="31" dstpinname="Kinect">
@@ -101,48 +93,6 @@
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Bones Match">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Current Frame Skeleton">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Layer Out" dstnodeid="4" dstpinname="Input Node">
-   </LINK>
-   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="11532" top="2040" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="30" srcpinname="Skeleton Count" dstnodeid="32" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11736" top="1692" width="300" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11736" top="1692" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="11136" top="2460" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="31" dstpinname="Enabled">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
    <BOUNDS type="Node" left="6996" top="588" width="100" height="100">
@@ -174,8 +124,48 @@
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="34" dstpinname="Input 2">
+   <NODE systemname="WaitingForUserView" filename="WaitingForUserView.v4p" componentmode="Hidden" id="38" nodename="WaitingForUserView.v4p">
+   <BOUNDS type="Node" left="1668" top="4956" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1668" top="4956" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="648" top="1764" width="19272" height="7956">
+   </BOUNDS>
+   <PIN pinname="Kinect" visible="1">
+   </PIN>
+   <PIN pinname="Current User Skeleton" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input 1">
+   <LINK srcnodeid="11" srcpinname="Output Node" dstnodeid="38" dstpinname="Kinect">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Current User Skeleton">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="1620" top="6984" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Layer Out" dstnodeid="40" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Layer Out" dstnodeid="40" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Switch" linkstyle="VHV">
+   <LINKPOINT x="10656" y="6768">
+   </LINKPOINT>
+   <LINKPOINT x="1644" y="6768">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="4" dstpinname="Input Node">
    </LINK>
    </PATCH>

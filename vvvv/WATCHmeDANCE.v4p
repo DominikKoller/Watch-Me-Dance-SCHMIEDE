@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="1080">
-   <BOUNDS type="Window" left="240" top="0" width="12696" height="13128">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="-360">
+   <BOUNDS type="Window" left="3096" top="0" width="12696" height="12456">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -281,9 +281,9 @@
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="30" dstpinname="Input String">
    </LINK>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="3684" top="11589" width="100" height="100">
+   <BOUNDS type="Node" left="324" top="9957" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3684" top="11589" width="2400" height="1800">
+   <BOUNDS type="Box" left="324" top="9957" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="1530" top="2835" width="6240" height="5085">
    </BOUNDS>
@@ -304,12 +304,12 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="29" dstpinname="Set">
    </LINK>
-   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="InAWindow" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
+   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="Hidden" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
    <BOUNDS type="Node" left="3834" top="8724" width="1680" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4224" top="780" width="15960" height="9504">
+   <BOUNDS type="Window" left="-240" top="0" width="15336" height="9504">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="1" values="0">
    </PIN>
@@ -329,7 +329,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3684" top="10584" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="11652" top="552" width="9516" height="6252">
+   <BOUNDS type="Window" left="13524" top="432" width="9516" height="6252">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -511,9 +511,9 @@
    <LINK srcnodeid="50" srcpinname="Transform Out" dstnodeid="48" dstpinname="Projection">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5289" top="11574" width="345" height="270">
+   <BOUNDS type="Node" left="1929" top="9942" width="345" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5289" top="11574" width="345" height="270">
+   <BOUNDS type="Box" left="1929" top="9942" width="345" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="tty">
    </PIN>
@@ -525,9 +525,9 @@
    </PIN>
    </NODE>
    <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
-   <BOUNDS type="Node" left="9534" top="2229" width="100" height="100">
+   <BOUNDS type="Node" left="9774" top="2109" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9534" top="2229" width="4800" height="3600">
+   <BOUNDS type="Box" left="9774" top="2109" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="156" top="984" width="20136" height="11532">
    </BOUNDS>
@@ -596,14 +596,6 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
-   <NODE systemname="Writer (EX9.Texture)" nodename="Writer (EX9.Texture)" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="7752" top="10128" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="Writer (EX9.Texture AVI)" nodename="Writer (EX9.Texture AVI)" componentmode="Hidden" id="72">
-   <BOUNDS type="Node" left="9468" top="10704" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
    <LINKPOINT x="1812" y="8532">
    </LINKPOINT>
