@@ -1,0 +1,653 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="30" scrolly="0">
+   <BOUNDS type="Window" left="345" top="240" width="12540" height="10395">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="ProcessImages (ImageMagick, crop, resize, morph).v4p" nodename="ProcessImages (ImageMagick, crop, resize, morph)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1335" top="4500" width="7920" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4935" top="1515" width="16020" height="7830">
+   </BOUNDS>
+   <PIN pinname="InputFileFolder" visible="1" slicecount="1" values="..\..\..\..\..\..\Pictures\sessionFolder">
+   </PIN>
+   <PIN pinname="OutputFilenaming" visible="1" slicecount="1" values="%05d.temp.jpg">
+   </PIN>
+   <PIN pinname="Completed" visible="1">
+   </PIN>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="OutputFileFolder" visible="1" slicecount="1" values="..\..\..\..\..\..\Pictures\sessionFolder\0001\temp">
+   </PIN>
+   <PIN pinname="NrOfMorphFrames" visible="1">
+   </PIN>
+   <PIN pinname="ImageMagickFolder" visible="1">
+   </PIN>
+   <PIN pinname="cropSettings" visible="1" slicecount="1" values="200x200+100x100">
+   </PIN>
+   </NODE>
+   <NODE systemname="WriteGifFromPictures (ImageMagick)" filename="WriteGifFromPictures (ImageMagick).v4p" nodename="WriteGifFromPictures (ImageMagick)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1335" top="6600" width="7275" height="270">
+   </BOUNDS>
+   <PIN pinname="ImageMagickFolder" visible="1" slicecount="1" values="|..\..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
+   </PIN>
+   <BOUNDS type="Box" left="1335" top="6600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3105" top="2355" width="17385" height="7815">
+   </BOUNDS>
+   <PIN pinname="InputFileFolder" visible="1" slicecount="1" values="..\..\..\..\..\..\Pictures\sessionFolder\0001\temp">
+   </PIN>
+   <PIN pinname="InputMask" slicecount="1" visible="1" values="%05d.morph.jpg">
+   </PIN>
+   <PIN pinname="OutputFileFolder" visible="1">
+   </PIN>
+   <PIN pinname="OutputFilenaming" visible="1">
+   </PIN>
+   <PIN pinname="Execute" visible="1">
+   </PIN>
+   <PIN pinname="Completed" visible="1">
+   </PIN>
+   <PIN pinname="GifPath" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="WriteVideoFromPictures (ImageMagick)" filename="WriteVideoFromPictures (ImageMagick).v4p" nodename="WriteVideoFromPictures (ImageMagick)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="450" top="8475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ImageMagickFolder" visible="1" slicecount="1" values="|..\..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
+   </PIN>
+   <BOUNDS type="Box" left="450" top="8475">
+   </BOUNDS>
+   <BOUNDS type="Window" left="735" top="3555" width="19320" height="7755">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="450" top="720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="450" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ImageMagickFolder">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1530" top="1155" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1530" top="1155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\..\Pictures">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CanonFolder">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5670" top="1110" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5670" top="1110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\..\Pictures\VideoFolder">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GifFolder">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="3" dstpinname="OutputFileFolder" linkstyle="VHV">
+   <LINKPOINT x="5430" y="3283">
+   </LINKPOINT>
+   <LINKPOINT x="5970" y="4653">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="4995" top="600" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4995" top="600" width="885" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SessionID">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="0001">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="5010" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values=".gif">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="13" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="4995" y="3090">
+   </LINKPOINT>
+   <LINKPOINT x="5055" y="3300">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="3" dstpinname="OutputFilenaming" linkstyle="VHV">
+   <LINKPOINT x="5070" y="6195">
+   </LINKPOINT>
+   <LINKPOINT x="7110" y="6195">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="8550" top="6075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Completed" dstnodeid="14" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="9195" y="5423">
+   </LINKPOINT>
+   <LINKPOINT x="8580" y="5423">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Up Edge" dstnodeid="3" dstpinname="Execute" linkstyle="VHV">
+   <LINKPOINT x="8580" y="6473">
+   </LINKPOINT>
+   <LINKPOINT x="8580" y="6473">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9195" top="450" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9195" top="450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Execute">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7905" top="1260" width="1245" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7905" top="1260" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="*.temp.jpg">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TempFileNaming">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="3" dstpinname="InputMask" linkstyle="VHV">
+   <LINKPOINT x="7660" y="4055">
+   </LINKPOINT>
+   <LINKPOINT x="4505" y="4045">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2055" top="3465" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2055" top="3465" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="NrOfMorphFrames">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="1" dstpinname="NrOfMorphFrames" linkstyle="VHV">
+   <LINKPOINT x="2085" y="4103">
+   </LINKPOINT>
+   <LINKPOINT x="2085" y="4103">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="4710" top="9585" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4710" top="9585" width="1995" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="status">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="4725" top="9150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" values="processing">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="writingGif">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="done">
+   </PIN>
+   <PIN pinname="Input 4" slicecount="1" values="writingGif">
+   </PIN>
+   <PIN pinname="Input 5" slicecount="1" values="completed">
+   </PIN>
+   </NODE>
+   <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="4740" top="8745" width="1305" height="270">
+   </BOUNDS>
+   <PIN pinname="Set Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set 3" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set 0" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set 4" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="24" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="25" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="1" dstpinname="ImageMagickFolder" linkstyle="VHV">
+   <LINKPOINT x="480" y="2730">
+   </LINKPOINT>
+   <LINKPOINT x="1350" y="2730">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="3" dstpinname="ImageMagickFolder" linkstyle="VHV">
+   <LINKPOINT x="480" y="2730">
+   </LINKPOINT>
+   <LINKPOINT x="1365" y="2730">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="4" dstpinname="ImageMagickFolder" linkstyle="VHV">
+   <LINKPOINT x="475" y="4638">
+   </LINKPOINT>
+   <LINKPOINT x="470" y="4798">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="8550" top="7650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="6330" top="3705" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="*.temp.jpg">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="%05d">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (String)" nodename="Subtract (String)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="7905" top="2295" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="Operand 1" visible="1">
+   </PIN>
+   <PIN pinname="Operand 2" slicecount="1" values="*">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="35" dstpinname="Operand 1" linkstyle="VHV">
+   <LINKPOINT x="8895" y="2078">
+   </LINKPOINT>
+   <LINKPOINT x="6975" y="1688">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Result" dstnodeid="34" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="7470" y="2985">
+   </LINKPOINT>
+   <LINKPOINT x="7005" y="3285">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="1" dstpinname="OutputFilenaming" linkstyle="VHV">
+   <LINKPOINT x="5620" y="4183">
+   </LINKPOINT>
+   <LINKPOINT x="7100" y="4263">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6345" top="1875" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6345" top="1875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="%05d">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FileIndexFormat">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="34" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="6945" y="3050">
+   </LINKPOINT>
+   <LINKPOINT x="5775" y="2755">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="30" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="8575" y="7260">
+   </LINKPOINT>
+   <LINKPOINT x="8570" y="7260">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Up Edge" dstnodeid="26" dstpinname="Set 1" linkstyle="VHV">
+   <LINKPOINT x="8550" y="7630">
+   </LINKPOINT>
+   <LINKPOINT x="5415" y="7430">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="26" dstpinname="Set 2" linkstyle="VHV">
+   <LINKPOINT x="8550" y="7893">
+   </LINKPOINT>
+   <LINKPOINT x="6045" y="7693">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8550" top="9225" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8550" top="9225" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Completed">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="38" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="8570" y="8185">
+   </LINKPOINT>
+   <LINKPOINT x="8575" y="7910">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="MoveImages" filename="MoveImages.v4p" componentmode="Hidden" id="40" nodename="MoveImages.v4p">
+   <BOUNDS type="Node" left="1545" top="1920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1545" top="1920" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2595" top="720" width="6975" height="9195">
+   </BOUNDS>
+   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TempFolder" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="sourceLocation" visible="1">
+   </PIN>
+   <PIN pinname="Destination" visible="1">
+   </PIN>
+   <PIN pinname="completed" visible="1">
+   </PIN>
+   <PIN pinname="SessionID" visible="1">
+   </PIN>
+   <PIN pinname="Completed" visible="1">
+   </PIN>
+   <PIN pinname="DestinationPath" visible="1">
+   </PIN>
+   <PIN pinname="TempPath" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DeleteTempFiles" filename="DeleteTempFiles.v4p" nodename="DeleteTempFiles.v4p" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="7200" top="8280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TempFolder" visible="1" slicecount="1" values="C:\Users\Vorland\Pictures\sessionFolder\0001\temp">
+   </PIN>
+   <BOUNDS type="Window" left="1395" top="2325" width="13350" height="5640">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="40" dstpinname="sourceLocation">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="42" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2955" top="630" width="1575" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2955" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\..\Pictures\sessionFolder">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SessionFolder">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Output String" dstnodeid="40" dstpinname="Destination" linkstyle="VHV">
+   <LINKPOINT x="2940" y="1388">
+   </LINKPOINT>
+   <LINKPOINT x="1980" y="1388">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Set 0" linkstyle="VHV">
+   <LINKPOINT x="9195" y="4938">
+   </LINKPOINT>
+   <LINKPOINT x="4785" y="4738">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Do Execute" linkstyle="VHV">
+   <LINKPOINT x="9205" y="1415">
+   </LINKPOINT>
+   <LINKPOINT x="2705" y="1405">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="9195" top="3960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Up Edge" dstnodeid="1" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="40" dstpinname="SessionID" linkstyle="VHV">
+   <LINKPOINT x="4995" y="1365">
+   </LINKPOINT>
+   <LINKPOINT x="2340" y="1365">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Completed" dstnodeid="44" dstpinname="Input">
+   <LINKPOINT x="1580" y="2845">
+   </LINKPOINT>
+   <LINKPOINT x="9235" y="2870">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="DestinationPath" dstnodeid="1" dstpinname="InputFileFolder" linkstyle="VHV">
+   <LINKPOINT x="2130" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="2775" y="3345">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="TempPath" dstnodeid="3" dstpinname="InputFileFolder" linkstyle="VHV">
+   <LINKPOINT x="2685" y="4343">
+   </LINKPOINT>
+   <LINKPOINT x="2835" y="4343">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="TempPath" dstnodeid="1" dstpinname="OutputFileFolder" linkstyle="VHV">
+   <LINKPOINT x="2715" y="3330">
+   </LINKPOINT>
+   <LINKPOINT x="5610" y="3330">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="TempPath" dstnodeid="41" dstpinname="TempFolder" linkstyle="VHV">
+   <LINKPOINT x="2715" y="5228">
+   </LINKPOINT>
+   <LINKPOINT x="7200" y="5228">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Up Edge" dstnodeid="41" dstpinname="Do Execute">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8550" top="11175" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8550" top="11175" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GifPath">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="GifPath" dstnodeid="46" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="EvvvvilTweetLogger (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetLogger\EvvvvilTweetLogger.dll" nodename="EvvvvilTweetLogger (Network)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="1125" top="11445" width="4395" height="270">
+   </BOUNDS>
+   <PIN pinname="Logged In?" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EvvvvilTweetAction (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetAction\EvvvvilTweetAction.dll" nodename="EvvvvilTweetAction (Network)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="2865" top="13515" width="6975" height="270">
+   </BOUNDS>
+   <PIN pinname="Publish Picture" visible="1">
+   </PIN>
+   <PIN pinname="Publish Tweet Text" visible="1">
+   </PIN>
+   <PIN pinname="Machine Gun Mode?" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Publish Tweet" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="All Actions Finished Bang" visible="1">
+   </PIN>
+   <PIN pinname="Logged In?" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Output String" dstnodeid="49" dstpinname="Publish Picture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="50" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3330" top="12900" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3330" top="12900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="140">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Tweet Text|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="49" dstpinname="Publish Tweet Text">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6570" top="12645" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6570" top="12645" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Tweet|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Publish Tweet">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9795" top="14265" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9795" top="14265" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|All Actions Finished Bang|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="All Actions Finished Bang" dstnodeid="52" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Logged In?" dstnodeid="49" dstpinname="Logged In?">
+   </LINK>
+   </PATCH>
