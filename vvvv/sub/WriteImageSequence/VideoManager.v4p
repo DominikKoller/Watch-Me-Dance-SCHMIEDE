@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="30" scrolly="0">
-   <BOUNDS type="Window" left="345" top="240" width="12540" height="10395">
+   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="30" scrolly="-360">
+   <BOUNDS type="Window" left="2805" top="3240" width="12540" height="10395">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.0.0">
    </PACK>
@@ -403,9 +403,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8550" top="9225" width="480" height="480">
+   <BOUNDS type="Box" left="7995" top="9450" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8550" top="9225" width="0" height="0">
+   <BOUNDS type="Node" left="7995" top="9450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -417,13 +417,11 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Completed">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="38" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="8570" y="8185">
-   </LINKPOINT>
-   <LINKPOINT x="8575" y="7910">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="MoveImages" filename="MoveImages.v4p" componentmode="Hidden" id="40" nodename="MoveImages.v4p">
    <BOUNDS type="Node" left="1545" top="1920" width="100" height="100">
    </BOUNDS>
@@ -549,9 +547,9 @@
    <LINK srcnodeid="30" srcpinname="Up Edge" dstnodeid="41" dstpinname="Do Execute">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="46" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8550" top="11175" width="795" height="240">
+   <BOUNDS type="Box" left="8970" top="10605" width="2445" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8550" top="11175" width="0" height="0">
+   <BOUNDS type="Node" left="8970" top="10605" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -566,36 +564,44 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="GifPath" dstnodeid="46" dstpinname="Input String">
    </LINK>
-   <NODE systemname="EvvvvilTweetLogger (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetLogger\EvvvvilTweetLogger.dll" nodename="EvvvvilTweetLogger (Network)" componentmode="Hidden" id="48">
-   <BOUNDS type="Node" left="1125" top="11445" width="4395" height="270">
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="5505" top="11115" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Logged In?" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="EvvvvilTweetAction (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetAction\EvvvvilTweetAction.dll" nodename="EvvvvilTweetAction (Network)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="2865" top="13515" width="6975" height="270">
+   <NODE systemname="TwitterManager" filename="TwitterManager.v4p" nodename="TwitterManager.v4p" componentmode="InAWindow" id="67">
+   <BOUNDS type="Node" left="3888" top="12851" width="3375" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="459" top="9259" width="11925" height="7185">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7665" top="1770" width="11925" height="7185">
    </BOUNDS>
    <PIN pinname="Publish Picture" visible="1">
    </PIN>
    <PIN pinname="Publish Tweet Text" visible="1">
    </PIN>
-   <PIN pinname="Machine Gun Mode?" slicecount="1" values="0">
+   <PIN pinname="Login as a Dev" visible="1">
    </PIN>
-   <PIN pinname="Publish Tweet" slicecount="1" visible="1" values="0">
+   <PIN pinname="Publish Tweet" visible="1">
    </PIN>
    <PIN pinname="All Actions Finished Bang" visible="1">
    </PIN>
-   <PIN pinname="Logged In?" visible="1">
+   <PIN pinname="Logout" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="46" srcpinname="Output String" dstnodeid="49" dstpinname="Publish Picture">
+   <LINK srcnodeid="46" srcpinname="Output String" dstnodeid="67" dstpinname="Publish Picture">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="50" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3330" top="12900" width="795" height="240">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4530" top="12210" width="1380" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="3330" top="12900" width="0" height="0">
+   <BOUNDS type="Node" left="4530" top="12210" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="qweriuasdimvass">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -606,34 +612,40 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Tweet Text|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="49" dstpinname="Publish Tweet Text">
+   <LINK srcnodeid="68" srcpinname="Output String" dstnodeid="67" dstpinname="Publish Tweet Text">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6570" top="12645" width="480" height="480">
+   <LINK srcnodeid="65" srcpinname="Up Edge" dstnodeid="67" dstpinname="Login as a Dev">
+   </LINK>
+   <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="6570" top="11805" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="6570" top="12645" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
+   <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
+   <PIN pinname="Reset" visible="1">
    </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Tweet|">
+   <PIN pinname="Time" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Publish Tweet">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9795" top="14265" width="480" height="480">
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="6555" top="12270" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="9795" top="14265" width="0" height="0">
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="72" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Up Edge" dstnodeid="67" dstpinname="Publish Tweet">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3885" top="13515" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3885" top="13515" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -646,8 +658,44 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|All Actions Finished Bang|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="All Actions Finished Bang" dstnodeid="52" dstpinname="Y Input Value">
+   <LINK srcnodeid="67" srcpinname="All Actions Finished Bang" dstnodeid="73" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="48" srcpinname="Logged In?" dstnodeid="49" dstpinname="Logged In?">
+   <LINK srcnodeid="65" srcpinname="Down Edge" dstnodeid="69" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="75" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8850" top="12855" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8850" top="12855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="75" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="9045" top="9075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Completed" dstnodeid="76" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="76" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Down Edge" dstnodeid="67" dstpinname="Logout">
    </LINK>
    </PATCH>
