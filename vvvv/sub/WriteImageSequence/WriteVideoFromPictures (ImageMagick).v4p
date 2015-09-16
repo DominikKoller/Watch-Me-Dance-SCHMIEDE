@@ -113,7 +113,7 @@
    </PIN>
    <PIN pinname="Input 3" slicecount="1" visible="1" values="-i">
    </PIN>
-   <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="C:\Users\Vorland\Pictures\%05d.morph.JPG">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    <PIN pinname="Input 6" slicecount="1" visible="1" values="1280x720">
    </PIN>
-   <PIN pinname="Input 8" visible="1">
+   <PIN pinname="Input 8" visible="1" slicecount="1" values="C:\Users\Vorland\Pictures\output4.mp4">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
@@ -148,211 +148,7 @@
    <LINKPOINT x="4530" y="1635">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="6180" top="1680" width="750" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7065" top="915" width="1200" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7065" top="915" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="%05d.morph">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="IndexFormat">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="16" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="7955" y="1368">
-   </LINKPOINT>
-   <LINKPOINT x="5515" y="1438">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8370" top="915" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8370" top="915" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values=".JPG">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="InputExtension">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="16" dstpinname="Input 3" linkstyle="VHV">
-   <LINKPOINT x="9140" y="1368">
-   </LINKPOINT>
-   <LINKPOINT x="5815" y="1438">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9525" top="780" width="2730" height="285">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9525" top="780" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\Users\Vorland\Pictures\">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="String">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="OutputFileFolder">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="9525" top="1470" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12405" top="780" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="12405" top="780" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="output4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="OutputFileName">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="21" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="12405" y="1230">
-   </LINKPOINT>
-   <LINKPOINT x="9750" y="1230">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="13680" top="780" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13680" top="780" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values=".mp4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="OutputExtension">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="21" dstpinname="Input 3" linkstyle="VHV">
-   <LINKPOINT x="13650" y="1230">
-   </LINKPOINT>
-   <LINKPOINT x="9960" y="1230">
-   </LINKPOINT>
-   </LINK>
-   <NODE id="15" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="C:\Users\Vorland\Pictures\">
-   </PIN>
-   <BOUNDS type="Box" left="3870" top="915" width="3150" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3870" top="915" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="InputFileFolder">
-   </PIN>
-   <PIN pinname="Output String" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="C:\Windows\system32\cmd.exe">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="|All Files (*.*)||*.*|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
-   </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
-   </PIN>
-   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
-   </PIN>
-   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
-   </PIN>
-   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Changed" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="16" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="4715" y="1375">
-   </LINKPOINT>
-   <LINKPOINT x="5380" y="1445">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="21" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="9555" y="1268">
-   </LINKPOINT>
-   <LINKPOINT x="9555" y="1268">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="12" srcpinname="Output" dstnodeid="0" dstpinname="Commandline Arguments">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="12" dstpinname="Input 8">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2340" top="885" width="795" height="240">
@@ -375,8 +171,6 @@
    </LINKPOINT>
    <LINKPOINT x="7860" y="1628">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="12" dstpinname="Input 4">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1425" top="3105" width="975" height="270">
@@ -433,13 +227,15 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="DosPath">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="57" systemname="IOBox (String)">
    <BOUNDS type="Box" left="285" top="2145" width="3105" height="255">
    </BOUNDS>
    <BOUNDS type="Node" left="285" top="2145" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|C:\Program Files\ImageMagick-6.9.2-Q16\|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -448,6 +244,8 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ImageMagickFolder">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
    </NODE>
    <LINK srcnodeid="57" srcpinname="Output String" dstnodeid="58" dstpinname="Input 1">
@@ -469,5 +267,197 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="58" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="9495" top="1530" width="750" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="*">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="DosPath">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9705" top="1185" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9705" top="1185" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="output.mp4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="OutputFilenaming">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="60" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\..\..\..\..\..\Pictures">
+   </PIN>
+   <BOUNDS type="Box" left="9495" top="525" width="3150" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9495" top="525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="OutputFileFolder">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="Directory">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Output String" dstnodeid="62" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="9570" y="1065">
+   </LINKPOINT>
+   <LINKPOINT x="9465" y="1215">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="62" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="12" dstpinname="Input 8">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="6210" top="1485" width="750" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="*">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="DosPath">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="64" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7710" top="615" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7710" top="615" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="%05d.morph.JPG">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="InputMask">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="63" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\..\..\..\..\..\Pictures">
+   </PIN>
+   <BOUNDS type="Box" left="5610" top="600" width="1920" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5610" top="600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="InputFileFolder">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="Directory">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Output String" dstnodeid="65" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="5885" y="1100">
+   </LINKPOINT>
+   <LINKPOINT x="5980" y="1210">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output String" dstnodeid="65" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="7740" y="1215">
+   </LINKPOINT>
+   <LINKPOINT x="6465" y="1095">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="12" dstpinname="Input 4">
    </LINK>
    </PATCH>
