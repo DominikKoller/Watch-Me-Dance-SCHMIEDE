@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="-360">
-   <BOUNDS type="Window" left="3096" top="0" width="12696" height="12456">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="0">
+   <BOUNDS type="Window" left="0" top="0" width="14532" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Matches" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Session Active" visible="1">
+   <PIN pinname="Session Active" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
@@ -525,11 +525,11 @@
    </PIN>
    </NODE>
    <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
-   <BOUNDS type="Node" left="9774" top="2109" width="100" height="100">
+   <BOUNDS type="Node" left="9798" top="1761" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9774" top="2109" width="4800" height="3600">
+   <BOUNDS type="Box" left="9798" top="1761" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="156" top="984" width="20136" height="11532">
+   <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
    </BOUNDS>
    </NODE>
    <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p">
@@ -541,7 +541,7 @@
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
    </PIN>
-   <PIN pinname="New Session" visible="1" slicecount="1" values="0">
+   <PIN pinname="New Session" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
@@ -558,20 +558,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Bones Match" dstnodeid="45" dstpinname="Bones Match">
    </LINK>
-   <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
-   <BOUNDS type="Node" left="1788" top="3324" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1824" top="0" width="11976" height="10992">
-   </BOUNDS>
-   <PIN pinname="Current Session Done" visible="1">
-   </PIN>
-   <PIN pinname="Kinect" visible="1">
-   </PIN>
-   <PIN pinname="Session Active" visible="1">
-   </PIN>
-   <PIN pinname="New Session" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="6312" top="8664" width="100" height="100">
    </BOUNDS>
@@ -588,18 +574,32 @@
    </NODE>
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="69" dstpinname="Input 1">
    </LINK>
+   <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
+   <BOUNDS type="Node" left="1788" top="3816" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3348" top="468" width="14532" height="10992">
+   </BOUNDS>
+   <PIN pinname="Current Session Done" visible="1">
+   </PIN>
+   <PIN pinname="Kinect" visible="1">
+   </PIN>
+   <PIN pinname="Session Active" visible="1">
+   </PIN>
+   <PIN pinname="New Session" visible="1">
+   </PIN>
+   </NODE>
    <LINK srcnodeid="69" srcpinname="Output 1" dstnodeid="64" dstpinname="Current Session Done" linkstyle="Bezier">
-   <LINKPOINT x="136" y="7780">
+   <LINKPOINT x="136" y="7944">
    </LINKPOINT>
-   <LINKPOINT x="284" y="1304">
+   <LINKPOINT x="284" y="1632">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
-   <LINKPOINT x="1812" y="8532">
+   <LINKPOINT x="1812" y="8860">
    </LINKPOINT>
-   <LINKPOINT x="5532" y="8532">
+   <LINKPOINT x="5532" y="8696">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="62" dstpinname="New Session">
