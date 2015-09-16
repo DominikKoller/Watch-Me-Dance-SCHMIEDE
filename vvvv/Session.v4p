@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="-360">
-   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
+   <BOUNDS type="Window" left="336" top="576" width="18072" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -73,9 +73,9 @@
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="6" dstpinname="Bin Size">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11370" top="1305" width="795" height="240">
+   <BOUNDS type="Box" left="11490" top="1065" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11370" top="1305" width="0" height="0">
+   <BOUNDS type="Node" left="11490" top="1065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -165,9 +165,9 @@
    <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="26" dstpinname="Set">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13980" top="885" width="480" height="480">
+   <BOUNDS type="Box" left="13956" top="1077" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="13980" top="885" width="0" height="0">
+   <BOUNDS type="Node" left="13956" top="1077" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -182,6 +182,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|New Session|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Simulate">
@@ -308,42 +310,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="37" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8040" top="1050" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8040" top="1050" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="SessionData\2015.09.12-18.36.22\SkeletonData.xml">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="file.txt">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|DanceMove Filename|">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9648" top="930" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9648" top="930" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Read Dancemove|">
-   </PIN>
-   </NODE>
    <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="40">
    <BOUNDS type="Node" left="3795" top="1440" width="100" height="100">
    </BOUNDS>
@@ -467,9 +433,9 @@
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="59" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8181" top="5697" width="795" height="240">
+   <BOUNDS type="Box" left="8169" top="5829" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8181" top="5697" width="0" height="0">
+   <BOUNDS type="Node" left="8169" top="5829" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -517,18 +483,18 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6610" top="2820" width="3100" height="3655">
    </BOUNDS>
-   <BOUNDS type="Window" left="4695" top="1320" width="11865" height="11490">
+   <BOUNDS type="Window" left="-108" top="-108" width="23208" height="13128">
    </BOUNDS>
    <PIN pinname="Skeleton Count" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="RecordedDanceMoves\TestMove.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Joints Direction Vector" dstnodeid="6" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="66" srcpinname="Skeleton Joint Count" dstnodeid="11" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="Output String" dstnodeid="66" dstpinname="Filename">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="66" dstpinname="Read">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Index">
    </LINK>
@@ -547,9 +513,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Error Tolerance" linkstyle="VHV">
-   <LINKPOINT x="11415" y="5860">
+   <LINKPOINT x="11495" y="5700">
    </LINKPOINT>
-   <LINKPOINT x="6105" y="5765">
+   <LINKPOINT x="6145" y="5685">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="61" dstpinname="CurrentSkeleton">
@@ -646,4 +612,106 @@
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="29" dstpinname="Current Frame">
    </LINK>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="8220" top="2064" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" values="RecordedDanceMoves">
+   </PIN>
+   <PIN pinname="Mask" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="File Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8232" top="1692" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8232" top="1692" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="*.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Output String" dstnodeid="75" dstpinname="Mask">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Update">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="8160" top="3396" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Filenames" dstnodeid="77" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="8340" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Scale" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Is Integer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="8376" top="2628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="84" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8784" top="2628" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8784" top="2628" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="File Count" dstnodeid="83" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="80" dstpinname="Scale">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Output" dstnodeid="77" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="77" srcpinname="Output" dstnodeid="66" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="66" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="85" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8184" top="1020" width="2580" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8184" top="1020" width="1896" height="612">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|get random dancemove from folder&cr;&lf;v|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
