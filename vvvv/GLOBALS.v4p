@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="156" top="984" width="20136" height="11532">
+   <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -322,4 +322,86 @@
    </NODE>
    <LINK srcnodeid="71" srcpinname="Output String" dstnodeid="72" dstpinname="Input Value">
    </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="348" top="10620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="StartPosition">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="75">
+   <BOUNDS type="Node" left="336" top="9624" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="336" top="9624" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="74">
+   <BOUNDS type="Node" left="1956" top="10608" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|StartPosition Epsilon|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1980" top="9468" width="696" height="816">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1980" top="9468" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.5,0.5,0.5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="77" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="432" top="11040" width="2628" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="432" top="11040" width="1500" height="660">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;Where the player needs to be to start|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2088" top="11016" width="2628" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2088" top="11016" width="2412" height="1752">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;How accurately she has to be there.&cr;&lf;It&apos;s 3d because we probably want X and Y to be more accurate than Z (which will usually be the player&apos;s waist height, not her position on the dancefloor)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
