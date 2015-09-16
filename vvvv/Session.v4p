@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="-360">
-   <BOUNDS type="Window" left="336" top="576" width="18072" height="12900">
+   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -483,7 +483,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6610" top="2820" width="3100" height="3655">
    </BOUNDS>
-   <BOUNDS type="Window" left="-108" top="-108" width="23208" height="13128">
+   <BOUNDS type="Window" left="264" top="624" width="23208" height="13128">
    </BOUNDS>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>

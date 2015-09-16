@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="0" scrolly="4428">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="0" scrolly="2268">
    <BOUNDS type="Window" left="675" top="1125" width="15795" height="15705">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
