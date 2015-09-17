@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="30" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="30" scrolly="0">
    <BOUNDS type="Window" left="345" top="240" width="12540" height="10395">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="ProcessImages (ImageMagick, crop, resize, morph).v4p" nodename="ProcessImages (ImageMagick, crop, resize, morph)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1335" top="4500" width="7920" height="270">
@@ -115,7 +115,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="GifFolder">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output Folder|">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="3" dstpinname="OutputFileFolder" linkstyle="VHV">

@@ -670,4 +670,50 @@
    </LINK>
    <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="112" dstpinname="Input 1">
    </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="119">
+   <BOUNDS type="Node" left="9504" top="8328" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9504" top="8328" width="1032" height="264">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="\Tweeted">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="118">
+   <BOUNDS type="Node" left="9276" top="9624" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\SessionData">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|Tweeted Output Path|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="117">
+   <BOUNDS type="Node" left="9276" top="9168" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="\SessionData">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Absolute Path" dstnodeid="118" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="116">
+   <BOUNDS type="Node" left="9312" top="8700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="Output String" dstnodeid="116" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Output" dstnodeid="117" dstpinname="Relative Path">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Output" dstnodeid="116" dstpinname="Input 1">
+   </LINK>
    </PATCH>
