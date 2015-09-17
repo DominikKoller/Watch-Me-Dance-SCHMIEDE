@@ -181,7 +181,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="11484" top="0" width="12432" height="10140">
+   <BOUNDS type="Window" left="2544" top="276" width="12432" height="10140">
    </BOUNDS>
    <PIN pinname="Session Name" visible="1">
    </PIN>
@@ -309,9 +309,9 @@
    <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="40" dstpinname="Kinect Runtime">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4710" top="2340" width="795" height="240">
+   <BOUNDS type="Box" left="4926" top="3132" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4710" top="2340" width="0" height="0">
+   <BOUNDS type="Node" left="4926" top="3132" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -319,7 +319,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current User Skeleton|">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="75" values="0.0718187838792801,0.345858365297318,2.13868808746338,0.00720213539898396,0.569112181663513,2.11026883125305,-0.0556627213954926,0.784458458423614,2.07363200187683,-0.00543857738375664,0.90117734670639,2.10897636413574,-0.136818885803223,0.774458646774292,2.07640838623047,-0.14510115981102,0.513898253440857,2.05684113502502,-0.100901737809181,0.267429500818253,2.02380800247192,-0.102746449410915,0.189327672123909,2.01926779747009,0.120985694229603,0.699407696723938,2.04786658287048,0.280199766159058,0.504863440990448,2.01370668411255,0.357786357402802,0.296740174293518,1.98890721797943,0.394521951675415,0.22508043050766,1.97762596607208,0.0166085045784712,0.327137768268585,2.11014580726624,-0.0614948384463787,0.253036946058273,1.66601455211639,-0.0487181581556797,0.144153743982315,2.02286243438721,0.0708806067705154,0.0896179378032684,1.97695791721344,0.124992117285728,0.355139821767807,2.10841274261475,0.422598034143448,0.286383509635925,1.9857280254364,0.194165930151939,0.0683981031179428,1.98680973052979,0.0971211791038513,0.0625834241509438,1.97994017601013,-0.0401981323957443,0.731825411319733,2.08437371253967,-0.104757636785507,0.117954723536968,2.0035035610199,-0.0610592588782311,0.193673878908157,1.99776887893677,0.438625663518906,0.14673013985157,1.9618992805481,0.427846491336823,0.265073984861374,1.95180547237396">
+   <PIN pinname="Y Input Value" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="60" systemname="IOBox (Value Advanced)">
@@ -595,12 +595,12 @@
    </PIN>
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
+   <PIN pinname="Skeleton PositionXYZ" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="PositionXYZ" dstnodeid="87" dstpinname="Skeleton Positions">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Joint PositionXYZ" dstnodeid="87" dstpinname="Joint PositionsXYZ">
-   </LINK>
-   <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="59" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="88">
    <BOUNDS type="Node" left="9132" top="3588" width="100" height="100">
@@ -631,6 +631,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="6156" top="240" width="8424" height="9840">
    </BOUNDS>
+   <PIN pinname="CurrentSkeleton" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Error Tolerance" linkstyle="VHV">
    <LINKPOINT x="11495" y="5700">
@@ -646,10 +648,42 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="91" dstpinname="CurrentSkeleton">
-   </LINK>
    <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="90" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
+   </LINK>
+   <NODE systemname="TransformSkeleton" filename="sub\TransformSkeleton.v4p" componentmode="Hidden" id="92" nodename="sub\TransformSkeleton.v4p">
+   <BOUNDS type="Node" left="2892" top="2460" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2892" top="2460" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8256" top="2388" width="6384" height="4464">
+   </BOUNDS>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="JointPositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="JointPositionXYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Skeleton PositionXYZ" dstnodeid="92" dstpinname="PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="92" dstpinname="JointPositionXYZ">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="4632" top="2472" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Global Skeleton Transform|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Input Value" dstnodeid="92" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="JointPositionXYZ Transformed" dstnodeid="59" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="JointPositionXYZ Transformed" dstnodeid="91" dstpinname="CurrentSkeleton">
    </LINK>
    </PATCH>

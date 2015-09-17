@@ -417,7 +417,7 @@
    </PIN>
    <PIN pinname="Start New Session" visible="1">
    </PIN>
-   <PIN pinname="Skeleton PositionXYZ" visible="1" slicecount="9" values="0.12685514986515,1.28747773170471,4.32339859008789,-0.874385893344879,-0.361783772706985,1.50217652320862,-0.404155880212784,0.137742027640343,2.7826247215271">
+   <PIN pinname="Skeleton PositionXYZ" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
@@ -557,6 +557,8 @@
    </PIN>
    <PIN pinname="Skeleton PositionXYZ" visible="1">
    </PIN>
+   <PIN pinname="Joint PositionXYZ" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="82" srcpinname="PositionXYZ" dstnodeid="198" dstpinname="Input - XYZ">
    </LINK>
@@ -566,6 +568,38 @@
    </LINK>
    <LINK srcnodeid="82" srcpinname="Joint PositionXYZ" dstnodeid="198" dstpinname="Joint PositionsXYZ">
    </LINK>
-   <LINK srcnodeid="198" srcpinname="Skeleton PositionXYZ" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
+   <NODE systemname="TransformSkeleton" filename="sub\TransformSkeleton.v4p" componentmode="Hidden" id="200" nodename="sub\TransformSkeleton.v4p">
+   <BOUNDS type="Node" left="4428" top="2328" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4428" top="2328" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8256" top="2388" width="6384" height="4464">
+   </BOUNDS>
+   <PIN pinname="PositionXYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="JointPositionXYZ" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="JointPositionXYZ Transformed" visible="1">
+   </PIN>
+   <PIN pinname="PositionXYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="199">
+   <BOUNDS type="Node" left="6168" top="2340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Global Skeleton Transform|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="199" srcpinname="Input Value" dstnodeid="200" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Skeleton PositionXYZ" dstnodeid="200" dstpinname="PositionXYZ">
+   </LINK>
+   <LINK srcnodeid="198" srcpinname="Joint PositionXYZ" dstnodeid="200" dstpinname="JointPositionXYZ">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="PositionXYZ Transformed" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
    </LINK>
    </PATCH>

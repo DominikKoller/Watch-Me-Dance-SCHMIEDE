@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpace.v4p" scrollx="576" scrolly="-228" systemname="HelperKinectSpaceView2" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpaceView2.v4p">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpace.v4p" scrollx="4452" scrolly="0" systemname="HelperKinectSpaceView2" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpaceView2.v4p">
    <BOUNDS type="Window" left="396" top="0" width="14532" height="11616">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -327,6 +327,8 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="X" slicecount="1" values="-0.01">
+   </PIN>
    </NODE>
    <LINK srcnodeid="109" srcpinname="Transform Out" dstnodeid="93" dstpinname="Transform">
    </LINK>
@@ -335,9 +337,9 @@
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="110">
    <BOUNDS type="Node" left="11208" top="2280" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Y" slicecount="1" values="0.73">
+   <PIN pinname="Y" slicecount="1" values="0.8">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="-0.13">
+   <PIN pinname="X" slicecount="1" values="-0.16">
    </PIN>
    <PIN pinname="Z" slicecount="1" values="-0.88">
    </PIN>
@@ -362,6 +364,8 @@
    <PIN pinname="Filename" visible="1">
    </PIN>
    <PIN pinname="Write" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="111" srcpinname="Output" dstnodeid="112" dstpinname="Content">
@@ -463,7 +467,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13188" top="5976" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values=".raw">
+   <PIN pinname="Input String" slicecount="1" visible="1" values=".rawtransform">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -547,6 +551,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Write">
    </LINK>
@@ -619,7 +625,7 @@
    </PIN>
    <PIN pinname="X" slicecount="1" visible="1" values="-0.42">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0" visible="1">
+   <PIN pinname="Y" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Z" slicecount="1" visible="1" values="0.73">
    </PIN>
@@ -734,6 +740,36 @@
    <BOUNDS type="Box" left="9000" top="2304" width="1032" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; MARKERS|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="143" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12204" top="9096" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12204" top="9096" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="112" srcpinname="Success" dstnodeid="143" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="144" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12756" top="9252" width="816" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12756" top="9252" width="816" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; success|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

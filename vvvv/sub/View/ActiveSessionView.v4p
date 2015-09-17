@@ -217,7 +217,7 @@
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="468" top="2196" width="100" height="100">
+   <BOUNDS type="Node" left="492" top="2124" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Kinect Runtime" visible="1">
    </PIN>

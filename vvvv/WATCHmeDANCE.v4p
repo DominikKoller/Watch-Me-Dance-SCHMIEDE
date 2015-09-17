@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="0" top="0" width="11196" height="11556">
+   <BOUNDS type="Window" left="3180" top="204" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -165,9 +165,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="1692" top="492" width="15336" height="9504">
    </BOUNDS>
-   <PIN pinname="Current User Skeleton" visible="1" slicecount="1" values="0">
+   <PIN pinname="Current User Skeleton" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Current Frame Skeleton" visible="1" slicecount="1" values="0">
+   <PIN pinname="Current Frame Skeleton" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -176,6 +176,8 @@
    <PIN pinname="Matches" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Session Active" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Bones Match">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
@@ -247,57 +249,31 @@
    </PIN>
    </NODE>
    <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
-   <BOUNDS type="Node" left="9390" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="7026" top="1725" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9390" top="1725" width="4800" height="3600">
+   <BOUNDS type="Box" left="7026" top="1725" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p">
-   <BOUNDS type="Node" left="4194" top="6915" width="2436" height="276">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4194" top="6915" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="240" top="408" width="20628" height="12900">
-   </BOUNDS>
-   <PIN pinname="Session Done" visible="1">
-   </PIN>
-   <PIN pinname="New Session" visible="1" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Session Name" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Epsilon (Accuracy)">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="45" dstpinname="Current User Skeleton">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Bones Match" dstnodeid="45" dstpinname="Bones Match">
-   </LINK>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="6420" top="8748" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="1536" top="756" width="10176" height="8280">
    </BOUNDS>
-   <PIN pinname="Session Name" visible="1">
+   <PIN pinname="Session Name" visible="1" slicecount="1" values="0001">
    </PIN>
-   <PIN pinname="Save" visible="1">
+   <PIN pinname="Save" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="69">
    <BOUNDS type="Node" left="1908" top="7524" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="69" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
    <BOUNDS type="Node" left="1788" top="3828" width="100" height="100">
    </BOUNDS>
@@ -325,6 +301,32 @@
    </LINKPOINT>
    <LINKPOINT x="5532" y="8596">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p">
+   <BOUNDS type="Node" left="4194" top="6915" width="2436" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4194" top="6915" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="240" top="408" width="20628" height="12900">
+   </BOUNDS>
+   <PIN pinname="Session Done" visible="1">
+   </PIN>
+   <PIN pinname="New Session" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Session Name" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Epsilon (Accuracy)">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="45" dstpinname="Current User Skeleton">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Bones Match" dstnodeid="45" dstpinname="Bones Match">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="69" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="62" dstpinname="New Session">
    </LINK>
