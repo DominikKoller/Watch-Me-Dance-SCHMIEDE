@@ -6,3 +6,4 @@ SOFTWARE
 //- ImageToVideo (resizing, cropping, writeFile)
 - automated UserInteraction with Kinect
 - Gif/Video TwitterUpload with OneButton UserInterfaces (surface, touchkeyboard)
+- sounds
