@@ -181,7 +181,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1020" top="465" width="13650" height="7275">
+   <BOUNDS type="Window" left="11484" top="0" width="12432" height="10140">
    </BOUNDS>
    <PIN pinname="Session Name" visible="1">
    </PIN>
@@ -620,7 +620,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="29" dstpinname="SaveFrame">
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="29" dstpinname="ShootPicture">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="34" dstpinname="Switch">
    </LINK>

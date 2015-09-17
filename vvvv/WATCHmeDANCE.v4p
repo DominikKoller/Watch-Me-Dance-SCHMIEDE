@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="108" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="0" top="0" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -7,7 +7,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Node" left="675" top="510" width="1275" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="675" top="510" width="4050" height="615">
+   <BOUNDS type="Box" left="675" top="510" width="4176" height="624">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Watch Me Dance|">
    </PIN>
@@ -21,9 +21,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5010" top="885" width="1260" height="270">
+   <BOUNDS type="Node" left="5322" top="897" width="1260" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5010" top="885" width="1260" height="270">
+   <BOUNDS type="Box" left="5322" top="897" width="1260" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Schmiede 2015!|">
    </PIN>
@@ -299,7 +299,7 @@
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="69" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
-   <BOUNDS type="Node" left="1788" top="3816" width="100" height="100">
+   <BOUNDS type="Node" left="1788" top="3828" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="5436" top="1104" width="14532" height="10992">
    </BOUNDS>
@@ -313,17 +313,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="69" srcpinname="Output 1" dstnodeid="64" dstpinname="Current Session Done" linkstyle="Bezier">
-   <LINKPOINT x="136" y="7944">
+   <LINKPOINT x="136" y="7948">
    </LINKPOINT>
-   <LINKPOINT x="284" y="1632">
+   <LINKPOINT x="284" y="1640">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
-   <LINKPOINT x="1812" y="8592">
+   <LINKPOINT x="1812" y="8600">
    </LINKPOINT>
-   <LINKPOINT x="5532" y="8592">
+   <LINKPOINT x="5532" y="8596">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="62" dstpinname="New Session">
