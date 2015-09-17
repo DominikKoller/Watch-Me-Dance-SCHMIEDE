@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="2520">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="108" scrolly="3600">
    <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -300,30 +300,16 @@
    <LINKPOINT x="11940" y="1950">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="71">
-   <BOUNDS type="Node" left="300" top="8136" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="300" top="8136" width="1788" height="252">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Directory">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" values="\CameraImageDump">
-   </PIN>
-   </NODE>
    <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="72">
-   <BOUNDS type="Node" left="312" top="8712" width="100" height="100">
+   <BOUNDS type="Node" left="336" top="9804" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\CameraImageDump">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="|Images Dump Path|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="71" srcpinname="Output String" dstnodeid="72" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="348" top="10620" width="100" height="100">
+   <BOUNDS type="Node" left="384" top="11460" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="StartPosition">
    </PIN>
@@ -331,9 +317,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="75">
-   <BOUNDS type="Node" left="336" top="9624" width="100" height="100">
+   <BOUNDS type="Node" left="372" top="10464" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="336" top="9624" width="795" height="720">
+   <BOUNDS type="Box" left="372" top="10464" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -349,7 +335,7 @@
    <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="1956" top="10608" width="100" height="100">
+   <BOUNDS type="Node" left="1992" top="11448" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="|StartPosition Epsilon|">
    </PIN>
@@ -357,9 +343,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1980" top="9468" width="696" height="816">
+   <BOUNDS type="Box" left="2016" top="10308" width="696" height="816">
    </BOUNDS>
-   <BOUNDS type="Node" left="1980" top="9468" width="0" height="0">
+   <BOUNDS type="Node" left="2016" top="10308" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.5,0.5,0.5">
    </PIN>
@@ -377,9 +363,9 @@
    <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="77" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="432" top="11040" width="2628" height="240">
+   <BOUNDS type="Node" left="468" top="11880" width="2628" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="432" top="11040" width="1500" height="660">
+   <BOUNDS type="Box" left="468" top="11880" width="1500" height="660">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;Where the player needs to be to start|">
    </PIN>
@@ -391,9 +377,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2088" top="11016" width="2628" height="240">
+   <BOUNDS type="Node" left="2124" top="11856" width="2628" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="2088" top="11016" width="2412" height="1752">
+   <BOUNDS type="Box" left="2124" top="11856" width="2412" height="1752">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;How accurately she has to be there.&cr;&lf;It&apos;s 3d because we probably want X and Y to be more accurate than Z (which will usually be the player&apos;s waist height, not her position on the dancefloor)|">
    </PIN>
@@ -405,7 +391,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="79">
-   <BOUNDS type="Node" left="5292" top="8952" width="100" height="100">
+   <BOUNDS type="Node" left="10296" top="14688" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="|fps ReadDanceMove|">
    </PIN>
@@ -413,9 +399,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5280" top="8412" width="792" height="240">
+   <BOUNDS type="Box" left="10272" top="14004" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5280" top="8412" width="0" height="0">
+   <BOUNDS type="Node" left="10272" top="14004" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
@@ -427,5 +413,261 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="82">
+   <BOUNDS type="Node" left="2808" top="8436" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2808" top="8436" width="1032" height="264">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="\SessionData">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="2568" top="9684" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\SessionData">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|SessionData Path|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="2580" top="9276" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="\SessionData">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Absolute Path" dstnodeid="81" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="86">
+   <BOUNDS type="Node" left="324" top="9372" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\CameraImageDump">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Absolute Path" dstnodeid="72" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="10524" top="12996" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\SessionData">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|ImageMagick Path|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="10536" top="12588" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Absolute Path" dstnodeid="89" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10524" top="12216" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10524" top="12216" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="91" srcpinname="Output String" dstnodeid="88" dstpinname="Relative Path">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="12768" top="12396" width="4056" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12768" top="12396" width="1632" height="708">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; this is also in the PATH env variable, so we wouldn&apos;t need it|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="2616" top="8808" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Output String" dstnodeid="100" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
+   <BOUNDS type="Node" left="1668" top="7704" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1668" top="7704" width="576" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="..\Data">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="100" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="85" dstpinname="Relative Path">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="103">
+   <BOUNDS type="Node" left="732" top="8676" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="732" top="8676" width="1584" height="276">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="\CameraImageDump">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="540" top="9048" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="Output String" dstnodeid="102" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="102" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="86" dstpinname="Relative Path">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="104" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3972" top="10860" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3972" top="10860" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="file.foo">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Absolute Path" dstnodeid="104" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="111">
+   <BOUNDS type="Node" left="4956" top="8388" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4956" top="8388" width="1032" height="264">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="\RecordedDanceMoves">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="4728" top="9684" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\SessionData">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|RecordedDanceMoves Path|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="4728" top="9228" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="\SessionData">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="109" srcpinname="Absolute Path" dstnodeid="110" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="4764" top="8760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="111" srcpinname="Output String" dstnodeid="108" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Output" dstnodeid="109" dstpinname="Relative Path">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="108" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="115">
+   <BOUNDS type="Node" left="7764" top="8280" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7764" top="8280" width="1032" height="264">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="\Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="7536" top="9576" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\SessionData">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|Output Path|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AbsolutePath (File)" nodename="AbsolutePath (File)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="7536" top="9120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Relative Path" visible="1" slicecount="1" values="\SessionData">
+   </PIN>
+   <PIN pinname="Absolute Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Absolute Path" dstnodeid="114" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="7572" top="8652" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="Output String" dstnodeid="112" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Output" dstnodeid="113" dstpinname="Relative Path">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="112" dstpinname="Input 1">
    </LINK>
    </PATCH>
