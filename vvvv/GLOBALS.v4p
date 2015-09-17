@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="2520">
    <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -404,4 +404,28 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="5292" top="8952" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|fps ReadDanceMove|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="80" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5280" top="8412" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5280" top="8412" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="79" dstpinname="Input Value">
+   </LINK>
    </PATCH>

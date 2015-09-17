@@ -41,6 +41,8 @@
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
+   <PIN pinname="PositionXYZ" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="6" dstpinname="Kinect Runtime">
    </LINK>
@@ -57,9 +59,9 @@
    <LINK srcnodeid="6" srcpinname="Skeleton Count" dstnodeid="7" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="372" top="1500" width="372" height="240">
+   <BOUNDS type="Box" left="792" top="1872" width="372" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="372" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="792" top="1872" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -84,6 +86,8 @@
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
    <PIN pinname="Read" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Use every Frame" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
@@ -251,9 +255,9 @@
    <LINK srcnodeid="16" srcpinname="Skeleton Count" dstnodeid="30" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7308" top="948" width="480" height="480">
+   <BOUNDS type="Box" left="7188" top="576" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7308" top="948" width="0" height="0">
+   <BOUNDS type="Node" left="7188" top="576" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -513,5 +517,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="59" dstpinname="String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4428" top="1452" width="420" height="396">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4428" top="1452" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Use every Frame">
    </LINK>
    </PATCH>

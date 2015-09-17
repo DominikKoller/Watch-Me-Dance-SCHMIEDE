@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="108" scrolly="0">
    <BOUNDS type="Window" left="0" top="0" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -94,22 +94,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6807" top="2241" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6807" top="2241" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="RecordedDanceMoves\TestMove.xml">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="file.txt">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6807" top="3441" width="795" height="240">
    </BOUNDS>
@@ -122,58 +106,12 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7647" top="2196" width="1635" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7647" top="2196" width="1635" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; DanceMove Savefile|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7647" top="3411" width="1560" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="7647" top="3411" width="1560" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Epsilon (accuracy)|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6807" top="2691" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6807" top="2691" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7647" top="2781" width="1455" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7647" top="2781" width="1455" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Read DanceMove|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -239,7 +177,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-240" top="0" width="15336" height="9504">
+   <BOUNDS type="Window" left="1692" top="492" width="15336" height="9504">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="1" values="0">
    </PIN>
@@ -335,7 +273,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4194" top="6915" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="480" top="0" width="20628" height="12900">
+   <BOUNDS type="Window" left="240" top="408" width="20628" height="12900">
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
    </PIN>
@@ -344,11 +282,7 @@
    </NODE>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="62" dstpinname="Kinect">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="62" dstpinname="DanceMove Filename">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Epsilon (Accuracy)">
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Read Dancemove">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="45" dstpinname="Current User Skeleton">
    </LINK>
@@ -395,9 +329,9 @@
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
-   <LINKPOINT x="1812" y="8860">
+   <LINKPOINT x="1812" y="8592">
    </LINKPOINT>
-   <LINKPOINT x="5532" y="8696">
+   <LINKPOINT x="5532" y="8592">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="62" dstpinname="New Session">

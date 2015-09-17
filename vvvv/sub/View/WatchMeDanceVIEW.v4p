@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="-240" top="0" width="15336" height="9504">
+   <BOUNDS type="Window" left="1692" top="492" width="15336" height="9504">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
