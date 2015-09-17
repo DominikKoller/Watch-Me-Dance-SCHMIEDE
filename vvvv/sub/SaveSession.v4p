@@ -73,7 +73,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5016" top="6312" width="792" height="240">
+   <BOUNDS type="Box" left="5016" top="6312" width="1080" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="5016" top="6312" width="0" height="0">
    </BOUNDS>

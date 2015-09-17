@@ -195,7 +195,7 @@
    </PIN>
    <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="SaveFrame" slicecount="1" visible="1" values="1">
+   <PIN pinname="SaveFrame" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
@@ -245,7 +245,7 @@
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
+   <PIN pinname="Switch" visible="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -337,9 +337,9 @@
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="60" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15252" top="10644" width="480" height="480">
+   <BOUNDS type="Box" left="14664" top="10020" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15252" top="10644" width="0" height="0">
+   <BOUNDS type="Node" left="14664" top="10020" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -351,13 +351,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Match|">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="16482" top="10878" width="795" height="240">
+   <BOUNDS type="Box" left="15894" top="10254" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="16482" top="10878" width="0" height="0">
+   <BOUNDS type="Node" left="15894" top="10254" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -392,42 +392,10 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Index">
    </LINK>
-   <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="61" nodename="sub\compare\CompareSkeletons.v4p">
-   <BOUNDS type="Node" left="4590" top="5820" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4590" top="5820" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6156" top="240" width="8424" height="9840">
-   </BOUNDS>
-   <PIN pinname="Matches" visible="1">
-   </PIN>
-   <PIN pinname="Measure Accuracy" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton Match" visible="1">
-   </PIN>
-   <PIN pinname="CurrentSkeleton" visible="1" slicecount="75" values="0.0759768187999725,0.342303991317749,2.1390655040741,0.0101763922721148,0.567635774612427,2.11078119277954,-0.0538339056074619,0.785182356834412,2.07325649261475,-0.0079788975417614,0.904001712799072,2.10856938362122,-0.138656958937645,0.735850989818573,2.07590365409851,-0.147085711359978,0.513173580169678,2.05651378631592,-0.0535153895616531,0.261778503656387,2.01860284805298,-0.0829894095659256,0.231984749436378,2.01897168159485,0.124560378491878,0.70170783996582,2.04736924171448,0.282893121242523,0.51161116361618,2.01210904121399,0.386648863554001,0.299014687538147,1.98407745361328,0.407025039196014,0.225887671113014,1.97584283351898,0.017876423895359,0.319722473621368,2.11079287528992,-0.0461581759154797,0.25604322552681,1.66456019878387,-0.0447803400456905,0.141267061233521,2.05857348442078,0.073082447052002,0.0968113094568253,1.98933303356171,0.131907403469086,0.355443924665451,2.10849452018738,0.428177297115326,0.288128256797791,1.98543095588684,0.192447543144226,0.0780348405241966,1.98702907562256,0.0954682156443596,0.0711634308099747,1.9800136089325,-0.0380533933639526,0.732078313827515,2.08425068855286,-0.090729758143425,0.155426874756813,2.01647329330444,-0.0347111448645592,0.218539983034134,1.98606359958649,0.438995391130447,0.146234929561615,1.96034097671509,0.467145949602127,0.225042596459389,1.94541668891907">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Error Tolerance" linkstyle="VHV">
-   <LINKPOINT x="11495" y="5700">
-   </LINKPOINT>
-   <LINKPOINT x="6145" y="5685">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="61" dstpinname="RecordedSkeleton">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Bones Match" dstnodeid="64" dstpinname="Y Input Value" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Bones Error" dstnodeid="65" dstpinname="Y Input Value" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="29" dstpinname="SaveFrame">
-   </LINK>
-   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="34" dstpinname="Switch">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="68" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9432" top="10740" width="480" height="480">
+   <BOUNDS type="Box" left="10572" top="10320" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9432" top="10740" width="0" height="0">
+   <BOUNDS type="Node" left="10572" top="10320" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -471,9 +439,9 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="69" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13764" top="10560" width="480" height="480">
+   <BOUNDS type="Box" left="13176" top="9936" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="13764" top="10560" width="0" height="0">
+   <BOUNDS type="Node" left="13176" top="9936" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -485,13 +453,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Match|">
    </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="61" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10668" top="10944" width="792" height="240">
+   <BOUNDS type="Box" left="9432" top="10344" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10668" top="10944" width="0" height="0">
+   <BOUNDS type="Node" left="9432" top="10344" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -611,10 +579,10 @@
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="86">
    <BOUNDS type="Node" left="13935" top="4569" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Simulate" visible="1" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Bang" dstnodeid="26" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
    </LINK>
    <LINK srcnodeid="86" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize" hiddenwhenlocked="1">
    </LINK>
@@ -634,8 +602,6 @@
    </LINK>
    <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="59" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="61" dstpinname="CurrentSkeleton">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="88">
    <BOUNDS type="Node" left="9132" top="3588" width="100" height="100">
    </BOUNDS>
@@ -645,5 +611,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="Input Value" dstnodeid="66" dstpinname="fps">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="90">
+   <BOUNDS type="Node" left="4284" top="6228" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="29" dstpinname="SaveFrame">
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="34" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="91" nodename="sub\compare\CompareSkeletons.v4p">
+   <BOUNDS type="Node" left="4590" top="5820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4590" top="5820" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6156" top="240" width="8424" height="9840">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Error Tolerance" linkstyle="VHV">
+   <LINKPOINT x="11495" y="5700">
+   </LINKPOINT>
+   <LINKPOINT x="6145" y="5685">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="91" dstpinname="RecordedSkeleton">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Bones Match" dstnodeid="64" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Bones Error" dstnodeid="65" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="91" dstpinname="CurrentSkeleton">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="90" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
    </LINK>
    </PATCH>
