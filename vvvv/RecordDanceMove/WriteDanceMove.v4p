@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="0" scrolly="2268">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="0" scrolly="1188">
    <BOUNDS type="Window" left="675" top="1125" width="15795" height="15705">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -505,7 +505,7 @@
    <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="55">
    <BOUNDS type="Node" left="2025" top="2745" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1">
+   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
