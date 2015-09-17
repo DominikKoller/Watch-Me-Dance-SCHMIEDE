@@ -232,20 +232,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="WriteDanceMove" filename="WriteDanceMove.v4p" nodename="WriteDanceMove.v4p" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="4305" top="3360" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Write" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Record" visible="1" slicecount="1" values="0">
-   </PIN>
-   <BOUNDS type="Window" left="675" top="1125" width="15795" height="15705">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="69">
    <BOUNDS type="Node" left="4290" top="1650" width="100" height="100">
    </BOUNDS>
@@ -256,10 +242,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="68" dstpinname="Kinect">
-   </LINK>
-   <LINK srcnodeid="39" srcpinname="Absolute Path" dstnodeid="68" dstpinname="Filename">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="70" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1344" top="2412" width="1635" height="270">
    </BOUNDS>
@@ -304,10 +286,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Record">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Write">
-   </LINK>
    <NODE systemname="RGB (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="RGB (Kinect2 Microsoft)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="732" top="2424" width="100" height="100">
    </BOUNDS>
@@ -346,4 +324,64 @@
    </LINK>
    <LINK srcnodeid="75" srcpinname="Texture" dstnodeid="78" dstpinname="Texture In">
    </LINK>
+   <NODE systemname="NodeList (VVVV)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="NodeList (VVVV)" componentmode="Hidden" id="-13">
+   <BOUNDS type="Node" left="4272" top="4452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Search Paths" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="80" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4260" top="4020" width="2892" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4260" top="4020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\RecordDanceMove">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values=".">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Output String" dstnodeid="-13" dstpinname="Search Paths">
+   </LINK>
+   <NODE systemname="WriteDanceMove" filename="..\RecordDanceMove\WriteDanceMove.v4p" nodename="..\RecordDanceMove\WriteDanceMove.v4p" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="4305" top="3360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Write" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Record" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="675" top="1125" width="15795" height="15705">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output Node" dstnodeid="68" dstpinname="Kinect">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Absolute Path" dstnodeid="68" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Record">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Write">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7332" top="4176" width="1716" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7332" top="4176" width="4416" height="264">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; This is not very clear - it should be also in the main patch.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

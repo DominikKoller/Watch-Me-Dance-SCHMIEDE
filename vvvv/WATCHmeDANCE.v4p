@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="-360">
    <BOUNDS type="Window" left="0" top="0" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -335,7 +335,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4194" top="6915" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
+   <BOUNDS type="Window" left="480" top="0" width="20628" height="12900">
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
    </PIN>
@@ -375,7 +375,7 @@
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
    <BOUNDS type="Node" left="1788" top="3816" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="3348" top="468" width="14532" height="10992">
+   <BOUNDS type="Window" left="5436" top="1104" width="14532" height="10992">
    </BOUNDS>
    <PIN pinname="Current Session Done" visible="1">
    </PIN>

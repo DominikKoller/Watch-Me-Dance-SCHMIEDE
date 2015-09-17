@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="-360">
-   <BOUNDS type="Window" left="0" top="0" width="20628" height="12900">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="-720" locked="0">
+   <BOUNDS type="Window" left="480" top="0" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -147,22 +147,12 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Set" visible="1">
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="String" dstnodeid="26" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="22" dstpinname="Input String">
-   </LINK>
-   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="13935" top="4605" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Bang" visible="1">
-   </PIN>
-   <PIN pinname="Simulate" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="26" dstpinname="Set">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="13956" top="1077" width="480" height="480">
@@ -186,8 +176,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Simulate">
-   </LINK>
    <NODE systemname="ShootPicture" filename="sub\ShootPicture.v4p" componentmode="Hidden" id="29" nodename="sub\ShootPicture.v4p">
    <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
    </BOUNDS>
@@ -223,7 +211,7 @@
    </PIN>
    <PIN pinname="Default 1" visible="1">
    </PIN>
-   <PIN pinname="Initialize" visible="1">
+   <PIN pinname="Initialize" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="32">
@@ -293,8 +281,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Default 1">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1962" top="10605" width="4695" height="270">
@@ -714,4 +700,14 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="86">
+   <BOUNDS type="Node" left="13935" top="4569" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Bang" dstnodeid="26" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize" hiddenwhenlocked="1">
+   </LINK>
    </PATCH>
