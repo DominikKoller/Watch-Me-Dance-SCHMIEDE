@@ -5,4 +5,4 @@ SOFTWARE
 //- RecordingLogic
 //- ImageToVideo (resizing, cropping, writeFile)
 - automated UserInteraction with Kinect
-- Gif/Video TwitterUpload with OneButton UserInterfaces
+- Gif/Video TwitterUpload with OneButton UserInterfaces (surface, touchkeyboard)
