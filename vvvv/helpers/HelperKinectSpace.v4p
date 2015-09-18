@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpace.v4p" scrollx="0" scrolly="0" systemname="HelperKinectSpaceView2" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpaceView2.v4p">
-   <BOUNDS type="Window" left="396" top="0" width="14532" height="11616">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpace.v4p" scrollx="4860" scrolly="-360" systemname="HelperKinectSpaceView2" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HelperKinectSpaceView2.v4p">
+   <BOUNDS type="Window" left="408" top="480" width="14532" height="11616">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -199,7 +199,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1839" top="9330" width="7644" height="6144">
    </BOUNDS>
-   <BOUNDS type="Window" left="13092" top="132" width="9948" height="8640">
+   <BOUNDS type="Window" left="13260" top="0" width="9948" height="8640">
    </BOUNDS>
    <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
    </PIN>
@@ -214,18 +214,6 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="34" dstpinname="Layer 5">
    </LINK>
-   <NODE systemname="HeadSpaceView" filename="HeadSpaceView.v4p" nodename="HeadSpaceView.v4p" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="1572" top="4284" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="HeadPosition" visible="1" slicecount="3" values="0.3155,0.8053,1.7872">
-   </PIN>
-   <PIN pinname="View Out" visible="1">
-   </PIN>
-   <PIN pinname="Projection Out" visible="1">
-   </PIN>
-   <PIN pinname="Screen Transform" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="86" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9324" top="252" width="480" height="480">
    </BOUNDS>
@@ -245,8 +233,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Screen Transform" dstnodeid="36" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
    <BOUNDS type="Node" left="10044" top="600" width="1788" height="240">
@@ -301,7 +287,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0.11" visible="1">
+   <PIN pinname="X" slicecount="1" visible="1" values="0.11">
    </PIN>
    <PIN pinname="Y" slicecount="1" visible="1" values="0">
    </PIN>
@@ -315,11 +301,11 @@
    <NODE systemname="Translate (Transform)" nodename="Translate (Transform)" componentmode="Hidden" id="110">
    <BOUNDS type="Node" left="11220" top="1824" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Y" slicecount="1" values="2.42">
+   <PIN pinname="Y" slicecount="1" values="2.42" visible="1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="0">
+   <PIN pinname="X" slicecount="1" values="0" visible="1">
    </PIN>
-   <PIN pinname="Z" slicecount="1" values="-0.5">
+   <PIN pinname="Z" slicecount="1" values="-0.5" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="110" srcpinname="Transform Out" dstnodeid="109" dstpinname="Transform In">
@@ -837,7 +823,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="384" top="3552" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8808" top="564" width="13812" height="10284">
+   <BOUNDS type="Window" left="13884" top="828" width="10440" height="8628">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -863,7 +849,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Depth (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Depth (Kinect2 Microsoft)" componentmode="Hidden" id="160">
-   <BOUNDS type="Node" left="384" top="1944" width="100" height="100">
+   <BOUNDS type="Node" left="168" top="1944" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Kinect Runtime" slicecount="1" values="||">
    </PIN>
@@ -875,6 +861,8 @@
    </BOUNDS>
    <PIN pinname="Kinect Runtime" visible="1">
    </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="162" srcpinname="Depth FOVXY" dstnodeid="92" dstpinname="FOV">
    </LINK>
@@ -883,7 +871,7 @@
    <LINK srcnodeid="162" srcpinname="Kinect Runtime" dstnodeid="160" dstpinname="Kinect Runtime">
    </LINK>
    <NODE systemname="Player (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Player (Kinect2 Microsoft)" componentmode="Hidden" id="163">
-   <BOUNDS type="Node" left="840" top="2436" width="100" height="100">
+   <BOUNDS type="Node" left="864" top="2340" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Kinect Runtime" visible="1">
    </PIN>
@@ -891,8 +879,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="162" srcpinname="Kinect Runtime" dstnodeid="163" dstpinname="Kinect Runtime">
-   </LINK>
-   <LINK srcnodeid="163" srcpinname="Texture" dstnodeid="156" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="92" srcpinname="Transform Out" dstnodeid="157" dstpinname="Projection">
    </LINK>
@@ -903,13 +889,13 @@
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="166" srcpinname="Layer Out" dstnodeid="157" dstpinname="Layers">
    </LINK>
    <NODE systemname="Stickman (Kinect2 DX11)" filename="..\sub\View\Stickman (Kinect2 DX11).v4p" nodename="Stickman (Kinect2 DX11)" componentmode="Hidden" id="167">
-   <BOUNDS type="Node" left="1920" top="2772" width="100" height="100">
+   <BOUNDS type="Node" left="2136" top="2076" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="-4392" top="348" width="14604" height="13104">
    </BOUNDS>
@@ -920,8 +906,6 @@
    <PIN pinname="Show Bones" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="167" srcpinname="Layer Out" dstnodeid="166" dstpinname="Layer 2">
-   </LINK>
    <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="168">
    <BOUNDS type="Node" left="2892" top="1236" width="100" height="100">
    </BOUNDS>
@@ -945,7 +929,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="12540" top="1908" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.12">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.127">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -973,7 +957,7 @@
    <LINK srcnodeid="171" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Y">
    </LINK>
    <NODE systemname="NearestSkeletonOnly" filename="..\sub\NearestSkeletonOnly.v4p" nodename="..\sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="172">
-   <BOUNDS type="Node" left="2832" top="1752" width="100" height="100">
+   <BOUNDS type="Node" left="3132" top="1692" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Skeleton Positions" visible="1">
    </PIN>
@@ -981,12 +965,12 @@
    </PIN>
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
+   <PIN pinname="Valid Box" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="168" srcpinname="PositionXYZ" dstnodeid="172" dstpinname="Skeleton Positions">
    </LINK>
    <LINK srcnodeid="168" srcpinname="Joint PositionXYZ" dstnodeid="172" dstpinname="Joint PositionsXYZ">
-   </LINK>
-   <LINK srcnodeid="172" srcpinname="Joint PositionXYZ" dstnodeid="93" dstpinname="XYZ UnTransformed">
    </LINK>
    <LINK srcnodeid="172" srcpinname="Joint PositionXYZ" dstnodeid="167" dstpinname="Joint PositionXYZ">
    </LINK>
@@ -1003,5 +987,101 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="173" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Z">
+   </LINK>
+   <NODE systemname="HeadSpaceView" filename="..\sub\View\HeadSpaceView.v4p" nodename="..\sub\View\HeadSpaceView.v4p" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="1572" top="4284" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="HeadPosition" visible="1" slicecount="3" values="0.3155,0.8053,1.7872">
+   </PIN>
+   <PIN pinname="View Out" visible="1">
+   </PIN>
+   <PIN pinname="Projection Out" visible="1">
+   </PIN>
+   <PIN pinname="Screen Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Screen Transform" dstnodeid="36" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="RGB (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="RGB (Kinect2 Microsoft)" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="864" top="1368" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="162" srcpinname="Kinect Runtime" dstnodeid="174" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Texture" dstnodeid="156" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="RenderState (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="RenderState (DX11.Layer)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="1920" top="2712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer In" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Layer Out" dstnodeid="176" dstpinname="Layer In">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Layer Out" dstnodeid="166" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="DepthStencil (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="DepthStencil (DX11.RenderState)" componentmode="Hidden" id="177">
+   <BOUNDS type="Node" left="1584" top="1716" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="WriteOnly">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="177" srcpinname="Render State" dstnodeid="176" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="168" srcpinname="Joint PositionXYZ" dstnodeid="93" dstpinname="XYZ UnTransformed">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="179" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12852" top="672" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12852" top="672" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.14">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="Y Output Value" dstnodeid="110" dstpinname="X">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="180" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12852" top="1008" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12852" top="1008" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2.25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="180" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="181" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13056" top="1488" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13056" top="1488" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.09">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Z">
    </LINK>
    </PATCH>

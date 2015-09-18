@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="48" scrolly="2052">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="60" scrolly="2052">
    <BOUNDS type="Window" left="2988" top="216" width="12636" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -176,12 +176,12 @@
    <PIN pinname="Projection" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="48" stayontop="1">
    <BOUNDS type="Node" left="3972" top="10608" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3972" top="10608" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="7356" top="5292" width="9516" height="8388">
+   <BOUNDS type="Window" left="31440" top="2244" width="9516" height="8388">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -473,7 +473,7 @@
    <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="74" dstpinname="Bones Error">
    </LINK>
    <NODE systemname="TouchInterface" filename="sub\TouchInterface\TouchInterface.v4p" nodename="sub\TouchInterface\TouchInterface.v4p" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="588" top="10008" width="100" height="100">
+   <BOUNDS type="Node" left="264" top="9972" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -481,11 +481,15 @@
    </BOUNDS>
    <PIN pinname="Session Done" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Tweet" visible="1">
+   </PIN>
+   <PIN pinname="TweetMessage" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="78">
-   <BOUNDS type="Node" left="588" top="10616" width="100" height="100">
+   <BOUNDS type="Node" left="264" top="10580" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="588" top="10616" width="2400" height="1800">
+   <BOUNDS type="Box" left="264" top="10580" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="13656" top="216" width="6612" height="4080">
    </BOUNDS>
@@ -503,7 +507,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" filename="" nodename="AspectRatio (Transform)" componentmode="Hidden" id="77">
-   <BOUNDS type="Node" left="2914" top="10608" width="100" height="100">
+   <BOUNDS type="Node" left="2590" top="10572" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Aspect Width" visible="1">
    </PIN>
@@ -525,9 +529,9 @@
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="76" dstpinname="Session Done">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2112" top="9852" width="480" height="480">
+   <BOUNDS type="Box" left="1788" top="9816" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2112" top="9852" width="0" height="0">
+   <BOUNDS type="Node" left="1788" top="9816" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -541,5 +545,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Fullscreen">
+   </LINK>
+   <NODE systemname="TwitterManager" filename="sub\TwitterManager.v4p" nodename="sub\TwitterManager.v4p" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="420" top="11784" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Publish Tweet" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Publish Tweet Text" visible="1" slicecount="1" values="werwerwer">
+   </PIN>
+   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="8520">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="TweetMessage" dstnodeid="82" dstpinname="Publish Tweet Text">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Tweet" dstnodeid="82" dstpinname="Publish Tweet">
    </LINK>
    </PATCH>

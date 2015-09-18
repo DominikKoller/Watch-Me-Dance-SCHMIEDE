@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="6564">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="7212" scrolly="4512">
    <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -933,11 +933,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="144" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="16560" top="11112" width="4512" height="264">
+   <BOUNDS type="Box" left="16452" top="11196" width="4512" height="264">
    </BOUNDS>
-   <BOUNDS type="Node" left="16560" top="11112" width="0" height="0">
+   <BOUNDS type="Node" left="16452" top="11196" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -959,28 +961,12 @@
    </PIN>
    <PIN pinname="Intersperse String" visible="-1" pintype="Input" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="\KinectTransform_2015.09.18-12.20.59.rawtransform">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="124" srcpinname="Output" dstnodeid="145" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="146" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11364" top="8328" width="4056" height="264">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11364" top="8328" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="\KinectTransform_2015.09.18-12.20.59.rawtransform">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="146" srcpinname="Output String" dstnodeid="145" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="145" srcpinname="Output" dstnodeid="121" dstpinname="Filename">
    </LINK>
@@ -1015,5 +1001,49 @@
    <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="148" srcpinname="Output" dstnodeid="76" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="149" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15192" top="8820" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15192" top="8820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="149" srcpinname="Y Output Value" dstnodeid="143" dstpinname="Index">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="150">
+   <BOUNDS type="Node" left="11088" top="8304" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11088" top="8304" width="3972" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="\KinectTransform_2015.09.18-21.32.43.rawtransform">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="150" srcpinname="Output String" dstnodeid="145" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="151" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="10908" top="10764" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10908" top="10764" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Content" dstnodeid="151" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="152" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="10560" top="11340" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10560" top="11340" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Transform Out" dstnodeid="152" dstpinname="Input Node">
    </LINK>
    </PATCH>

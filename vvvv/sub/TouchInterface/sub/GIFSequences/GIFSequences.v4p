@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\GIFSequences.v4p" scrollx="0" scrolly="0" systemname="GIFSequences" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences.v4p">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\GIFSequences.v4p" scrollx="0" scrolly="1800" systemname="GIFSequences" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences.v4p">
    <BOUNDS type="Window" left="1728" top="1332" width="11796" height="9480">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">

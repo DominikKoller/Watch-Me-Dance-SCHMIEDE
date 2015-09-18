@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="1536" top="756" width="11892" height="8280">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="360">
+   <BOUNDS type="Window" left="1536" top="756" width="10176" height="8280">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -40,22 +40,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5088" top="5148" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5088" top="5148" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5064" top="5724" width="480" height="480">
    </BOUNDS>
@@ -73,9 +57,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5016" top="6312" width="1080" height="240">
+   <BOUNDS type="Box" left="5004" top="6456" width="1356" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5016" top="6312" width="0" height="0">
+   <BOUNDS type="Node" left="5004" top="6456" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -163,8 +147,6 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Execute">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Input Value" dstnodeid="11" dstpinname="CanonFolder">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="All Actions Finished Bang" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Completed" dstnodeid="13" dstpinname="Y Input Value">
    </LINK>

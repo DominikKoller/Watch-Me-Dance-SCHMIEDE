@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" systemname="RECORDDanceMove" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" systemname="RECORDDanceMove" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" scrollx="0" scrolly="1116">
    <BOUNDS type="Window" left="0" top="0" width="11808" height="13128">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -123,6 +123,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Record">
    </LINK>
@@ -141,11 +143,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3228" top="4500" width="480" height="480">
+   <BOUNDS type="Box" left="3228" top="4488" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3228" top="4500" width="0" height="0">
+   <BOUNDS type="Node" left="3228" top="4488" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -154,6 +156,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Record Only When Changed">
@@ -251,6 +255,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Write">
    </LINK>
@@ -293,7 +299,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6516" top="6108" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="DanceMoveName">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="FirstRealTest">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -553,6 +559,8 @@
    </PIN>
    <PIN pinname="Joint PositionXYZ" visible="1">
    </PIN>
+   <PIN pinname="Valid Box" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="TransformSkeleton" filename="..\sub\TransformSkeleton.v4p" nodename="..\sub\TransformSkeleton.v4p" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="2004" top="11028" width="100" height="100">
@@ -579,7 +587,7 @@
    <LINK srcnodeid="57" srcpinname="Joint PositionXYZ" dstnodeid="55" dstpinname="Joint PositionXYZ">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="61">
-   <BOUNDS type="Node" left="3300" top="10692" width="100" height="100">
+   <BOUNDS type="Node" left="3600" top="10584" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -587,5 +595,53 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="61" srcpinname="Input Value" dstnodeid="58" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="62">
+   <BOUNDS type="Node" left="6420" top="10632" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6420" top="10632" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
+   <BOUNDS type="Node" left="7296" top="10620" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7296" top="10620" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="999,999,999">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="6420" top="11508" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="57" dstpinname="Valid Box">
    </LINK>
    </PATCH>

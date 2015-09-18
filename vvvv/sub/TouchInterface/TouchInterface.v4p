@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3880" top="5120" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1368" top="852" width="9876" height="8376">
+   <BOUNDS type="Window" left="1368" top="852" width="10644" height="8928">
    </BOUNDS>
    <PIN pinname="State" visible="1" slicecount="1" values="0">
    </PIN>
@@ -225,9 +225,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5850" top="8680" width="800" height="240">
+   <BOUNDS type="Box" left="5286" top="8740" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5850" top="8680" width="0" height="0">
+   <BOUNDS type="Node" left="5286" top="8740" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

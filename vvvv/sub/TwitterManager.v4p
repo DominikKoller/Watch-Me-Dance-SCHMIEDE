@@ -1,57 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" systemname="TwitterManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" scrollx="255" scrolly="720">
-   <NODE systemname="EvvvvilTweetLogger (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetLogger\EvvvvilTweetLogger.dll" nodename="EvvvvilTweetLogger (Network)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1815" top="3165" width="4395" height="270">
-   </BOUNDS>
-   <PIN pinname="Logged In?" visible="1">
-   </PIN>
-   <PIN pinname="Application Credentials" visible="1" slicecount="2" values="chJrHyWVm8dArkzblzNqhkmfh,4L3un6AHxdGMdrskAz0XkkDDZdHNUkgdRU0DH3H9sTwmaJ1zOw">
-   </PIN>
-   <PIN pinname="Login as a User" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Logout" visible="1">
-   </PIN>
-   <PIN pinname="Logger Status" visible="1">
-   </PIN>
-   <PIN pinname="Authorize a Twitter User" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Authorization URL" visible="1">
-   </PIN>
-   <PIN pinname="Verifier Code" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Developer Credentials" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Login as a Dev" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Refresh Login Status" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="EvvvvilTweetAction (Network)" filename="..\..\modules\EvilTweetEngine\EvvvvilTweetAction\EvvvvilTweetAction.dll" nodename="EvvvvilTweetAction (Network)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="3540" top="5235" width="6975" height="270">
-   </BOUNDS>
-   <PIN pinname="Publish Picture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Publish Tweet Text" visible="1">
-   </PIN>
-   <PIN pinname="Machine Gun Mode?" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Publish Tweet" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="All Actions Finished Bang" visible="1">
-   </PIN>
-   <PIN pinname="Logged In?" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Action Status" visible="1">
-   </PIN>
-   <PIN pinname="Action Done Bang" visible="1">
-   </PIN>
-   <PIN pinname="Published Tweet Ids" visible="1">
-   </PIN>
-   </NODE>
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TwitterManager.v4p" systemname="TwitterManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" scrollx="252" scrolly="-360">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4020" top="4695" width="1500" height="315">
+   <BOUNDS type="Box" left="3960" top="4362" width="2256" height="672">
    </BOUNDS>
-   <BOUNDS type="Node" left="4020" top="4695" width="0" height="0">
+   <BOUNDS type="Node" left="3960" top="4362" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="asfdasfd">
    </PIN>
@@ -65,9 +17,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7245" top="4260" width="480" height="480">
+   <BOUNDS type="Box" left="10197" top="924" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7245" top="4260" width="0" height="0">
+   <BOUNDS type="Node" left="10197" top="924" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -82,6 +34,8 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Tweet|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
@@ -101,9 +55,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6165" top="1485" width="480" height="480">
+   <BOUNDS type="Box" left="6933" top="2361" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6165" top="1485" width="0" height="0">
+   <BOUNDS type="Node" left="6933" top="2361" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -145,9 +99,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8490" top="2685" width="795" height="240">
+   <BOUNDS type="Box" left="8322" top="2193" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8490" top="2685" width="0" height="0">
+   <BOUNDS type="Node" left="8322" top="2193" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -164,21 +118,9 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Picture|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Logout">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Logger Status" dstnodeid="8" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Publish Tweet Text">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Publish Tweet">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Action Status" dstnodeid="12" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="All Actions Finished Bang" dstnodeid="4" dstpinname="Y Input Value">
-   </LINK>
-   <BOUNDS type="Window" left="7665" top="1770" width="11925" height="7185">
+   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="8520">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2310" top="2505" width="2235" height="270">
@@ -218,12 +160,10 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Login as a Dev|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Login as a Dev">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5685" top="2355" width="480" height="480">
+   <BOUNDS type="Box" left="5649" top="1959" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5685" top="2355" width="0" height="0">
+   <BOUNDS type="Node" left="5649" top="1959" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -240,8 +180,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Refresh Login Status|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Refresh Login Status">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3555" top="5865" width="480" height="480">
    </BOUNDS>
@@ -256,8 +194,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Action Done Bang" dstnodeid="18" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5850" top="5730" width="1440" height="735">
    </BOUNDS>
@@ -270,8 +206,6 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Published Tweet Ids" dstnodeid="19" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1245" top="1575" width="1185" height="465">
    </BOUNDS>
@@ -288,8 +222,6 @@
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Application Credentials">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3735" top="2640" width="285" height="270">
    </BOUNDS>
@@ -304,9 +236,173 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    </NODE>
+   <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="10188" top="3204" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="10188" top="2772" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="27" dstpinname="Set">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="10188" top="3732" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10176" top="4332" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10176" top="4332" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Up Edge" dstnodeid="34" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="NodeList (VVVV)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="NodeList (VVVV)" componentmode="Hidden" id="-13">
+   <BOUNDS type="Node" left="780" top="5652" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Search Paths" visible="1" slicecount="1" values="..\modules\EvilTweetEngine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="35" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="792" top="4812" width="2376" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="792" top="4812" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\modules\EvilTweetEngine">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values=".">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SubDir (File)" nodename="SubDir (File)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="792" top="5232" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" visible="1">
+   </PIN>
+   <PIN pinname="Subdirectories" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output String" dstnodeid="36" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Subdirectories" dstnodeid="-13" dstpinname="Search Paths">
+   </LINK>
+   <NODE systemname="EvvvvilTweetLogger (Network)" filename="..\modules\EvilTweetEngine\EvvvvilTweetLogger\EvvvvilTweetLogger.dll" nodename="EvvvvilTweetLogger (Network)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1815" top="3165" width="4395" height="270">
+   </BOUNDS>
+   <PIN pinname="Logged In?" visible="1">
+   </PIN>
+   <PIN pinname="Application Credentials" visible="1" slicecount="2" values="chJrHyWVm8dArkzblzNqhkmfh,4L3un6AHxdGMdrskAz0XkkDDZdHNUkgdRU0DH3H9sTwmaJ1zOw">
+   </PIN>
+   <PIN pinname="Login as a User" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Logout" visible="1">
+   </PIN>
+   <PIN pinname="Logger Status" visible="1">
+   </PIN>
+   <PIN pinname="Authorize a Twitter User" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Authorization URL" visible="1">
+   </PIN>
+   <PIN pinname="Verifier Code" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Developer Credentials" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Login as a Dev" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Refresh Login Status" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Logout">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Logger Status" dstnodeid="8" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Login as a Dev">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Refresh Login Status">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="0" dstpinname="Application Credentials">
+   </LINK>
    <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="0" dstpinname="Verifier Code">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="0" dstpinname="Developer Credentials">
+   </LINK>
+   <NODE systemname="EvvvvilTweetAction (Network)" filename="..\modules\EvilTweetEngine\EvvvvilTweetAction\EvvvvilTweetAction.dll" nodename="EvvvvilTweetAction (Network)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3540" top="5235" width="6975" height="270">
+   </BOUNDS>
+   <PIN pinname="Publish Picture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Publish Tweet Text" visible="1">
+   </PIN>
+   <PIN pinname="Machine Gun Mode?" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Publish Tweet" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="All Actions Finished Bang" visible="1">
+   </PIN>
+   <PIN pinname="Logged In?" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Action Status" visible="1">
+   </PIN>
+   <PIN pinname="Action Done Bang" visible="1">
+   </PIN>
+   <PIN pinname="Published Tweet Ids" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Publish Tweet Text">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Action Status" dstnodeid="12" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="All Actions Finished Bang" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Action Done Bang" dstnodeid="18" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Published Tweet Ids" dstnodeid="19" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Publish Tweet">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="1" dstpinname="Publish Picture">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Logged In?" dstnodeid="1" dstpinname="Logged In?">
    </LINK>
