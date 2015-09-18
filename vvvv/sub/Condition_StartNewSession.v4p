@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Condition_StartNewSession.v4p" systemname="Condition_StartNewSession" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Condition_StartNewSession.v4p" scrollx="456" scrolly="0">
-   <BOUNDS type="Window" left="4368" top="0" width="7608" height="7500">
+   <BOUNDS type="Window" left="14196" top="552" width="7608" height="7500">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -14,26 +14,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="LE (Value)" nodename="LE (Value)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2268" top="2556" width="396" height="276">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="3" values="-0.99241179227829,0.294918924570084,1.02267205715179">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="2808" top="2520" width="1944" height="276">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|StartPosition Epsilon|">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="1968" top="4944" width="100" height="100">
    </BOUNDS>
@@ -47,9 +27,9 @@
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="9" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6480" top="2088" width="756" height="240">
+   <BOUNDS type="Box" left="6804" top="2112" width="756" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6480" top="2088" width="0" height="0">
+   <BOUNDS type="Node" left="6804" top="2112" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
@@ -153,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4884" top="1812" width="480" height="480">
+   <BOUNDS type="Box" left="5208" top="1836" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4884" top="1812" width="0" height="0">
+   <BOUNDS type="Node" left="5208" top="1836" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -171,30 +151,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="2316" top="1800" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="3" values="0,0,0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="Sign (Value)" nodename="Sign (Value)" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="2316" top="2160" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Absolute Part" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="26" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Absolute Part" dstnodeid="6" dstpinname="Input 1">
    </LINK>
    <NODE systemname="AND (Boolean Spectral)" nodename="AND (Boolean Spectral)" componentmode="Hidden" id="27">
    <BOUNDS type="Node" left="1956" top="3588" width="100" height="100">
@@ -216,8 +172,6 @@
    <PIN pinname="Default" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="30" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="27" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
@@ -233,5 +187,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Default">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="2256" top="1620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|StartPosition Box|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (3d)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (3d)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="2244" top="2172" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="InputXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Output 1XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Output 2XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Input Value" dstnodeid="33" dstpinname="InputXYZ">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="1968" top="2604" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Epsilon" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output 1XYZ" dstnodeid="34" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output 2XYZ" dstnodeid="34" dstpinname="Epsilon">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="30" dstpinname="Input">
    </LINK>
    </PATCH>

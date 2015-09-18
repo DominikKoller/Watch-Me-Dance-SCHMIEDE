@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="3072" scrolly="6744">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="6564">
    <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -309,11 +309,11 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="480" top="11856" width="100" height="100">
+   <BOUNDS type="Node" left="492" top="12672" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="StartPosition">
+   <PIN pinname="Send String" slicecount="1" values="|StartPosition Box|">
    </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   <PIN pinname="Input Value" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="75">
@@ -330,16 +330,6 @@
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Input Value">
-   </LINK>
-   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="2088" top="11844" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="|StartPosition Epsilon|">
-   </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
@@ -359,13 +349,13 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="77" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="564" top="12276" width="2628" height="240">
+   <BOUNDS type="Node" left="576" top="13092" width="2628" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="564" top="12276" width="1500" height="660">
+   <BOUNDS type="Box" left="576" top="13092" width="1500" height="660">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;Where the player needs to be to start|">
    </PIN>
@@ -377,9 +367,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2220" top="12252" width="2628" height="240">
+   <BOUNDS type="Node" left="2316" top="13020" width="2628" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="2220" top="12252" width="2412" height="1752">
+   <BOUNDS type="Box" left="2316" top="13020" width="2412" height="1752">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;How accurately she has to be there.&cr;&lf;It&apos;s 3d because we probably want X and Y to be more accurate than Z (which will usually be the player&apos;s waist height, not her position on the dancefloor)|">
    </PIN>
@@ -1009,5 +999,21 @@
    <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="147" srcpinname="Output" dstnodeid="135" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="480" top="12132" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Y Output Value" dstnodeid="148" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Output" dstnodeid="76" dstpinname="Input Value">
    </LINK>
    </PATCH>

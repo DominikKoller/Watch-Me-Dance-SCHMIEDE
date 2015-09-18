@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\RightSkeleton.v4p" systemname="RightSkeleton" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\RightSkeleton.v4p">
-   <BOUNDS type="Window" left="10032" top="1644" width="6072" height="4308">
+   <BOUNDS type="Window" left="7908" top="660" width="6072" height="4308">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -27,7 +27,7 @@
    </PIN>
    <PIN pinname="Skeleton PositionXYZ" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4152" top="480" width="6516" height="7116">
+   <BOUNDS type="Window" left="1224" top="576" width="12864" height="7116">
    </BOUNDS>
    <PIN pinname="Valid Area" visible="1">
    </PIN>

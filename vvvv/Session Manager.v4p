@@ -395,7 +395,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3732" top="6132" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4368" top="0" width="7608" height="7500">
+   <BOUNDS type="Window" left="14196" top="552" width="7608" height="7500">
    </BOUNDS>
    <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
    </PIN>
