@@ -1,0 +1,347 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\sub\VirtualKeyboard.v4p" scrollx="0" scrolly="1800" systemname="VirtualKeyboard" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\VirtualKeyboard.v4p">
+   <BOUNDS type="Window" left="-580" top="2620" width="13730" height="9220">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="EnterString" filename="EnterString.v4p" componentmode="Hidden" id="1" nodename="EnterString.v4p" stayontop="0">
+   <BOUNDS type="Node" left="2640" top="6460" width="1570" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2640" top="6460" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5940" top="4260" width="13660" height="11830">
+   </BOUNDS>
+   <PIN pinname="Touch Id" visible="1">
+   </PIN>
+   <PIN pinname="TouchXY" visible="1">
+   </PIN>
+   <PIN pinname="EmailKeys" visible="1">
+   </PIN>
+   <PIN pinname="Is new" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="LastKey" visible="1">
+   </PIN>
+   <PIN pinname="CharacterClick" visible="1">
+   </PIN>
+   <PIN pinname="DeleteClick" visible="1">
+   </PIN>
+   <PIN pinname="SwitchToNumbers" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Key Pressed" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3170" top="2540" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3170" top="2540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Touch Id|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4140" top="2540" width="800" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4140" top="2540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TouchXY">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DisplayKeyboard" filename="DisplayKeyboard.v4p" componentmode="Hidden" id="5" nodename="DisplayKeyboard.v4p">
+   <BOUNDS type="Node" left="2640" top="8070" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2640" top="8070" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1290" top="2470" width="11750" height="8760">
+   </BOUNDS>
+   <PIN pinname="Email_Keys" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="AllowDataInput" visible="1">
+   </PIN>
+   <PIN pinname="Email_Switch" visible="1">
+   </PIN>
+   <PIN pinname="Key Pressed" visible="1">
+   </PIN>
+   <PIN pinname="Time" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Transform Keys" dstnodeid="5" dstpinname="TransformKeys">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="6" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2640" top="8900" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2640" top="8900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Keyboard|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="6" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5150" top="2540" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5150" top="2540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Is new|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Node" left="1330" top="2540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1330" top="2540" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AllowDataInput">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2640" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="3610" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4620" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\NIL (Spreads).v4p" nodename="NIL (Spreads)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="2910" top="4860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="11" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="1" dstpinname="Touch Id">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="1" dstpinname="TouchXY">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="1" dstpinname="Is new">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="AllowDataInput">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="16" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="4900" top="8900" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4900" top="8900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Text|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="StoreString" filename="StoreString.v4p" componentmode="Hidden" id="70" nodename="StoreString.v4p">
+   <BOUNDS type="Node" left="3840" top="7260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3840" top="7260" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4260" top="4040" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="LastKey" visible="1">
+   </PIN>
+   <PIN pinname="CharacterClick" visible="1">
+   </PIN>
+   <PIN pinname="Delete" visible="1">
+   </PIN>
+   <PIN pinname="Max Length" slicecount="1" visible="1" values="30">
+   </PIN>
+   <PIN pinname="TextOut" visible="1">
+   </PIN>
+   <PIN pinname="TextAvailable" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="LastKey" dstnodeid="70" dstpinname="LastKey">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="CharacterClick" dstnodeid="70" dstpinname="CharacterClick">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="DeleteClick" dstnodeid="70" dstpinname="Delete">
+   </LINK>
+   <NODE systemname="TextOutput" filename="TextOutput.v4p" nodename="TextOutput.v4p" componentmode="Hidden" id="92">
+   <BOUNDS type="Node" left="4900" top="8070" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4900" top="8070" width="8600" height="7740">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2630" top="3120" width="11110" height="8560">
+   </BOUNDS>
+   <PIN pinname="TextAvailable" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="TweetMessage" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
+   </PIN>
+   <PIN pinname="AllowDataInput" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="TextOut" dstnodeid="92" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="TextAvailable" dstnodeid="92" dstpinname="TextAvailable">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Layer" dstnodeid="16" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5980" top="8900" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5980" top="8900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TweetMessage">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="TweetMessage" dstnodeid="93" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="SwitchToNumbers" dstnodeid="5" dstpinname="SwitchToNumbers" linkstyle="PolyLine">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="96">
+   <BOUNDS type="Node" left="5700" top="4050" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Down Edge" dstnodeid="1" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Down Edge" dstnodeid="70" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Key Pressed" dstnodeid="5" dstpinname="Key Pressed">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7770" top="2540" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7770" top="2540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Time" linkstyle="PolyLine" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="6090" top="4870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="99" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="10" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="11" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="12" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="5700" top="4460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Time" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Up Edge" dstnodeid="100" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Inverse Output" dstnodeid="99" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Time" linkstyle="PolyLine" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="92" dstpinname="FilterTime" linkstyle="PolyLine" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="92" dstpinname="AllowDataInput">
+   </LINK>
+   </PATCH>
