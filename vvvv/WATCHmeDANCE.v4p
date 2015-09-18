@@ -355,9 +355,9 @@
    <NODE id="70" componentmode="Hidden" systemname="Audio" filename="sub\Audio.v4p" nodename="sub\Audio.v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="1104" top="0" width="20640" height="8016">
    </BOUNDS>
-   <BOUNDS type="Node" left="8388" top="8844" width="100" height="100">
+   <BOUNDS type="Node" left="8556" top="8844" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="72" top="2328" width="4800" height="3600">
+   <BOUNDS type="Box" left="240" top="2328" width="4800" height="3600">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -384,18 +384,18 @@
    <PIN pinname="Bones Error" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="70" dstpinname="User Skeleton">
+   <LINK srcnodeid="62" srcpinname="Current User Skeleton" dstnodeid="70" dstpinname="User Skeleton" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Current User Skeleton PositionXYZ" dstnodeid="70" dstpinname="User Skeleton PositionXYZ">
+   <LINK srcnodeid="62" srcpinname="Current User Skeleton PositionXYZ" dstnodeid="70" dstpinname="User Skeleton PositionXYZ" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Skeleton Match" dstnodeid="70" dstpinname="Cam Trigger">
+   <LINK srcnodeid="62" srcpinname="Skeleton Match" dstnodeid="70" dstpinname="Cam Trigger" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="70" dstpinname="Session Active">
+   <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="70" dstpinname="Session Active" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="70" dstpinname="Session Start">
+   <LINK srcnodeid="64" srcpinname="New Session" dstnodeid="70" dstpinname="Session Start" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="64" srcpinname="Abort Session" dstnodeid="70" dstpinname="Session Abort">
+   <LINK srcnodeid="64" srcpinname="Abort Session" dstnodeid="70" dstpinname="Session Abort" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="70" dstpinname="Bones Error">
+   <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="70" dstpinname="Bones Error" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
