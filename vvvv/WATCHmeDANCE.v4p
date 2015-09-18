@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="0" top="276" width="15492" height="11556">
+   <BOUNDS type="Window" left="2988" top="216" width="15492" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -355,9 +355,9 @@
    <NODE id="70" componentmode="InAWindow" systemname="Events" filename="sub\Events.v4p" nodename="sub\Events.v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="1104" top="0" width="20640" height="7848">
    </BOUNDS>
-   <BOUNDS type="Node" left="9024" top="8760" width="100" height="100">
+   <BOUNDS type="Node" left="9204" top="8388" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="708" top="2244" width="4800" height="3600">
+   <BOUNDS type="Box" left="888" top="1872" width="4800" height="3600">
    </BOUNDS>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -415,7 +415,7 @@
    <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="70" dstpinname="Bones Error" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="Audio" filename="sub\Audio.v4p" nodename="sub\Audio.v4p" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="8844" top="9408" width="100" height="100">
+   <BOUNDS type="Node" left="9036" top="9012" width="100" height="100">
    </BOUNDS>
    <PIN pinname="User Entered Circle" visible="1">
    </PIN>
@@ -432,6 +432,8 @@
    <PIN pinname="Session Aborted" visible="1">
    </PIN>
    <PIN pinname="Session Done" visible="1">
+   </PIN>
+   <PIN pinname="Bones Error" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="User Entered Circle" dstnodeid="74" dstpinname="User Entered Circle">
@@ -451,9 +453,43 @@
    <LINK srcnodeid="70" srcpinname="Session Done" dstnodeid="74" dstpinname="Session Done">
    </LINK>
    <NODE systemname="Hardware" filename="sub\Hardware.v4p" nodename="sub\Hardware.v4p" componentmode="Hidden" id="75">
-   <BOUNDS type="Node" left="10608" top="9384" width="100" height="100">
+   <BOUNDS type="Node" left="10800" top="8988" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="2304" top="0" width="15384" height="9276">
    </BOUNDS>
+   <PIN pinname="User Entered Circle" visible="1">
+   </PIN>
+   <PIN pinname="User Left Circle" visible="1">
+   </PIN>
+   <PIN pinname="User Entered Stage" visible="1">
+   </PIN>
+   <PIN pinname="User Left Stage" visible="1">
+   </PIN>
+   <PIN pinname="Camera Trigger" visible="1">
+   </PIN>
+   <PIN pinname="Session Started" visible="1">
+   </PIN>
+   <PIN pinname="Session Aborted" visible="1">
+   </PIN>
+   <PIN pinname="Session Done" visible="1">
+   </PIN>
    </NODE>
+   <LINK srcnodeid="70" srcpinname="User Entered Circle" dstnodeid="75" dstpinname="User Entered Circle">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="User Left Circle" dstnodeid="75" dstpinname="User Left Circle">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="User Entered Stage" dstnodeid="75" dstpinname="User Entered Stage">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="User Left Stage" dstnodeid="75" dstpinname="User Left Stage">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Camera Trigger" dstnodeid="75" dstpinname="Camera Trigger">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Session Started" dstnodeid="75" dstpinname="Session Started">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Session Aborted" dstnodeid="75" dstpinname="Session Aborted">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Session Done" dstnodeid="75" dstpinname="Session Done">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="74" dstpinname="Bones Error">
+   </LINK>
    </PATCH>
