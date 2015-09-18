@@ -374,20 +374,6 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="173">
-   <BOUNDS type="Node" left="10116" top="2952" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.02">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="173" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="141" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Reset">
    </LINK>
    <NODE systemname="Condition_StartNewSession" filename="sub\Condition_StartNewSession.v4p" componentmode="Hidden" id="176" nodename="sub\Condition_StartNewSession.v4p">
@@ -407,7 +393,7 @@
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
-   <PIN pinname="Session Ended Recently" visible="1">
+   <PIN pinname="Session Ended Recently" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="ActivationTime" visible="1">
    </PIN>
@@ -439,12 +425,6 @@
    <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Session Active" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="176" dstpinname="Session Ended Recently" linkstyle="VHV">
-   <LINKPOINT x="10140" y="3360">
-   </LINKPOINT>
-   <LINKPOINT x="5880" y="3360">
-   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5988" top="6180" width="792" height="240">
@@ -529,5 +509,25 @@
    <LINK srcnodeid="203" srcpinname="Skeleton PositionXYZ" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
    </LINK>
    <LINK srcnodeid="203" srcpinname="Skeleton Count" dstnodeid="177" dstpinname="Skeleton Count">
+   </LINK>
+   <NODE systemname="LT (Value)" nodename="LT (Value)" componentmode="Hidden" id="173">
+   <BOUNDS type="Node" left="10116" top="2952" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.02">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="173" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="174" srcpinname="Y Output Value" dstnodeid="173" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="173" srcpinname="Output" dstnodeid="176" dstpinname="Session Ended Recently" linkstyle="VHV">
+   <LINKPOINT x="10140" y="3360">
+   </LINKPOINT>
+   <LINKPOINT x="5880" y="3360">
+   </LINKPOINT>
    </LINK>
    </PATCH>

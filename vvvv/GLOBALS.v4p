@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="7212" scrolly="4512">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="6168">
    <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -337,7 +337,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2112" top="10704" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.3,0.3,1">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="9,9,9">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -833,7 +833,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7464" top="10776" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.3,0.3,1">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="9,9,9">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
