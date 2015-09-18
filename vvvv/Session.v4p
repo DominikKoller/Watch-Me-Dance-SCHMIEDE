@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="12" scrolly="720" locked="0">
-   <BOUNDS type="Window" left="240" top="408" width="20628" height="12900">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="0" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="4344" top="960" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -176,32 +176,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ShootPicture" filename="sub\ShootPicture.v4p" componentmode="Hidden" id="29" nodename="sub\ShootPicture.v4p">
-   <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2544" top="276" width="12432" height="10140">
-   </BOUNDS>
-   <PIN pinname="Session Name" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton Matched" visible="1">
-   </PIN>
-   <PIN pinname="Current Skeleton Data" visible="1">
-   </PIN>
-   <PIN pinname="Current Frame" visible="1">
-   </PIN>
-   <PIN pinname="Current RGB image" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="SaveFrame" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="29" dstpinname="Kinect">
-   </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="31">
    <BOUNDS type="Node" left="2598" top="8148" width="100" height="100">
    </BOUNDS>
@@ -282,20 +256,6 @@
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="31" dstpinname="Default 1">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="1962" top="10605" width="4695" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1962" top="10605" width="5130" height="315">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|This will be reworked once we have the external Camera input.|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5310" top="3144" width="795" height="240">
    </BOUNDS>
@@ -339,7 +299,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Match|">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65" systemname="IOBox (Value Advanced)">
@@ -353,7 +313,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Bones Error|">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="ReadDanceMove" filename="sub\ReadDanceMove.v4p" nodename="sub\ReadDanceMove.v4p" componentmode="Hidden" id="66">
@@ -441,7 +401,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Match|">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
@@ -459,8 +419,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="74" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="29" dstpinname="Current Frame">
    </LINK>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="8220" top="2064" width="100" height="100">
@@ -585,16 +543,46 @@
    <LINK srcnodeid="88" srcpinname="Input Value" dstnodeid="66" dstpinname="fps">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="90">
-   <BOUNDS type="Node" left="4284" top="6228" width="100" height="100">
+   <BOUNDS type="Node" left="4332" top="6252" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="29" dstpinname="ShootPicture">
-   </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="34" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
+   </LINK>
+   <NODE systemname="RightSkeleton" filename="sub\RightSkeleton.v4p" nodename="sub\RightSkeleton.v4p" componentmode="Hidden" id="95">
+   <BOUNDS type="Node" left="3828" top="1884" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   <PIN pinname="Joint PositionXYZ" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="7908" top="660" width="6072" height="4308">
+   </BOUNDS>
+   <PIN pinname="Skeleton PositionXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="95" dstpinname="Kinect Runtime">
+   </LINK>
+   <LINK srcnodeid="95" srcpinname="Joint PositionXYZ" dstnodeid="59" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="99" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5292" top="2772" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5292" top="2772" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Current User Skeleton PositionXYZ|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Skeleton PositionXYZ" dstnodeid="99" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="CompareSkeletons" filename="sub\compare\CompareSkeletons.v4p" componentmode="Hidden" id="91" nodename="sub\compare\CompareSkeletons.v4p">
    <BOUNDS type="Node" left="4590" top="5820" width="100" height="100">
@@ -620,24 +608,6 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="90" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="86" dstpinname="Simulate">
-   </LINK>
-   <NODE systemname="RightSkeleton" filename="sub\RightSkeleton.v4p" nodename="sub\RightSkeleton.v4p" componentmode="Hidden" id="95">
-   <BOUNDS type="Node" left="3828" top="1884" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1">
-   </PIN>
-   <PIN pinname="Joint PositionXYZ" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="7908" top="660" width="6072" height="4308">
-   </BOUNDS>
-   <PIN pinname="Skeleton PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="95" dstpinname="Kinect Runtime">
-   </LINK>
-   <LINK srcnodeid="95" srcpinname="Joint PositionXYZ" dstnodeid="59" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="95" srcpinname="Joint PositionXYZ" dstnodeid="91" dstpinname="CurrentSkeleton">
    </LINK>
    <LINK srcnodeid="91" srcpinname="Bones Error" dstnodeid="65" dstpinname="Y Input Value" hiddenwhenlocked="1">
@@ -646,18 +616,112 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="99" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5292" top="2772" width="792" height="240">
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="11640" top="3876" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="5292" top="2772" width="0" height="0">
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="103" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="12000" top="3888" width="300" height="240">
    </BOUNDS>
+   <BOUNDS type="Node" left="12000" top="3888" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Current User Skeleton PositionXYZ|">
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="95" srcpinname="Skeleton PositionXYZ" dstnodeid="99" dstpinname="Y Input Value">
+   <LINK srcnodeid="103" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="10536" top="5760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Cycles" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="111">
+   <BOUNDS type="Node" left="10536" top="6120" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Cycles" dstnodeid="111" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="111" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="ShootPicture" filename="sub\ShootPicture.v4p" componentmode="Hidden" id="29" nodename="sub\ShootPicture.v4p">
+   <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1995" top="10215" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2544" top="276" width="16308" height="7068">
+   </BOUNDS>
+   <PIN pinname="Session Name" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton Matched" visible="1">
+   </PIN>
+   <PIN pinname="Current Skeleton Data" visible="1">
+   </PIN>
+   <PIN pinname="Current Frame" visible="1">
+   </PIN>
+   <PIN pinname="Current RGB image" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Kinect" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="SaveFrame" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="29" dstpinname="Session Name">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="29" dstpinname="Kinect">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="29" dstpinname="Current Frame">
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="29" dstpinname="ShootPicture">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="10392" top="4524" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="OnChange" dstnodeid="110" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="113" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10548" top="5268" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10548" top="5268" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Period">
    </LINK>
    </PATCH>
