@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="684" scrolly="2796" locked="0">
    <BOUNDS type="Window" left="4344" top="960" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -382,8 +382,6 @@
    <PIN pinname="Default" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="68" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="69" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
@@ -723,5 +721,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="113" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Period">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="10572" top="9984" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="114" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="114" srcpinname="Up Edge" dstnodeid="68" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

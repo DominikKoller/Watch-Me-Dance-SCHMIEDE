@@ -1,67 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\TouchInterface.v4p" scrollx="0" scrolly="-360" systemname="TouchInterface" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\TouchInterface.v4p">
-   <BOUNDS type="Window" left="1690" top="920" width="9320" height="8030">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\TouchInterface.v4p" scrollx="0" scrolly="-360" systemname="TouchInterface" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\TouchInterface.v4p">
+   <BOUNDS type="Window" left="3084" top="828" width="9312" height="10488">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="32">
-   <BOUNDS type="Node" left="3360" top="8520" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3360" top="8520" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="12580" top="310" width="6620" height="4090">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Width" visible="1">
-   </PIN>
-   <PIN pinname="Actual Backbuffer Height" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="AspectRatio (Transform)" filename="" nodename="AspectRatio (Transform)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="4210" top="9100" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1">
-   </PIN>
-   <PIN pinname="Aspect Height" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Alignment" slicecount="1" values="FitHeight">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="32" srcpinname="Actual Backbuffer Width" dstnodeid="33" dstpinname="Aspect Width">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Actual Backbuffer Height" dstnodeid="33" dstpinname="Aspect Height">
-   </LINK>
-   <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="32" dstpinname="Aspect Ratio">
-   <LINKPOINT x="4240" y="9570">
-   </LINKPOINT>
-   <LINKPOINT x="5360" y="9570">
-   </LINKPOINT>
-   <LINKPOINT x="5360" y="8330">
-   </LINKPOINT>
-   <LINKPOINT x="4830" y="8330">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="TouchData" filename="sub\TouchData.v4p" componentmode="Hidden" id="35" nodename="sub\TouchData.v4p">
-   <BOUNDS type="Node" left="7000" top="2600" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7000" top="2600" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6040" top="5020" width="5020" height="5470">
-   </BOUNDS>
-   <PIN pinname="PositionXY" visible="1">
-   </PIN>
-   <PIN pinname="Touch Id" visible="1">
-   </PIN>
-   <PIN pinname="TouchXY" visible="1">
-   </PIN>
-   <PIN pinname="Is New" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
    <BOUNDS type="Node" left="1190" top="2600" width="100" height="100">
    </BOUNDS>
@@ -111,13 +53,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3880" top="5120" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8640" top="4770" width="9880" height="8380">
+   <BOUNDS type="Window" left="1368" top="852" width="9876" height="8376">
    </BOUNDS>
    <PIN pinname="State" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Touch Id" visible="1" slicecount="1" values="969">
+   <PIN pinname="Touch Id" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="TouchXY" visible="1" slicecount="2" values="-0.330203442879499,-0.994428969359331">
+   <PIN pinname="TouchXY" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Is new" visible="1" slicecount="1" values="0">
    </PIN>
@@ -132,6 +74,8 @@
    <PIN pinname="Filename" visible="1">
    </PIN>
    <PIN pinname="TweetMessage" visible="1">
+   </PIN>
+   <PIN pinname="BackToBeginning" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="ThankYouScreen" filename="sub\ThankYouScreen.v4p" componentmode="Hidden" id="42" nodename="sub\ThankYouScreen.v4p">
@@ -165,7 +109,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3540" top="3820" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="4490" top="5670" width="11800" height="6000">
+   <BOUNDS type="Window" left="1728" top="1332" width="11796" height="9480">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -177,9 +121,9 @@
    </PIN>
    <PIN pinname="State" visible="1">
    </PIN>
-   <PIN pinname="Directory" visible="1">
+   <PIN pinname="Directory" visible="1" slicecount="1" values="..\..\assets\TestGIF">
    </PIN>
-   <PIN pinname="Update Directory" visible="1">
+   <PIN pinname="Update Directory" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="NewestGIF" visible="1">
    </PIN>
@@ -187,50 +131,6 @@
    <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="39" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="8" dstpinname="State">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4340" top="880" width="740" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4340" top="880" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\assets\TestGIF">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Directory">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|GIF Directory|">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="8" dstpinname="Directory">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="45" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5660" top="880" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5660" top="880" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Directory|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Update Directory">
    </LINK>
    <NODE systemname="MultiFlipFlop (Animation)" nodename="MultiFlipFlop (Animation)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="1190" top="2080" width="1040" height="270">
@@ -300,22 +200,6 @@
    </NODE>
    <LINK srcnodeid="41" srcpinname="Tweet" dstnodeid="51" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="3360" top="8100" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="55" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Layer" dstnodeid="32" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="41" dstpinname="GIF Directpry">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="NewestGIF" dstnodeid="41" dstpinname="NewestGIF">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="58">
@@ -330,48 +214,20 @@
    </NODE>
    <LINK srcnodeid="42" srcpinname="BackToBeginning" dstnodeid="58" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Touch Id" dstnodeid="41" dstpinname="Touch Id" linkstyle="Bezier">
-   <LINKPOINT x="7000" y="3990">
-   </LINKPOINT>
-   <LINKPOINT x="4250" y="3990">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="TouchXY" dstnodeid="41" dstpinname="TouchXY" linkstyle="Bezier">
-   <LINKPOINT x="7520" y="3990">
-   </LINKPOINT>
-   <LINKPOINT x="4570" y="3990">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Is New" dstnodeid="41" dstpinname="Is new" linkstyle="Bezier">
-   <LINKPOINT x="8030" y="3990">
-   </LINKPOINT>
-   <LINKPOINT x="4880" y="3990">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="51" srcpinname="Output 1" dstnodeid="46" dstpinname="Set 3">
-   <LINKPOINT x="5160" y="6110">
+   <LINKPOINT x="5160" y="6108">
    </LINKPOINT>
-   <LINKPOINT x="730" y="6110">
+   <LINKPOINT x="684" y="6084">
    </LINKPOINT>
-   <LINKPOINT x="730" y="1900">
+   <LINKPOINT x="732" y="1896">
    </LINKPOINT>
-   <LINKPOINT x="2200" y="1900">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="46" dstpinname="Set 0">
-   <LINKPOINT x="5530" y="7720">
-   </LINKPOINT>
-   <LINKPOINT x="490" y="7720">
-   </LINKPOINT>
-   <LINKPOINT x="490" y="1720">
-   </LINKPOINT>
-   <LINKPOINT x="1220" y="1720">
+   <LINKPOINT x="2196" y="1896">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5850" top="9100" width="800" height="240">
+   <BOUNDS type="Box" left="5850" top="8680" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5850" top="9100" width="0" height="0">
+   <BOUNDS type="Node" left="5850" top="8680" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -387,9 +243,9 @@
    <LINK srcnodeid="41" srcpinname="TweetMessage" dstnodeid="62" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7440" top="9100" width="480" height="480">
+   <BOUNDS type="Box" left="7260" top="8500" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7440" top="9100" width="0" height="0">
+   <BOUNDS type="Node" left="7260" top="8500" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -404,4 +260,126 @@
    </NODE>
    <LINK srcnodeid="41" srcpinname="Tweet" dstnodeid="63" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="TouchData" filename="sub\TouchData.v4p" componentmode="Hidden" id="35" nodename="sub\TouchData.v4p">
+   <BOUNDS type="Node" left="6784" top="3668" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6784" top="3668" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6040" top="5020" width="5020" height="5470">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Touch Id" visible="1">
+   </PIN>
+   <PIN pinname="TouchXY" visible="1">
+   </PIN>
+   <PIN pinname="Is New" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Touch Id" dstnodeid="41" dstpinname="Touch Id" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="TouchXY" dstnodeid="41" dstpinname="TouchXY" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Is New" dstnodeid="41" dstpinname="Is new" linkstyle="PolyLine">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="64" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3348" top="8676" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3348" top="8676" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="64" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="6324" top="5460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="BackToBeginning" dstnodeid="65" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="1092" top="1524" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="46" dstpinname="Set 0">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output 1" dstnodeid="66" dstpinname="Input 1">
+   <LINKPOINT x="6348" y="6264">
+   </LINKPOINT>
+   <LINKPOINT x="612" y="6180">
+   </LINKPOINT>
+   <LINKPOINT x="612" y="1356">
+   </LINKPOINT>
+   <LINKPOINT x="1152" y="1272">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="66" dstpinname="Input 2">
+   <LINKPOINT x="5580" y="7536">
+   </LINKPOINT>
+   <LINKPOINT x="444" y="7356">
+   </LINKPOINT>
+   <LINKPOINT x="348" y="1176">
+   </LINKPOINT>
+   <LINKPOINT x="1344" y="1104">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="4332" top="1092" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|RecordedDanceMoves Path|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Input Value" dstnodeid="8" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="4884" top="3360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="8" dstpinname="Update Directory">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="4884" top="2844" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="60">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Change" dstnodeid="68" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5748" top="2796" width="2412" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5748" top="2796" width="2688" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Check Directory every n seconds|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

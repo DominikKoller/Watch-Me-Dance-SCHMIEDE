@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="12" scrolly="276">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="0" scrolly="1176">
    <BOUNDS type="Window" left="972" top="636" width="15336" height="10608">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -24,16 +24,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current Frame Skeleton|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="4">
-   <BOUNDS type="Node" left="1284" top="6666" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1284" top="6666" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
-   </PIN>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="11">
@@ -165,8 +155,6 @@
    </LINKPOINT>
    <LINKPOINT x="1308" y="5796">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="4" dstpinname="Input Node">
    </LINK>
    <NODE systemname="HeadSpaceView" filename="HeadSpaceView.v4p" nodename="HeadSpaceView.v4p" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="5676" top="5064" width="100" height="100">
