@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="9432" scrolly="5472">
-   <BOUNDS type="Window" left="5028" top="168" width="20136" height="12192">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="3072" scrolly="6744">
+   <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -815,11 +815,11 @@
    <LINK srcnodeid="129" srcpinname="Transform Out" dstnodeid="120" dstpinname="Input Value">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="135">
-   <BOUNDS type="Node" left="5328" top="11916" width="100" height="100">
+   <BOUNDS type="Node" left="5316" top="12408" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="|Valid Area Center|">
+   <PIN pinname="Send String" slicecount="1" values="|Valid Box|">
    </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   <PIN pinname="Input Value" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="134">
@@ -836,16 +836,6 @@
    <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="134" srcpinname="Y Output Value" dstnodeid="135" dstpinname="Input Value">
-   </LINK>
-   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="133">
-   <BOUNDS type="Node" left="7440" top="11916" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="|Valid Area Epsilon|">
-   </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="132" systemname="IOBox (Value Advanced)">
@@ -865,13 +855,13 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="133" dstpinname="Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="136" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6876" top="12672" width="2628" height="240">
+   <BOUNDS type="Node" left="5628" top="13044" width="2628" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="6876" top="12672" width="2400" height="1380">
+   <BOUNDS type="Box" left="5628" top="13044" width="2400" height="1380">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|^ &cr;&lf;Defines a box in which all skeletons must be to be detected. Kept in this style (Center + Epsilon) to be consistent with other Position values.|">
    </PIN>
@@ -947,7 +937,7 @@
    <LINK srcnodeid="140" srcpinname="Short Filenames" dstnodeid="141" dstpinname="Input String">
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="143">
-   <BOUNDS type="Node" left="15588" top="8412" width="100" height="100">
+   <BOUNDS type="Node" left="15552" top="8352" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="..\Data\KinectTransformSave">
    </PIN>
@@ -1003,5 +993,21 @@
    <LINK srcnodeid="146" srcpinname="Output String" dstnodeid="145" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="145" srcpinname="Output" dstnodeid="121" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="147">
+   <BOUNDS type="Node" left="5316" top="11976" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="134" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="147" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="147" srcpinname="Output" dstnodeid="135" dstpinname="Input Value">
    </LINK>
    </PATCH>

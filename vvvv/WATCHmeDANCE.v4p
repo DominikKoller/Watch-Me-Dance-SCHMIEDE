@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="912">
-   <BOUNDS type="Window" left="2364" top="804" width="11196" height="11556">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="2208" top="0" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -163,7 +163,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="972" top="636" width="15336" height="9504">
+   <BOUNDS type="Window" left="972" top="636" width="15336" height="10608">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -201,7 +201,7 @@
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
@@ -257,7 +257,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7026" top="1725" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="11376" top="1944" width="20136" height="12192">
+   <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    </NODE>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
@@ -342,4 +342,10 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Projection" dstnodeid="48" dstpinname="Projection">
    </LINK>
+   <NODE systemname="Audio" filename="sub\Audio.v4p" nodename="sub\Audio.v4p" componentmode="InAWindow" id="70">
+   <BOUNDS type="Node" left="8544" top="6468" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13392" top="1368" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
    </PATCH>

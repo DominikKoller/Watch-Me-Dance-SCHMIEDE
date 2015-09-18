@@ -599,6 +599,8 @@
    </PIN>
    <BOUNDS type="Window" left="1524" top="468" width="9708" height="5976">
    </BOUNDS>
+   <PIN pinname="Valid Area" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="88">
    <BOUNDS type="Node" left="9132" top="3588" width="100" height="100">
@@ -689,5 +691,15 @@
    <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="59" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="87" srcpinname="Joint PositionXYZ" dstnodeid="91" dstpinname="CurrentSkeleton">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="4668" top="2268" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Valid Box|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Input Value" dstnodeid="87" dstpinname="Valid Area">
    </LINK>
    </PATCH>

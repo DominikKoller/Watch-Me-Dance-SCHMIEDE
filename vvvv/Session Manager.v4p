@@ -475,9 +475,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6060" top="6084" width="792" height="240">
+   <BOUNDS type="Box" left="5988" top="6180" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6060" top="6084" width="0" height="0">
+   <BOUNDS type="Node" left="5988" top="6180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
@@ -489,9 +489,9 @@
    <LINK srcnodeid="178" srcpinname="Y Output Value" dstnodeid="176" dstpinname="ActivationTime">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="179" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5784" top="6720" width="792" height="240">
+   <BOUNDS type="Box" left="5748" top="6744" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5784" top="6720" width="0" height="0">
+   <BOUNDS type="Node" left="5748" top="6744" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
    </PIN>
@@ -525,9 +525,9 @@
    <LINK srcnodeid="182" srcpinname="Output" dstnodeid="80" dstpinname="Input 1">
    </LINK>
    <NODE systemname="NearestSkeletonOnly" filename="sub\NearestSkeletonOnly.v4p" nodename="sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="198">
-   <BOUNDS type="Node" left="5472" top="2350" width="0" height="0">
+   <BOUNDS type="Node" left="5208" top="2290" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2706" top="492" width="5532" height="4768">
+   <BOUNDS type="Box" left="2442" top="432" width="5532" height="4768">
    </BOUNDS>
    <BOUNDS type="Window" left="7728" top="2352" width="5244" height="5976">
    </BOUNDS>
@@ -545,9 +545,9 @@
    <LINK srcnodeid="82" srcpinname="Joint PositionXYZ" dstnodeid="198" dstpinname="Input">
    </LINK>
    <NODE systemname="TransformSkeleton" filename="sub\TransformSkeleton.v4p" componentmode="Hidden" id="200" nodename="sub\TransformSkeleton.v4p">
-   <BOUNDS type="Node" left="5472" top="1872" width="100" height="100">
+   <BOUNDS type="Node" left="5208" top="1812" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5472" top="1872" width="4800" height="3600">
+   <BOUNDS type="Box" left="5208" top="1812" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="8256" top="2388" width="6384" height="4464">
    </BOUNDS>
@@ -563,7 +563,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="199">
-   <BOUNDS type="Node" left="7212" top="1884" width="100" height="100">
+   <BOUNDS type="Node" left="6948" top="1824" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|Global Skeleton Transform|">
    </PIN>
