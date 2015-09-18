@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="3180" top="204" width="11196" height="11556">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="912">
+   <BOUNDS type="Window" left="2364" top="804" width="11196" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="675" top="510" width="1275" height="270">
+   <BOUNDS type="Node" left="447" top="6" width="1275" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="675" top="510" width="4176" height="624">
+   <BOUNDS type="Box" left="447" top="6" width="4176" height="624">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Watch Me Dance|">
    </PIN>
@@ -163,7 +163,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1692" top="492" width="15336" height="9504">
+   <BOUNDS type="Window" left="972" top="636" width="15336" height="9504">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="75" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -179,13 +179,17 @@
    </PIN>
    <PIN pinname="Bones Match">
    </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48" stayontop="1">
    <BOUNDS type="Node" left="3684" top="10584" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3684" top="10584" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="13524" top="432" width="9516" height="6252">
+   <BOUNDS type="Window" left="7356" top="5292" width="9516" height="8388">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -196,6 +200,8 @@
    <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
    </PIN>
    <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="View" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
@@ -223,7 +229,7 @@
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="45" dstpinname="Kinect">
    </LINK>
    <NODE systemname="Perspective (Transform FOV)" filename="%VVVV%\addonpack\lib\nodes\modules\Transform\Perspective (Transform FOV).v4p" nodename="Perspective (Transform FOV)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="5220" top="9942" width="100" height="100">
+   <BOUNDS type="Node" left="5964" top="9894" width="100" height="100">
    </BOUNDS>
    <PIN pinname="FOV" visible="1">
    </PIN>
@@ -231,8 +237,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Depth FOVXY" dstnodeid="50" dstpinname="FOV" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="50" srcpinname="Transform Out" dstnodeid="48" dstpinname="Projection">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1929" top="9942" width="345" height="270">
@@ -253,7 +257,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7026" top="1725" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="276" top="168" width="20136" height="12192">
+   <BOUNDS type="Window" left="11376" top="1944" width="20136" height="12192">
    </BOUNDS>
    </NODE>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
@@ -277,7 +281,7 @@
    <NODE systemname="Session Manager" filename="Session Manager.v4p" nodename="Session Manager.v4p" componentmode="Hidden" id="64" stayontop="1">
    <BOUNDS type="Node" left="1788" top="3828" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="5436" top="1104" width="14532" height="10992">
+   <BOUNDS type="Window" left="1212" top="0" width="14532" height="10992">
    </BOUNDS>
    <PIN pinname="Current Session Done" visible="1">
    </PIN>
@@ -333,5 +337,9 @@
    <LINK srcnodeid="62" srcpinname="Session Name" dstnodeid="66" dstpinname="Session Name">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="66" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="View" dstnodeid="48" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Projection" dstnodeid="48" dstpinname="Projection">
    </LINK>
    </PATCH>

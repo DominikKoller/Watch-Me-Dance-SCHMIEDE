@@ -1,6 +1,6 @@
 SOFTWARE
 
-- KinectSpaceHelper (calibrate, implement)
+//- KinectSpaceHelper (calibrate, implement)
 - serial CameraControl
 //- RecordingLogic
 //- ImageToVideo (resizing, cropping, writeFile)

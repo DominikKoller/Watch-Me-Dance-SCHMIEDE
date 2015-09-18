@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\NearestSkeletonOnly.v4p" systemname="NearestSkeletonOnly" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\NearestSkeletonOnly.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="7728" top="2352" width="5244" height="5976">
+   <BOUNDS type="Window" left="1524" top="468" width="9708" height="5976">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -101,9 +101,9 @@
    <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Positions|">
    </PIN>
-   <BOUNDS type="Box" left="540" top="452" width="750" height="240">
+   <BOUNDS type="Box" left="396" top="404" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="540" top="452" width="750" height="240">
+   <BOUNDS type="Node" left="396" top="404" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="4" dstpinname="XYZ">
@@ -127,6 +127,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2892" top="452" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Input">
    </LINK>
@@ -161,5 +163,57 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="4872" top="300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4872" top="300" width="612" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Valid Area|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3228" top="924" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3228" top="924" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3600" top="924" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3600" top="924" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="25">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Select (Value Vector)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="3060" top="1464" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Vector Size">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Bin Size">
    </LINK>
    </PATCH>
