@@ -342,10 +342,22 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Projection" dstnodeid="48" dstpinname="Projection">
    </LINK>
-   <NODE systemname="Audio" filename="sub\Audio.v4p" nodename="sub\Audio.v4p" componentmode="InAWindow" id="70">
-   <BOUNDS type="Node" left="8544" top="6468" width="100" height="100">
+   <NODE id="70" componentmode="Hidden" systemname="Audio" filename="sub\Audio.v4p" nodename="sub\Audio.v4p" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Window" left="13332" top="2748" width="9000" height="6000">
    </BOUNDS>
-   <BOUNDS type="Window" left="13392" top="1368" width="9000" height="6000">
+   <BOUNDS type="Node" left="8472" top="6636" width="100" height="100">
    </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
    </NODE>
    </PATCH>

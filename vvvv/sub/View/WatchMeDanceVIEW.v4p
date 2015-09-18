@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="0" scrolly="240">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="12" scrolly="276">
    <BOUNDS type="Window" left="972" top="636" width="15336" height="10608">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -79,7 +79,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2160" top="2296" width="9201" height="5392">
    </BOUNDS>
-   <BOUNDS type="Window" left="3288" top="156" width="12864" height="8160">
+   <BOUNDS type="Window" left="6384" top="468" width="12864" height="8160">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
    </PIN>
@@ -177,6 +177,8 @@
    </PIN>
    <PIN pinname="Projection Out" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="8832" top="336" width="7992" height="7920">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Current User Skeleton">
    </LINK>

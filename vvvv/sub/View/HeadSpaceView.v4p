@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\HeadSpaceView.v4p" scrollx="0" scrolly="360" systemname="HeadSpaceView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HeadSpaceView.v4p">
-   <BOUNDS type="Window" left="2532" top="516" width="7992" height="7920">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\HeadSpaceView.v4p" scrollx="0" scrolly="-360" systemname="HeadSpaceView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\helpers\HeadSpaceView.v4p">
+   <BOUNDS type="Window" left="8832" top="336" width="7992" height="7920">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

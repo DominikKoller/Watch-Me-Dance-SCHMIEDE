@@ -122,20 +122,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Skeleton (Kinect2 Microsoft)" filename="%VVVV%\packs\kinect2\nodes\VVVV.DX11.Nodes.Kinect2.dll" nodename="Skeleton (Kinect2 Microsoft)" componentmode="Hidden" id="82">
-   <BOUNDS type="Node" left="5040" top="1140" width="1560" height="276">
-   </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
-   </PIN>
-   <PIN pinname="PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Joint PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="67" srcpinname="Output Node" dstnodeid="82" dstpinname="Kinect Runtime">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="99">
    <BOUNDS type="Node" left="3600" top="10236" width="100" height="100">
    </BOUNDS>
@@ -417,7 +403,7 @@
    </PIN>
    <PIN pinname="Start New Session" visible="1">
    </PIN>
-   <PIN pinname="Skeleton PositionXYZ" visible="1" slicecount="6" values="0.0309571493417025,0.717022478580475,4.10933446884155,-1.43907594680786,0.35222914814949,3.64992356300354">
+   <PIN pinname="Skeleton PositionXYZ" visible="1">
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
@@ -441,30 +427,16 @@
    </BOUNDS>
    <PIN pinname="Session Active" visible="1">
    </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
+   <PIN pinname="Skeleton Count" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Max Time Without User" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="82" srcpinname="Skeleton Count" dstnodeid="177" dstpinname="Input 1 1">
-   </LINK>
    <LINK srcnodeid="177" srcpinname="Abort Session" dstnodeid="78" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="177" srcpinname="Abort Session" dstnodeid="127" dstpinname="Switch">
    </LINK>
-   <LINK srcnodeid="82" srcpinname="Skeleton Count" dstnodeid="176" dstpinname="Skeleton Count" linkstyle="VHV">
-   <LINKPOINT x="5284" y="4612">
-   </LINKPOINT>
-   <LINKPOINT x="4604" y="5228">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="177" dstpinname="Session Active" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="82" srcpinname="Skeleton Count" dstnodeid="177" dstpinname="Skeleton Count" linkstyle="VHV">
-   <LINKPOINT x="5064" y="6648">
-   </LINKPOINT>
-   <LINKPOINT x="5616" y="6648">
-   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="70" dstpinname="Y Input Value">
    </LINK>
@@ -524,54 +496,6 @@
    </LINK>
    <LINK srcnodeid="182" srcpinname="Output" dstnodeid="80" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="NearestSkeletonOnly" filename="sub\NearestSkeletonOnly.v4p" nodename="sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="198">
-   <BOUNDS type="Node" left="5208" top="2290" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2442" top="432" width="5532" height="4768">
-   </BOUNDS>
-   <BOUNDS type="Window" left="7728" top="2352" width="5244" height="5976">
-   </BOUNDS>
-   <PIN pinname="Skeleton Positions" visible="1" slicecount="6" values="0.0574457012116909,1.86026084423065,4.31424283981323,-1.3938502073288,1.36817049980164,4.44245052337646">
-   </PIN>
-   <PIN pinname="Joint PositionsXYZ" visible="1" slicecount="150" values="0.0213350560516119,1.8034930229187,4.48644924163818,0.072403147816658,1.86201906204224,4.23247671127319,0.122255258262157,1.91406154632568,3.96827793121338,0.104232996702194,1.99876952171326,3.92241597175598,-0.0132561903446913,1.85688579082489,4.03198194503784,0.179867431521416,1.76418042182922,4.0808539390564,0.0553564578294754,1.90450167655945,3.84163475036621,0.0256195291876793,1.93570554256439,3.78773808479309,0.343857675790787,1.95294117927551,4.14493751525879,0.443661063909531,2.16101408004761,4.01499891281128,0.259825259447098,1.95028078556061,4.11999416351318,0.243764221668243,1.86074995994568,4.08909702301025,-0.023746732622385,1.7679637670517,4.44047880172729,-0.0543754883110523,1.40472269058228,4.34035396575928,-0.0792175084352493,1.16001415252686,4.54025030136108,-0.0523586943745613,1.05171966552734,4.50185966491699,0.0620810426771641,1.81294476985931,4.46881771087646,0.1243776679039,1.45506584644318,4.50522470474243,-0.0492146126925945,1.18338131904602,4.53399801254272,-0.0225794371217489,1.07491147518158,4.49564933776855,0.109928764402866,1.90224099159241,4.03631114959717,-0.00398194463923574,1.96326231956482,3.67422366142273,-0.0303180571645498,1.90892112255096,3.80080008506775,0.231950297951698,1.83137547969818,4.10645198822022,0.263227969408035,1.82978522777557,4.11724996566772,-1.42632973194122,1.37637293338776,4.4640474319458,-1.37999582290649,1.51609945297241,4.35548210144043,-1.33722352981567,1.64816677570343,4.24301290512085,-1.33045434951782,1.75093948841095,4.22392892837524,-1.46309781074524,1.5483615398407,4.26853084564209,-1.31682527065277,1.42982113361359,4.25677728652954,-1.27841258049011,1.31092476844788,4.15722703933716,-1.30988013744354,1.35613071918488,4.07503509521484,-1.23789429664612,1.50691270828247,4.238440990448,-1.25489163398743,1.38183259963989,4.28008842468262,-1.22149205207825,1.47842371463776,4.41741466522217,-1.21088373661041,1.55193114280701,4.4898886680603,-1.47049343585968,1.37646353244781,4.43125057220459,-1.60636174678802,1.34237957000732,4.80792379379272,-1.36081624031067,1.29254198074341,4.42354393005371,-1.36665832996368,1.21974790096283,4.35041666030884,-1.36415910720825,1.35717558860779,4.43793201446533,-1.22477829456329,1.60867118835449,4.26216793060303,-1.39791619777679,1.24851202964783,4.46582841873169,-1.4620246887207,1.20073974132538,4.45082092285156,-1.34739875793457,1.61563241481781,4.2721791267395,-1.33101236820221,1.30481112003326,4.11143970489502,-1.2769467830658,1.34913396835327,4.10011625289917,-1.18568646907806,1.59532511234283,4.49768590927124,-1.22215104103088,1.57496404647827,4.47449970245361">
-   </PIN>
-   <PIN pinname="Skeleton PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Joint PositionXYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="82" srcpinname="PositionXYZ" dstnodeid="198" dstpinname="Input - XYZ">
-   </LINK>
-   <LINK srcnodeid="82" srcpinname="Joint PositionXYZ" dstnodeid="198" dstpinname="Input">
-   </LINK>
-   <NODE systemname="TransformSkeleton" filename="sub\TransformSkeleton.v4p" componentmode="Hidden" id="200" nodename="sub\TransformSkeleton.v4p">
-   <BOUNDS type="Node" left="5208" top="1812" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5208" top="1812" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8256" top="2388" width="6384" height="4464">
-   </BOUNDS>
-   <PIN pinname="PositionXYZ" visible="1" slicecount="3" values="-1.40097677707672,1.3686546087265,4.44165134429932">
-   </PIN>
-   <PIN pinname="JointPositionXYZ" visible="1" slicecount="75" values="-1.39411175251007,1.36612606048584,4.43199920654297,-1.37922346591949,1.49527597427368,4.34136152267456,-1.36065173149109,1.62029540538788,4.24064683914185,-1.33997786045074,1.73131537437439,4.22057628631592,-1.4506402015686,1.54686152935028,4.26130104064941,-1.30335891246796,1.43046259880066,4.25800132751465,-1.26012802124023,1.34732699394226,4.34733533859253,-1.26696121692657,1.33445560932159,4.38635349273682,-1.25453186035156,1.47368657588959,4.23594188690186,-1.238809466362,1.35159063339233,4.28546476364136,-1.2246310710907,1.43001353740692,4.43567419052124,-1.21397256851196,1.51146245002747,4.48412084579468,-1.4480082988739,1.37438273429871,4.42175769805908,-1.64206337928772,1.35581767559052,4.77300214767456,-1.45431637763977,1.259605884552,4.36574125289917,-1.45238518714905,1.193687915802,4.40659475326538,-1.31979036331177,1.3395973443985,4.38174724578857,-1.19309592247009,1.62497270107269,4.28126287460327,-1.35446560382843,1.25088095664978,4.46951389312744,-1.41295826435089,1.21103727817535,4.4443473815918,-1.36583316326141,1.58993709087372,4.2680344581604,-1.25017619132996,1.30463838577271,4.44360780715942,-1.23677349090576,1.34812307357788,4.35669994354248,-1.18810784816742,1.56559669971466,4.50299024581909,-1.19828832149506,1.50058543682098,4.47500038146973">
-   </PIN>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="JointPositionXYZ Transformed" visible="1">
-   </PIN>
-   <PIN pinname="PositionXYZ Transformed" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="199">
-   <BOUNDS type="Node" left="6948" top="1824" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="|Global Skeleton Transform|">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="199" srcpinname="Input Value" dstnodeid="200" dstpinname="Transform">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="201" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3756" top="8520" width="480" height="480">
    </BOUNDS>
@@ -590,14 +514,20 @@
    </NODE>
    <LINK srcnodeid="201" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Simulate">
    </LINK>
-   <LINK srcnodeid="82" srcpinname="PositionXYZ" dstnodeid="200" dstpinname="PositionXYZ">
+   <NODE systemname="RightSkeleton" filename="sub\RightSkeleton.v4p" nodename="sub\RightSkeleton.v4p" componentmode="Hidden" id="203">
+   <BOUNDS type="Node" left="5100" top="1200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton PositionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Skeleton Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output Node" dstnodeid="203" dstpinname="Kinect Runtime">
    </LINK>
-   <LINK srcnodeid="82" srcpinname="Joint PositionXYZ" dstnodeid="200" dstpinname="JointPositionXYZ">
+   <LINK srcnodeid="203" srcpinname="Skeleton PositionXYZ" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
    </LINK>
-   <LINK srcnodeid="200" srcpinname="PositionXYZ Transformed" dstnodeid="198" dstpinname="Skeleton Positions">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="JointPositionXYZ Transformed" dstnodeid="198" dstpinname="Joint PositionsXYZ">
-   </LINK>
-   <LINK srcnodeid="198" srcpinname="Skeleton PositionXYZ" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
+   <LINK srcnodeid="203" srcpinname="Skeleton Count" dstnodeid="177" dstpinname="Skeleton Count">
    </LINK>
    </PATCH>
