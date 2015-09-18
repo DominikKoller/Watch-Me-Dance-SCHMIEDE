@@ -587,7 +587,7 @@
    <LINK srcnodeid="86" srcpinname="Bang" dstnodeid="31" dstpinname="Initialize" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="NearestSkeletonOnly" filename="sub\NearestSkeletonOnly.v4p" nodename="sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="87">
-   <BOUNDS type="Node" left="2688" top="2352" width="100" height="100">
+   <BOUNDS type="Node" left="2796" top="2256" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Skeleton Positions" visible="1" slicecount="6" values="-1.6751549243927,1.51463711261749,4.43095827102661,-0.832411825656891,-0.623554110527039,1.86720335483551">
    </PIN>

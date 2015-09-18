@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ShootPicture.v4p" systemname="ShootPicture" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ShootPicture.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ShootPicture.v4p" systemname="ShootPicture" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\ShootPicture.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="2544" top="276" width="12432" height="10140">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
