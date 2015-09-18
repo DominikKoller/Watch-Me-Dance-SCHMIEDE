@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SaveSession.v4p" systemname="WriteSession" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteSession.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1536" top="756" width="10176" height="8280">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5064" top="5724" width="480" height="480">
+   <BOUNDS type="Box" left="6576" top="6180" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5064" top="5724" width="0" height="0">
+   <BOUNDS type="Node" left="6576" top="6180" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -54,6 +54,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Completed">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
@@ -143,6 +145,8 @@
    </PIN>
    <PIN pinname="SessionID" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="5112" top="576" width="12540" height="10392">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Execute">
    </LINK>

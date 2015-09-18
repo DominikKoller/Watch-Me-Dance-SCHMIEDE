@@ -1,6 +1,11 @@
 
 # .v4p backup files
 *~.xml
+Data/CameraImageDump/
+Data/Output
+Data/SessionData
+Data/Tweeted
+
 
 # Dynamic plugins .dll
 bin/

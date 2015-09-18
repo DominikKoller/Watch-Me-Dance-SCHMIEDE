@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" scrollx="0" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" scrollx="0" scrolly="1104">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="4350" top="6750" width="10305" height="8055">
    </BOUNDS>
@@ -115,13 +115,13 @@
    </PIN>
    <PIN pinname="Intersperse" slicecount="1" values="Space">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="|-resize 600x600|" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|-resize 600x600|">
    </PIN>
    <PIN pinname="Input 3" visible="1" slicecount="1" values="|-crop 600x600+100x100|">
    </PIN>
    <PIN pinname="Input 5" visible="1" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 4" slicecount="1" values="-delay" visible="1">
+   <PIN pinname="Input 4" slicecount="1" visible="1" values="-delay">
    </PIN>
    <PIN pinname="Input 6" visible="1" slicecount="1" values="text">
    </PIN>
@@ -160,9 +160,9 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Completed" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="9540" top="3810" width="16020" height="7830">
+   <BOUNDS type="Window" left="3444" top="1824" width="16020" height="7824">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="17">
    <BOUNDS type="Node" left="7800" top="3855" width="100" height="100">
@@ -209,9 +209,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="450" top="3765" width="3105" height="255">
+   <BOUNDS type="Box" left="294" top="3621" width="3105" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="450" top="3765" width="0" height="0">
+   <BOUNDS type="Node" left="294" top="3621" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\..\..\..\..\Program Files\ImageMagick-6.9.2-Q16|">
    </PIN>

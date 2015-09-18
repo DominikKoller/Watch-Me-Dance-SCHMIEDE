@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="0" scrolly="6168">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" systemname="GLOBALS" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\GLOBALS.v4p" scrollx="384" scrolly="5316">
    <BOUNDS type="Window" left="3984" top="972" width="20136" height="12192">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -198,12 +198,12 @@
    <PIN pinname="Input Value" visible="1" slicecount="24" values="0,0.461538461538462,0,0.00312499999999993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="57">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="57" stayontop="1">
    <BOUNDS type="Node" left="12930" top="4710" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="12930" top="4710" width="6105" height="5505">
    </BOUNDS>
-   <BOUNDS type="Window" left="16800" top="120" width="6240" height="5076">
+   <BOUNDS type="Window" left="13332" top="408" width="6240" height="5076">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -217,7 +217,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9120" top="1320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="24" visible="-1" pintype="Input" values="0.615384615384615,0,0.538461538461538,0.692307692307692,0.461538461538461,0,0,0,0,0.153846153846154,1,1,0,0,0,1,1,1,0.307692307692308,0.538461538461539,0,1,1,0.384615384615384">
+   <PIN pinname="Y Input Value" slicecount="24" visible="-1" pintype="Input" values="0.615384615384615,0,0.538461538461538,0.692307692307692,0.461538461538461,0,0,0,0,0.153846153846154,0,0.5,0,0,0,1,1,1,0.307692307692308,0.538461538461539,0,1,1,0.447115384615384">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -243,7 +243,7 @@
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="scY">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="24" visible="1" pintype="Input" values="1,1,1,1,1,1,0.5,0.377049180327869,1,1,0.713114754098361,0.401639344262295,1,1,1,0,0,0.360655737704918,1,1,1,0,0,0.467213114754098">
+   <PIN pinname="X Input Value" slicecount="24" visible="1" pintype="Input" values="1,1,1,1,1,1,0.506578947368421,0,1,1,0.463114754098361,0,1,1,1,0,0,0,1,1,1,0,0,0">
    </PIN>
    <PIN pinname="Slider Alignment" slicecount="1" values="Grid">
    </PIN>
@@ -555,7 +555,7 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="111">
    <BOUNDS type="Node" left="4956" top="8388" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4956" top="8388" width="1032" height="264">
+   <BOUNDS type="Box" left="4956" top="8388" width="1836" height="252">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>

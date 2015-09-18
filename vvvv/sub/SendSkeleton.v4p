@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\RightSkeleton.v4p" systemname="RightSkeleton" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\RightSkeleton.v4p">
-   <BOUNDS type="Window" left="7908" top="660" width="6072" height="4308">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SendSkeleton.v4p" systemname="SendSkeleton" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\SendSkeleton.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2304" top="588" width="7848" height="4104">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -16,7 +16,7 @@
    <PIN pinname="Frame Number" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="NearestSkeletonOnly" filename="sub\NearestSkeletonOnly.v4p" nodename="sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="3">
+   <NODE systemname="NearestSkeletonOnly" filename="NearestSkeletonOnly.v4p" nodename="sub\NearestSkeletonOnly.v4p" componentmode="Hidden" id="3">
    <BOUNDS type="Node" left="900" top="1812" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Skeleton Positions" visible="1" slicecount="6" values="-1.6751549243927,1.51463711261749,4.43095827102661,-0.832411825656891,-0.623554110527039,1.86720335483551">
@@ -34,7 +34,7 @@
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="TransformSkeleton" filename="sub\TransformSkeleton.v4p" componentmode="Hidden" id="2" nodename="sub\TransformSkeleton.v4p">
+   <NODE systemname="TransformSkeleton" filename="TransformSkeleton.v4p" componentmode="Hidden" id="2" nodename="sub\TransformSkeleton.v4p">
    <BOUNDS type="Node" left="912" top="1428" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="912" top="1428" width="4800" height="3600">
@@ -92,64 +92,34 @@
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="4" dstpinname="Kinect Runtime">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="300" top="2712" width="792" height="240">
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3036" top="2928" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="300" top="2712" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
+   <PIN pinname="Send String" slicecount="1" values="|USkeleton Position|">
    </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Count|">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Skeleton Count" dstnodeid="6" dstpinname="Y Input Value">
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5028" top="2916" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|USkeleton Joints|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="888" top="2916" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|IsSkeleton In View|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Skeleton Count" dstnodeid="15" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1644" top="2724" width="804" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1644" top="2724" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton PositionXYZ|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Skeleton PositionXYZ" dstnodeid="7" dstpinname="Y Input Value">
+   <LINK srcnodeid="3" srcpinname="Skeleton PositionXYZ" dstnodeid="17" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3288" top="2712" width="792" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3288" top="2712" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Joint PositionXYZ|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Joint PositionXYZ" dstnodeid="8" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4776" top="2724" width="792" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4776" top="2724" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Frame Number|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="4" srcpinname="Frame Number" dstnodeid="9" dstpinname="Y Input Value">
+   <LINK srcnodeid="3" srcpinname="Joint PositionXYZ" dstnodeid="16" dstpinname="Input Value">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\MoveImages.v4p" systemname="MoveImages" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\MoveImages.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\MoveImages.v4p" systemname="MoveImages" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\MoveImages.v4p" scrollx="0" scrolly="1440">
    <BOUNDS type="Window" left="2595" top="720" width="6975" height="9195">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
@@ -187,17 +187,17 @@
    </PIN>
    </NODE>
    <NODE systemname="ShellExecute (Windows Advanced)" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="0" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll">
-   <BOUNDS type="Node" left="405" top="3180" width="100" height="100">
+   <BOUNDS type="Node" left="465" top="3168" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Result" visible="1">
    </PIN>
-   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="|/c mkdir C:\Users\Vorland\Pictures\sessionFolder\0001|">
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="|/c mkdir C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data\SessionData\2015.09.18-23.41.05\images\temp\|">
    </PIN>
    <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Execute" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="File" slicecount="1" values="..\..\..\..\..\..\..\..\Windows\System32\cmd.exe">
+   <PIN pinname="File" slicecount="1" values="..\..\..\..\..\..\..\..\Windows\System32\cmd.exe" visible="1">
    </PIN>
    <PIN pinname="Show Window" slicecount="1" values="0">
    </PIN>
@@ -206,8 +206,6 @@
    <PIN pinname="Completed" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="0" dstpinname="Commandline Arguments">
-   </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="2427" top="4803" width="100" height="100">
    </BOUNDS>
@@ -220,18 +218,12 @@
    </LINK>
    <LINK srcnodeid="21" srcpinname="Up Edge" dstnodeid="20" dstpinname="Execute">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Execute" linkstyle="VHV">
-   <LINKPOINT x="4845" y="1935">
-   </LINKPOINT>
-   <LINKPOINT x="1350" y="1935">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="20" dstpinname="Commandline Arguments">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2385" top="5985" width="480" height="480">
+   <BOUNDS type="Box" left="2421" top="5973" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2385" top="5985" width="0" height="0">
+   <BOUNDS type="Node" left="2421" top="5973" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -265,7 +257,7 @@
    <NODE systemname="Subtract (String)" nodename="Subtract (String)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="1995" top="3720" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Operand 2" slicecount="1" values="temp">
+   <PIN pinname="Operand 2" slicecount="1" values="\temp">
    </PIN>
    <PIN pinname="Occurence Mode" slicecount="1" values="Last">
    </PIN>
@@ -334,4 +326,40 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="29" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="660" top="4044" width="3576" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="660" top="4044" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Error" dstnodeid="29" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2760" top="1872" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2760" top="1872" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\..\..\..\..\Windows\System32\cmd.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="0" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="0" dstpinname="Commandline Arguments">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Execute">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" systemname="WaitingForUserView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1140" top="1320" width="19272" height="7956">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" systemname="WaitingForUserView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" scrollx="0" scrolly="240">
+   <BOUNDS type="Window" left="1128" top="780" width="19272" height="7956">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -14,16 +14,6 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="1032" top="648" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1032" top="648" width="792" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
    <BOUNDS type="Node" left="13788" top="2244" width="100" height="100">
    </BOUNDS>
@@ -34,32 +24,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="GE (Value)" nodename="GE (Value)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="240" top="2184" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="792" top="2196" width="300" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="792" top="2196" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="ReadDanceMove" filename="..\ReadDanceMove.v4p" nodename="..\ReadDanceMove.v4p" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="4224" top="1356" width="100" height="100">
    </BOUNDS>
@@ -309,7 +273,7 @@
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="276" top="5580" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -318,8 +282,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="39" dstpinname="Switch">
-   </LINK>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="42">
    <BOUNDS type="Node" left="10248" top="3072" width="100" height="100">
    </BOUNDS>
@@ -604,16 +566,14 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="0" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="RightSkeleton" filename="..\RightSkeleton.v4p" nodename="..\RightSkeleton.v4p" componentmode="Hidden" id="78">
-   <BOUNDS type="Node" left="240" top="1704" width="100" height="100">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="1776" top="1884" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1">
+   <PIN pinname="Receive String" slicecount="1" values="|IsSkeleton In View|">
    </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
+   <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Output Node" dstnodeid="78" dstpinname="Kinect Runtime">
-   </LINK>
-   <LINK srcnodeid="78" srcpinname="Skeleton Count" dstnodeid="7" dstpinname="Input 1">
+   <LINK srcnodeid="79" srcpinname="Input Value" dstnodeid="39" dstpinname="Switch">
    </LINK>
    </PATCH>

@@ -1,19 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="744" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" systemname="Session Manager" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\Session Manager.v4p" scrollx="0" scrolly="1428">
    <BOUNDS type="Window" left="1212" top="0" width="14532" height="10992">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="67">
-   <BOUNDS type="Node" left="5100" top="480" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5100" top="480" width="792" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="70">
    <BOUNDS type="Node" left="6948" top="9336" width="100" height="100">
    </BOUNDS>
@@ -389,7 +379,7 @@
    </PIN>
    <PIN pinname="Start New Session" visible="1">
    </PIN>
-   <PIN pinname="Skeleton PositionXYZ" visible="1">
+   <PIN pinname="Skeleton PositionXYZ" visible="1" slicecount="3" values="0.0159092377871275,0.843545198440552,1.39616465568542">
    </PIN>
    <PIN pinname="Skeleton Count" visible="1">
    </PIN>
@@ -413,7 +403,7 @@
    </BOUNDS>
    <PIN pinname="Session Active" visible="1">
    </PIN>
-   <PIN pinname="Skeleton Count" visible="1" slicecount="1" values="0">
+   <PIN pinname="Skeleton Count" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Max Time Without User" visible="1">
    </PIN>
@@ -494,22 +484,6 @@
    </NODE>
    <LINK srcnodeid="201" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="RightSkeleton" filename="sub\RightSkeleton.v4p" nodename="sub\RightSkeleton.v4p" componentmode="Hidden" id="203">
-   <BOUNDS type="Node" left="5100" top="1200" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="67" srcpinname="Output Node" dstnodeid="203" dstpinname="Kinect Runtime">
-   </LINK>
-   <LINK srcnodeid="203" srcpinname="Skeleton PositionXYZ" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
-   </LINK>
-   <LINK srcnodeid="203" srcpinname="Skeleton Count" dstnodeid="177" dstpinname="Skeleton Count">
-   </LINK>
    <NODE systemname="LT (Value)" nodename="LT (Value)" componentmode="Hidden" id="173">
    <BOUNDS type="Node" left="10116" top="2952" width="100" height="100">
    </BOUNDS>
@@ -529,5 +503,25 @@
    </LINKPOINT>
    <LINKPOINT x="5880" y="3360">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="204">
+   <BOUNDS type="Node" left="4548" top="2088" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|USkeleton Position|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="204" srcpinname="Input Value" dstnodeid="176" dstpinname="Skeleton PositionXYZ">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="6528" top="2088" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|IsSkeleton In View|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="Input Value" dstnodeid="177" dstpinname="Skeleton Count">
    </LINK>
    </PATCH>

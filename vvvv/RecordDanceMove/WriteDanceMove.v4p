@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="1440" top="192" width="15792" height="13104">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\WriteDanceMove.v4p" systemname="WriteDanceMove" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteDanceMove.v4p" scrollx="60" scrolly="48">
+   <BOUNDS type="Window" left="1140" top="2436" width="15792" height="13104">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -16,16 +16,6 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="3">
-   <BOUNDS type="Node" left="2199" top="1476" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2199" top="1476" width="2055" height="285">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Kinect">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Element (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Join)" componentmode="Hidden" id="16">
@@ -247,9 +237,9 @@
    <LINK srcnodeid="27" srcpinname="Element" dstnodeid="29" dstpinname="Input">
    </LINK>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="8574" top="5448" width="100" height="100">
+   <BOUNDS type="Node" left="8562" top="3708" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
@@ -349,7 +339,7 @@
    <LINK srcnodeid="37" srcpinname="String" dstnodeid="38" dstpinname="Content">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11529" top="4563" width="1245" height="240">
+   <BOUNDS type="Box" left="11529" top="4563" width="2520" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="11529" top="4563" width="0" height="0">
    </BOUNDS>
@@ -373,9 +363,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="41" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13794" top="4563" width="480" height="480">
+   <BOUNDS type="Box" left="14382" top="4635" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="13794" top="4563" width="0" height="0">
+   <BOUNDS type="Node" left="14382" top="4635" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -391,9 +381,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Write" linkstyle="VHV">
-   <LINKPOINT x="13824" y="15183">
+   <LINKPOINT x="14216" y="15231">
    </LINKPOINT>
-   <LINKPOINT x="2379" y="15183">
+   <LINKPOINT x="2575" y="15207">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="42">
@@ -505,7 +495,7 @@
    <NODE systemname="Vector (3d Split)" nodename="Vector (3d Split)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="3009" top="5253" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="XYZ" visible="1">
+   <PIN pinname="XYZ" visible="1" slicecount="75" values="0.0159092377871275,0.843545198440552,1.39616465568542,0.00743703497573733,1.14841949939728,1.39936304092407,-0.00140291440766305,1.45593214035034,1.38750016689301,-0.0104291429743171,1.58196020126343,1.3923807144165,-0.167589277029037,1.3332759141922,1.40143048763275,-0.241895467042923,1.04833805561066,1.37607741355896,-0.309053033590317,0.83994597196579,1.25508010387421,-0.309759527444839,0.799551784992218,1.19761824607849,0.16403266787529,1.33870565891266,1.37223565578461,0.324417561292648,1.15450894832611,1.27770459651947,0.373222380876541,1.39045703411102,1.18013226985931,0.381328076124191,1.43746507167816,1.16308081150055,-0.0652964115142822,0.864016830921173,1.37597048282623,-0.103150829672813,0.554801046848297,1.25019037723541,-0.130646839737892,0.0673019513487816,1.27009093761444,-0.0653439611196518,-0.023078290745616,1.21418344974518,0.0920066460967064,0.870649874210358,1.36611819267273,0.170039802789688,0.53467458486557,1.25812971591949,0.225715458393097,0.0498252771794796,1.27900564670563,0.214056581258774,0.0417926572263241,1.14442384243011,0.00101970124524087,1.37860858440399,1.39301419258118,-0.344037920236588,0.737269163131714,1.12903654575348,-0.244189590215683,0.808616638183594,1.15771675109863,0.402425795793533,1.52023124694824,1.10425329208374,0.368034094572067,1.48990571498871,1.20796120166779">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -523,7 +513,7 @@
    <NODE systemname="Count (3d)" filename="%VVVV%\lib\nodes\modules\3D\Count (3D).v4p" nodename="Count (3d)" componentmode="Hidden" id="57">
    <BOUNDS type="Node" left="3939" top="4293" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="75" values="0.0159092377871275,0.843545198440552,1.39616465568542,0.00743703497573733,1.14841949939728,1.39936304092407,-0.00140291440766305,1.45593214035034,1.38750016689301,-0.0104291429743171,1.58196020126343,1.3923807144165,-0.167589277029037,1.3332759141922,1.40143048763275,-0.241895467042923,1.04833805561066,1.37607741355896,-0.309053033590317,0.83994597196579,1.25508010387421,-0.309759527444839,0.799551784992218,1.19761824607849,0.16403266787529,1.33870565891266,1.37223565578461,0.324417561292648,1.15450894832611,1.27770459651947,0.373222380876541,1.39045703411102,1.18013226985931,0.381328076124191,1.43746507167816,1.16308081150055,-0.0652964115142822,0.864016830921173,1.37597048282623,-0.103150829672813,0.554801046848297,1.25019037723541,-0.130646839737892,0.0673019513487816,1.27009093761444,-0.0653439611196518,-0.023078290745616,1.21418344974518,0.0920066460967064,0.870649874210358,1.36611819267273,0.170039802789688,0.53467458486557,1.25812971591949,0.225715458393097,0.0498252771794796,1.27900564670563,0.214056581258774,0.0417926572263241,1.14442384243011,0.00101970124524087,1.37860858440399,1.39301419258118,-0.344037920236588,0.737269163131714,1.12903654575348,-0.244189590215683,0.808616638183594,1.15771675109863,0.402425795793533,1.52023124694824,1.10425329208374,0.368034094572067,1.48990571498871,1.20796120166779">
    </PIN>
    <PIN pinname="Count" visible="1">
    </PIN>
@@ -734,26 +724,18 @@
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="47" dstpinname="Value">
    </LINK>
-   <NODE systemname="RightSkeleton" filename="..\RightSkeleton.v4p" nodename="..\RightSkeleton.v4p" componentmode="Hidden" id="77">
-   <BOUNDS type="Node" left="2184" top="2220" width="100" height="100">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="3936" top="2256" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Kinect Runtime" visible="1" slicecount="1" values="||">
+   <PIN pinname="Receive String" slicecount="1" values="|USkeleton Joints|">
    </PIN>
-   <PIN pinname="Skeleton Count" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="10032" top="1644" width="6072" height="4308">
-   </BOUNDS>
-   <PIN pinname="Frame Number" visible="1">
-   </PIN>
-   <PIN pinname="Joint PositionXYZ" visible="1">
+   <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Output Node" dstnodeid="77" dstpinname="Kinect Runtime">
+   <LINK srcnodeid="78" srcpinname="Input Value" dstnodeid="57" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="77" srcpinname="Frame Number" dstnodeid="31" dstpinname="Input">
+   <LINK srcnodeid="78" srcpinname="Input Value" dstnodeid="56" dstpinname="XYZ">
    </LINK>
-   <LINK srcnodeid="77" srcpinname="Joint PositionXYZ" dstnodeid="57" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="77" srcpinname="Joint PositionXYZ" dstnodeid="56" dstpinname="XYZ">
+   <LINK srcnodeid="78" srcpinname="Input Value" dstnodeid="31" dstpinname="Input">
    </LINK>
    </PATCH>
