@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="2208" scrolly="420">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="468">
    <BOUNDS type="Window" left="1152" top="228" width="12636" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -109,9 +109,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5919" top="4251" width="1560" height="270">
+   <BOUNDS type="Node" left="6051" top="4263" width="1560" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5919" top="4251" width="1560" height="270">
+   <BOUNDS type="Box" left="6051" top="4263" width="1560" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Epsilon (accuracy)|">
    </PIN>
@@ -178,7 +178,7 @@
    <PIN pinname="Projection" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="48" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48" stayontop="1">
    <BOUNDS type="Node" left="3972" top="10608" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3972" top="10608" width="6000" height="4500">
@@ -287,7 +287,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3894" top="6507" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10440" top="1896" width="20628" height="12900">
+   <BOUNDS type="Window" left="1428" top="1320" width="20628" height="12900">
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
    </PIN>
