@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="468">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="1440">
    <BOUNDS type="Window" left="1152" top="228" width="12636" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
