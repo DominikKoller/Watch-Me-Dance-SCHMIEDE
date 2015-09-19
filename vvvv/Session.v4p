@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="0" scrolly="360" locked="0">
-   <BOUNDS type="Window" left="1428" top="1320" width="20628" height="12900">
+   <BOUNDS type="Window" left="768" top="192" width="20628" height="12900">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -556,34 +556,6 @@
    </LINK>
    <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="73" dstpinname="Y Input Value" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="102">
-   <BOUNDS type="Node" left="10596" top="4296" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="103" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10956" top="4308" width="300" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10956" top="4308" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="103" srcpinname="Y Output Value" dstnodeid="102" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="ShootPicture" filename="sub\ShootPicture.v4p" componentmode="Hidden" id="29" nodename="sub\ShootPicture.v4p">
    <BOUNDS type="Node" left="1995" top="10215" width="4995" height="270">
    </BOUNDS>
@@ -705,7 +677,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="6324" top="2688" width="9000" height="6000">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
+   <PIN pinname="Go To Position" visible="1" slicecount="1" values="0.04">
    </PIN>
    <PIN pinname="Jump To Position" visible="1">
    </PIN>
@@ -716,8 +688,6 @@
    <PIN pinname="Filter Time" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="128" dstpinname="Go To Position">
-   </LINK>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Jump To Position">
    </LINK>
    <LINK srcnodeid="128" srcpinname="Position Out" dstnodeid="91" dstpinname="Error Tolerance">
@@ -727,7 +697,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11880" top="4656" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="150">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="300">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -735,5 +705,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Filter Time">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="130" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10560" top="4116" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10560" top="4116" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.8">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="130" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Go To Position">
    </LINK>
    </PATCH>

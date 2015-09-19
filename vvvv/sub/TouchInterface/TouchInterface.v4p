@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3880" top="5120" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1368" top="852" width="10644" height="8928">
+   <BOUNDS type="Window" left="2040" top="420" width="10644" height="8928">
    </BOUNDS>
    <PIN pinname="State" visible="1" slicecount="1" values="0">
    </PIN>
@@ -243,9 +243,9 @@
    <LINK srcnodeid="41" srcpinname="TweetMessage" dstnodeid="62" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7260" top="8500" width="480" height="480">
+   <BOUNDS type="Box" left="8340" top="8560" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7260" top="8500" width="0" height="0">
+   <BOUNDS type="Node" left="8340" top="8560" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -382,4 +382,22 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="72" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6852" top="8712" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6852" top="8712" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="NewestGIF">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="NewestGIF" dstnodeid="72" dstpinname="Input String">
+   </LINK>
    </PATCH>

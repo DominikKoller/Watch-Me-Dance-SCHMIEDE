@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TwitterManager.v4p" systemname="TwitterManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" scrollx="252" scrolly="-360">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3960" top="4362" width="2256" height="672">
+   <BOUNDS type="Box" left="3996" top="4386" width="2256" height="672">
    </BOUNDS>
-   <BOUNDS type="Node" left="3960" top="4362" width="0" height="0">
+   <BOUNDS type="Node" left="3996" top="4386" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="asfdasfd">
    </PIN>
@@ -141,9 +141,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2745" top="1725" width="735" height="705">
+   <BOUNDS type="Box" left="2901" top="1701" width="735" height="705">
    </BOUNDS>
-   <BOUNDS type="Node" left="2745" top="1725" width="0" height="0">
+   <BOUNDS type="Node" left="2901" top="1701" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
