@@ -265,7 +265,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6784" top="3668" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6040" top="5020" width="5020" height="5470">
+   <BOUNDS type="Window" left="6036" top="5016" width="6084" height="6300">
    </BOUNDS>
    <PIN pinname="PositionXY" visible="1">
    </PIN>

@@ -389,17 +389,17 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="24" dstpinname="Set">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8760" top="4848" width="312" height="252">
+   <BOUNDS type="Box" left="8760" top="4848" width="1296" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="8760" top="4848" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="30">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="99999999999999">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" systemname="WaitingForUserView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" scrollx="0" scrolly="240">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" systemname="WaitingForUserView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1128" top="780" width="19272" height="7956">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -567,7 +567,7 @@
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="0" dstpinname="Input Node">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="79">
-   <BOUNDS type="Node" left="1776" top="1884" width="100" height="100">
+   <BOUNDS type="Node" left="288" top="1704" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|IsSkeleton In View|">
    </PIN>

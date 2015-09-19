@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p" systemname="ActiveSessionView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p" systemname="ActiveSessionView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\ActiveSessionView.v4p" scrollx="1992" scrolly="0">
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="7119" top="4740" width="100" height="100">
    </BOUNDS>
@@ -81,7 +81,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="11523" top="1656" width="100" height="100">
+   <BOUNDS type="Node" left="11547" top="1728" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -99,9 +99,9 @@
    <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current User Skeleton|">
    </PIN>
-   <BOUNDS type="Box" left="6924" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="8580" top="692" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6924" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="8580" top="692" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="XYZ">
@@ -137,9 +137,9 @@
    <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Current Frame Skeleton|">
    </PIN>
-   <BOUNDS type="Box" left="10035" top="296" width="750" height="240">
+   <BOUNDS type="Box" left="9963" top="800" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10035" top="296" width="750" height="240">
+   <BOUNDS type="Node" left="9963" top="800" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Target Joints YXZ">

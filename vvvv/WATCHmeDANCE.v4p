@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="2148">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="2664">
    <BOUNDS type="Window" left="1152" top="228" width="12636" height="11556">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -153,11 +153,11 @@
    </PIN>
    </NODE>
    <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="Hidden" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
-   <BOUNDS type="Node" left="3834" top="8724" width="1680" height="270">
+   <BOUNDS type="Node" left="4146" top="8676" width="1680" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3834" top="8724" width="4800" height="3600">
+   <BOUNDS type="Box" left="4146" top="8676" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-648" top="0" width="15336" height="10608">
+   <BOUNDS type="Window" left="-456" top="420" width="15336" height="10608">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="75" values="-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981">
    </PIN>
@@ -180,7 +180,7 @@
    <PIN pinname="EX9 Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="48" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48" stayontop="1">
    <BOUNDS type="Node" left="3972" top="10608" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3972" top="10608" width="6000" height="4500">
@@ -279,9 +279,9 @@
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="64" dstpinname="Kinect">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Session Active" dstnodeid="45" dstpinname="Session Active" linkstyle="VHV">
-   <LINKPOINT x="1812" y="8600">
+   <LINKPOINT x="1916" y="8584">
    </LINKPOINT>
-   <LINKPOINT x="5532" y="8596">
+   <LINKPOINT x="5740" y="8564">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="45" srcpinname="View" dstnodeid="48" dstpinname="View">
@@ -443,7 +443,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="264" top="10580" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="15228" top="936" width="6612" height="4080">
+   <BOUNDS type="Window" left="11640" top="756" width="11400" height="7128">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -496,21 +496,19 @@
    </NODE>
    <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Fullscreen">
    </LINK>
-   <NODE systemname="TwitterManager" filename="sub\TwitterManager.v4p" nodename="sub\TwitterManager.v4p" componentmode="Hidden" id="82">
+   <NODE systemname="TwitterManager" filename="sub\TwitterManager.v4p" nodename="sub\TwitterManager.v4p" componentmode="Hidden" id="82" stayontop="0">
    <BOUNDS type="Node" left="420" top="11784" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Publish Tweet" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Publish Tweet Text" visible="1" slicecount="1" values="werwerwer">
    </PIN>
-   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="8520">
+   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="9048">
    </BOUNDS>
    <PIN pinname="Publish Picture" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="TweetMessage" dstnodeid="82" dstpinname="Publish Tweet Text">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Tweet" dstnodeid="82" dstpinname="Publish Tweet">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="83" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5244" top="2532" width="480" height="480">
@@ -566,18 +564,24 @@
    </LINK>
    <LINK srcnodeid="76" srcpinname="NewestGIF" dstnodeid="82" dstpinname="Publish Picture">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="92">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="92" stayontop="1">
    <BOUNDS type="Node" left="6300" top="10620" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="6300" top="10620" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="14640" top="5568" width="6216" height="5064">
+   <BOUNDS type="Window" left="29040" top="2376" width="9504" height="7176">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Fullscreen" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="93">
@@ -645,5 +649,67 @@
    <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="76" dstpinname="Session Done">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3288" top="12108" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3288" top="12108" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="NewestGIF" dstnodeid="94" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Tweet" dstnodeid="82" dstpinname="Publish Tweet">
+   </LINK>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="95">
+   <BOUNDS type="Node" left="3084" top="11328" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Actual Backbuffer Width" dstnodeid="95" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Actual Backbuffer Height" dstnodeid="95" dstpinname="Y">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="3180" top="11712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="ResolutionTouchscreen">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="XY" dstnodeid="97" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6612" top="8856" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6612" top="8856" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Fullscreen">
    </LINK>
    </PATCH>

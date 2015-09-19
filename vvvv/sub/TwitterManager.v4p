@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TwitterManager.v4p" systemname="TwitterManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" scrollx="252" scrolly="-360">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TwitterManager.v4p" systemname="TwitterManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\TwitterManager.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3996" top="4386" width="2256" height="672">
    </BOUNDS>
@@ -118,7 +118,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Publish Picture|">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="8520">
+   <BOUNDS type="Window" left="9372" top="1164" width="12744" height="9048">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
