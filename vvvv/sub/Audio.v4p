@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Audio.v4p" systemname="Audio" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Audio.v4p" scrollx="48" scrolly="0">
-   <BOUNDS type="Window" left="1104" top="0" width="20640" height="8124">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Audio.v4p" systemname="Audio" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\Audio.v4p" scrollx="48" scrolly="-360">
+   <BOUNDS type="Window" left="624" top="1260" width="20640" height="8124">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -277,6 +277,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Y Input Value">
    </LINK>
@@ -292,6 +294,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="88" dstpinname="Y Input Value">
@@ -391,5 +395,43 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AudioTriggers" filename="Audio\AudioTriggers.v4p" nodename="Audio\AudioTriggers.v4p" componentmode="Hidden" id="96">
+   <BOUNDS type="Node" left="3684" top="6096" width="7524" height="276">
+   </BOUNDS>
+   <PIN pinname="UserEnter" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="UserEnterStage" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="UserLeft" visible="1">
+   </PIN>
+   <PIN pinname="UserLeftStage" visible="1">
+   </PIN>
+   <PIN pinname="CameraTrigger" visible="1">
+   </PIN>
+   <PIN pinname="SessionStart" visible="1">
+   </PIN>
+   <PIN pinname="SessionAbort" visible="1">
+   </PIN>
+   <PIN pinname="SessionDone" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="1692" top="1392" width="16080" height="10968">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="96" dstpinname="UserEnter">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="96" dstpinname="UserLeft">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="96" dstpinname="UserEnterStage">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Y Output Value" dstnodeid="96" dstpinname="UserLeftStage">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="96" dstpinname="CameraTrigger">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="96" dstpinname="SessionStart">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="96" dstpinname="SessionAbort">
+   </LINK>
+   <LINK srcnodeid="79" srcpinname="Y Output Value" dstnodeid="96" dstpinname="SessionDone">
    </LINK>
    </PATCH>

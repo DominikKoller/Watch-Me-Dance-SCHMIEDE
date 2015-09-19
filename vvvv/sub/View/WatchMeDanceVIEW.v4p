@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="4284" scrolly="1164">
-   <BOUNDS type="Window" left="-456" top="420" width="15336" height="10608">
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" systemname="WatchMeDanceVIEW" filename="D:\gitHub\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WatchMeDanceVIEW.v4p" scrollx="3384" scrolly="276">
+   <BOUNDS type="Window" left="1788" top="120" width="15336" height="10608">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -249,7 +249,7 @@
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="52" dstpinname="Y">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="12216" top="1956" width="100" height="100">
+   <BOUNDS type="Node" left="13560" top="1656" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|USkeleton Joints|">
    </PIN>
@@ -313,11 +313,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="76" stayontop="1">
-   <BOUNDS type="Node" left="12600" top="7824" width="100" height="100">
+   <BOUNDS type="Node" left="12468" top="7704" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12600" top="7824" width="2400" height="1800">
+   <BOUNDS type="Box" left="12468" top="7704" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="10788" top="480" width="10092" height="9120">
+   <BOUNDS type="Window" left="13284" top="672" width="10092" height="9120">
    </BOUNDS>
    <PIN pinname="Backbuffer Width" visible="1">
    </PIN>
@@ -425,7 +425,7 @@
    <NODE systemname="Room (EX9)" filename="Maria\Room (EX9).v4p" nodename="Room (EX9)" componentmode="Hidden" id="90">
    <BOUNDS type="Node" left="11688" top="6516" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="-168" top="528" width="12636" height="12216">
+   <BOUNDS type="Window" left="-108" top="-108" width="23256" height="13104">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -469,9 +469,9 @@
    <LINK srcnodeid="92" srcpinname="Transform Out" dstnodeid="91" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="94" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15108" top="5976" width="480" height="480">
+   <BOUNDS type="Box" left="15036" top="5928" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15108" top="5976" width="0" height="0">
+   <BOUNDS type="Node" left="15036" top="5928" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -489,30 +489,6 @@
    <LINK srcnodeid="94" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="91" srcpinname="Output" dstnodeid="76" dstpinname="Projection">
-   </LINK>
-   <NODE systemname="Stickman (Kinect EX9)" filename="%VVVV%\addonpack\lib\nodes\modules\Kinect\Stickman (Kinect EX9).v4p" nodename="Stickman (Kinect EX9)" componentmode="Hidden" id="95">
-   <BOUNDS type="Node" left="13200" top="5412" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Joint PositionXYZ" visible="1" slicecount="75" values="0.0437,0.9599,1.4827,0.0415,1.2408,1.4468,0.037,1.5242,1.4117,0.0523,1.617,1.4222,-0.1409,1.4427,1.4329,-0.4174,1.4622,1.4781,-0.5688,1.6193,1.387,-0.613,1.6637,1.3583,0.2124,1.3922,1.4331,0.3577,1.1704,1.3686,0.5313,1.1112,1.226,0.5927,1.1407,1.1476,-0.0368,0.9802,1.4641,-0.0552,0.6264,1.3425,-0.0951,0.1685,1.3537,-0.0939,0.154,1.2265,0.1186,0.9812,1.45,0.1936,0.6445,1.3262,0.2493,0.1886,1.3401,0.2462,0.1739,1.2132,0.0387,1.453,1.4226,-0.6551,1.7024,1.2958,-0.6564,1.6656,1.306,0.6148,1.1538,1.0625,0.5743,1.1161,1.1344">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Stickman (Kinect EX9)" filename="%VVVV%\addonpack\lib\nodes\modules\Kinect\Stickman (Kinect EX9).v4p" nodename="Stickman (Kinect EX9)" componentmode="Hidden" id="97">
-   <BOUNDS type="Node" left="12132" top="2772" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Joint PositionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Joint ID Color" slicecount="1" values="|0.00000,0.71391,1.00000,1.00000|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="67" srcpinname="Input Value" dstnodeid="97" dstpinname="Joint PositionXYZ">
-   </LINK>
-   <LINK srcnodeid="97" srcpinname="Layer" dstnodeid="82" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="95" srcpinname="Layer" dstnodeid="82" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="82" dstpinname="Layer 1">
    </LINK>
@@ -582,6 +558,46 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="104" dstpinname="Target Joints YXZ">
    </LINK>
-   <LINK srcnodeid="103" srcpinname="Position Out" dstnodeid="95" dstpinname="Joint PositionXYZ">
+   <NODE systemname="StickmanRetro" filename="StickmanRetro\StickmanRetro.v4p" nodename="StickmanRetro\StickmanRetro.v4p" componentmode="Hidden" id="105">
+   <BOUNDS type="Node" left="12960" top="5904" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="CurrentUserSkeleton" visible="1">
+   </PIN>
+   <PIN pinname="CurrentFrameSkeleton" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="BonesMatch" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonMatch" visible="1">
+   </PIN>
+   <PIN pinname="SessionActive" visible="1">
+   </PIN>
+   <PIN pinname="SkeletonHirachyFromTo" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="-108" top="-108" width="23256" height="13104">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Input Value" dstnodeid="105" dstpinname="CurrentUserSkeleton">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Position Out" dstnodeid="105" dstpinname="CurrentFrameSkeleton">
+   </LINK>
+   <LINK srcnodeid="105" srcpinname="Layer" dstnodeid="82" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="105" dstpinname="BonesMatch">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="105" dstpinname="SkeletonMatch">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="105" dstpinname="SessionActive">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="15540" top="4116" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="SkeletonHirachyFromTo">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="106" srcpinname="Input Value" dstnodeid="105" dstpinname="SkeletonHirachyFromTo">
    </LINK>
    </PATCH>
