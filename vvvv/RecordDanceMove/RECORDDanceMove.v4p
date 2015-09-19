@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" systemname="RECORDDanceMove" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\RecordDanceMove\RECORDDanceMove.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="0" top="0" width="11808" height="13128">
+   <BOUNDS type="Window" left="2904" top="324" width="11808" height="13104">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -283,7 +283,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7008" top="6900" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="\LastDaySecond">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="\LastDayFirst">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -543,7 +543,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4872" top="13296" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="34236" top="4356" width="5016" height="4164">
+   <BOUNDS type="Window" left="33744" top="3708" width="5016" height="4164">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -552,6 +552,8 @@
    <PIN pinname="Projection" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Projector">
+   </PIN>
+   <PIN pinname="Fullscreen" slicecount="1" values="1" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="55" srcpinname="Layer Out" dstnodeid="69" dstpinname="Layers">
@@ -693,5 +695,23 @@
    <LINK srcnodeid="80" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5424" top="12024" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5424" top="12024" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Fullscreen">
    </LINK>
    </PATCH>
