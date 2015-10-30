@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\GIFSequences.v4p" scrollx="0" scrolly="1800" systemname="GIFSequences" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences.v4p">
-   <BOUNDS type="Window" left="1728" top="1332" width="11796" height="9480">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\GIFSequences.v4p" scrollx="0" scrolly="48" systemname="GIFSequences" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences.v4p">
+   <BOUNDS type="Window" left="1344" top="516" width="11796" height="9480">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="46">
    <BOUNDS type="Node" left="3150" top="10500" width="100" height="100">
@@ -52,6 +52,8 @@
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="49" srcpinname="Output String" dstnodeid="48" dstpinname="Directory">
@@ -158,7 +160,7 @@
    <PIN pinname="Inverse Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="89">
+   <NODE systemname="Counter (Animation Legacy)" nodename="Counter (Animation)" componentmode="Hidden" id="89">
    <BOUNDS type="Node" left="4110" top="3700" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Up" visible="1" slicecount="1" values="0">
@@ -218,6 +220,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="High" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="48" srcpinname="Filenames" dstnodeid="117" dstpinname="Input">
@@ -461,5 +465,51 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="146" srcpinname="Last Slice" dstnodeid="147" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="148" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9396" top="2964" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9396" top="2964" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="file.foo">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="2" values="..\..\..\..\..\Data\Output\2015.09.19-19.02.45.gif,..\..\..\..\..\Data\Output\2015.09.19-19.03.46.gif">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output String" dstnodeid="148" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="149">
+   <BOUNDS type="Node" left="8388" top="3468" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Count" dstnodeid="149" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="150" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8388" top="4536" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8388" top="4536" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|FIlenumber changed|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="149" srcpinname="OnChange" dstnodeid="150" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

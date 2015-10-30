@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="0" scrolly="-360" locked="0">
-   <BOUNDS type="Window" left="768" top="192" width="20628" height="12900">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" systemname="Session" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\Session.v4p" scrollx="0" scrolly="360" locked="0">
+   <BOUNDS type="Window" left="1524" top="2232" width="20628" height="12900">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="8175" top="5160" width="100" height="100">
@@ -339,15 +339,13 @@
    <NODE systemname="GE (Value)" nodename="GE (Value)" componentmode="Hidden" id="67">
    <BOUNDS type="Node" left="9408" top="9204" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="22">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="66" srcpinname="Skeleton Count" dstnodeid="67" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="69">
@@ -658,24 +656,6 @@
    </NODE>
    <LINK srcnodeid="123" srcpinname="Output Node" dstnodeid="29" dstpinname="Kinect">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="124" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5088" top="7092" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5088" top="7092" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Skeleton Match|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="Skeleton Match" dstnodeid="124" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="MyDamper (Animation Jump)" filename="sub\MyDamper (Animation Jump).v4p" componentmode="Hidden" id="128" nodename="sub\MyDamper (Animation Jump).v4p">
    <BOUNDS type="Node" left="10596" top="5052" width="100" height="100">
    </BOUNDS>
@@ -739,5 +719,37 @@
    <LINK srcnodeid="132" srcpinname="Input Value" dstnodeid="91" dstpinname="USkeleton Positino">
    </LINK>
    <LINK srcnodeid="66" srcpinname="Skeleton Position" dstnodeid="91" dstpinname="RSkeleton Position">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="133">
+   <BOUNDS type="Node" left="9312" top="4620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.84">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Skeleton Count" dstnodeid="133" dstpinname="Input 1">
+   <LINKPOINT x="9168" y="4248">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="133" srcpinname="Output" dstnodeid="67" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="134" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9696" top="4704" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9696" top="4704" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="134" srcpinname="Y Output Value" dstnodeid="133" dstpinname="Input 2">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\sub\GIFPlayer.v4p" systemname="GIFPlayer" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFPlayer.v4p" scrollx="730" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFSequences\sub\GIFPlayer.v4p" systemname="GIFPlayer" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\GIFPlayer.v4p" scrollx="730" scrolly="-360">
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="4990" top="3470" width="100" height="100">
    </BOUNDS>
@@ -20,6 +20,8 @@
    <PIN pinname="Input 2" visible="1" slicecount="3" values="44,50,29">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="3">
@@ -226,7 +228,7 @@
    </LINK>
    <BOUNDS type="Window" left="6170" top="1710" width="8690" height="8440">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="22">
    <BOUNDS type="Node" left="6090" top="1590" width="100" height="100">
@@ -283,5 +285,15 @@
    </LINKPOINT>
    <LINKPOINT x="7390" y="1350">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="24" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3156" top="4440" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3156" top="4440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ignore">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output Enum" dstnodeid="2" dstpinname="Error Handling Style">
    </LINK>
    </PATCH>

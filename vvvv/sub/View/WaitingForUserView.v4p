@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" systemname="WaitingForUserView" filename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\WaitingForUserView.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1128" top="780" width="19272" height="7956">
    </BOUNDS>
@@ -121,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Output 1" visible="1">
    </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="15078">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Initialize" slicecount="1" visible="1" values="0">
    </PIN>
@@ -187,22 +187,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="Mod (Value)" nodename="Mod (Value)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="6072" top="2916" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="18">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="30" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="20" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Skeleton Count" dstnodeid="30" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="8640" top="432" width="480" height="480">
@@ -575,5 +559,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="79" srcpinname="Input Value" dstnodeid="39" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="81" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="6720" top="2832" width="492" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6720" top="2832" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ignore">
+   </PIN>
+   </NODE>
+   <NODE systemname="Mod (Value)" nodename="Mod (Value)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="6168" top="2880" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="82" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="Output" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Skeleton Count" dstnodeid="82" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output Enum" dstnodeid="82" dstpinname="Error Handling Style">
    </LINK>
    </PATCH>

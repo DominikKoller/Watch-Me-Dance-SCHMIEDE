@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\sub\VirtualKeyboard.v4p" scrollx="0" scrolly="1800" systemname="VirtualKeyboard" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\VirtualKeyboard.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\sub\VirtualKeyboard.v4p" scrollx="0" scrolly="1800" systemname="VirtualKeyboard" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\VirtualKeyboard.v4p">
    <BOUNDS type="Window" left="-580" top="2620" width="13730" height="9220">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">

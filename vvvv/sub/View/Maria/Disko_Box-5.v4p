@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WMD_Interface\Disko_Box-5.v4p" systemname="Disko_Box - 4" filename="D:\_EVENTS\2015-09-10__SCHMIEDE\Projects\Watch-me-Dance\vvvv\Little_80ies_Patches\Disko_Box - 4.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="696" top="804" width="11604" height="11556">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\Maria\Disko_Box-5.v4p" systemname="Disko_Box - 4" filename="D:\_EVENTS\2015-09-10__SCHMIEDE\Projects\Watch-me-Dance\vvvv\Little_80ies_Patches\Disko_Box - 4.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="696" top="804" width="15972" height="11556">
    </BOUNDS>
    <PACK Name="vvvv.packs_" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="2">
    <BOUNDS type="Node" left="420" top="7236" width="100" height="100">
@@ -467,7 +467,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Pattern" filename="Pattern.v4p" nodename="Pattern.v4p" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="6588" top="3492" width="100" height="100">
+   <BOUNDS type="Node" left="6864" top="3000" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="2112" top="732" width="11640" height="9708">
    </BOUNDS>
@@ -542,7 +542,7 @@
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="82">
+   <NODE systemname="Counter (Animation Legacy)" nodename="Counter (Animation)" componentmode="Hidden" id="82">
    <BOUNDS type="Node" left="5964" top="1788" width="1248" height="276">
    </BOUNDS>
    <PIN pinname="Up" visible="1">
@@ -652,8 +652,6 @@
    </LINK>
    <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="68" dstpinname="Go To Position">
    </LINK>
-   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="76" dstpinname="bang_terxture">
-   </LINK>
    <NODE systemname="Pillow (DX9)" nodename="Pillow (DX9)" componentmode="Hidden" id="114">
    <BOUNDS type="Node" left="2676" top="4920" width="100" height="100">
    </BOUNDS>
@@ -751,5 +749,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="124" srcpinname="Cycles" dstnodeid="115" dstpinname="Random Seed">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="7476" top="1896" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Change" dstnodeid="76" dstpinname="bang_terxture">
    </LINK>
    </PATCH>

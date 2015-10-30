@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\StickmanRetro\sub\Joints (EX9 StickmanRetro).v4p" scrollx="1404" scrolly="0" systemname="Joints" filename="C:\Users\Verena\Desktop\___WatchMeDance\subpatches\Joints.v4p">
-   <BOUNDS type="Window" left="2100" top="5550" width="9000" height="6000">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\StickmanRetro\sub\Joints (EX9 StickmanRetro).v4p" scrollx="0" scrolly="0" systemname="Joints" filename="C:\Users\Verena\Desktop\___WatchMeDance\subpatches\Joints.v4p">
+   <BOUNDS type="Window" left="2940" top="2016" width="12132" height="8292">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE id="17" systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="3384" top="1616" width="100" height="100">
@@ -79,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1170" top="5200" width="1350" height="270">
+   <BOUNDS type="Node" left="1170" top="6160" width="1350" height="270">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -143,7 +143,7 @@
    <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Translate XYZ">
    </LINK>
    <NODE systemname="GridSegment (DX9)" nodename="GridSegment (DX9)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="1820" top="4290" width="100" height="100">
+   <BOUNDS type="Node" left="1820" top="5250" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,0.85920,0.12000,1.00000|">
    </PIN>
@@ -159,7 +159,7 @@
    <LINK srcnodeid="14" srcpinname="Transform Out" dstnodeid="23" dstpinname="Transform">
    </LINK>
    <NODE systemname="GridSegment (DX9)" nodename="GridSegment (DX9)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="3960" top="4290" width="100" height="100">
+   <BOUNDS type="Node" left="3960" top="5250" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -247,9 +247,9 @@
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="35" dstpinname="Z">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="36" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1170" top="5800" width="800" height="240">
+   <BOUNDS type="Box" left="1170" top="6760" width="800" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1170" top="5800" width="0" height="0">
+   <BOUNDS type="Node" left="1170" top="6760" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
    </PIN>
@@ -257,7 +257,7 @@
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="36" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="6550" top="4290" width="100" height="100">
+   <BOUNDS type="Node" left="6550" top="5250" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -302,6 +302,8 @@
    <PIN pinname="Input 2" visible="1" slicecount="1" values="600">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Original Height" dstnodeid="41" dstpinname="Input">
@@ -355,9 +357,9 @@
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="40" dstpinname="Translate XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="45" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8970" top="1980" width="800" height="720">
+   <BOUNDS type="Box" left="9282" top="2544" width="800" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="8970" top="1980" width="0" height="0">
+   <BOUNDS type="Node" left="9282" top="2544" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,-0.35,0">
    </PIN>
@@ -414,14 +416,52 @@
    </NODE>
    <LINK srcnodeid="48" srcpinname="Output String" dstnodeid="38" dstpinname="Filename">
    </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="49" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="2736" top="3240" width="2256" height="480">
+   <NODE componentmode="Hidden" id="52" nodename="AsColor (String Hex)" systemname="AsColor (String Hex)">
+   <BOUNDS height="100" left="2820" top="4332" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS type="Node" left="2736" top="3240" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.85920,0.12000,0.61265|">
+   <PIN encoded="0" pinname="Input" slicecount="1" visible="1" values="#ffffff">
+   </PIN>
+   <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="49" srcpinname="Color Output" dstnodeid="23" dstpinname="Color">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2820" top="4008" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2820" top="4008" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="#a27eef">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output String" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="50" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="2820" top="4692" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2820" top="4692" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="50" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Color Output" dstnodeid="23" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="53" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="9180" top="1764" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9180" top="1764" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ignore">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Output Enum" dstnodeid="41" dstpinname="Error Handling Style">
    </LINK>
    </PATCH>

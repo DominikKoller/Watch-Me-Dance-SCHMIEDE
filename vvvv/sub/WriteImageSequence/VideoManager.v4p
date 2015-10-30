@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5112" top="576" width="12540" height="10392">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" systemname="VideoManager" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\VideoManager.v4p" scrollx="228" scrolly="-720">
+   <BOUNDS type="Window" left="7572" top="600" width="13344" height="10392">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="ProcessImages (ImageMagick, crop, resize, morph).v4p" nodename="ProcessImages (ImageMagick, crop, resize, morph)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1335" top="4500" width="7920" height="270">
@@ -386,12 +386,6 @@
    <LINKPOINT x="5775" y="2755">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="30" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="8635" y="7260">
-   </LINKPOINT>
-   <LINKPOINT x="8690" y="7260">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Up Edge" dstnodeid="26" dstpinname="Set 1" linkstyle="VHV">
    <LINKPOINT x="8550" y="7630">
    </LINKPOINT>
@@ -405,9 +399,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9162" top="9861" width="480" height="480">
+   <BOUNDS type="Box" left="10302" top="9537" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9162" top="9861" width="0" height="0">
+   <BOUNDS type="Node" left="10302" top="9537" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -419,13 +413,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Completed">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="38" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="8774" y="8397">
-   </LINKPOINT>
-   <LINKPOINT x="8983" y="8334">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="MoveImages" filename="MoveImages.v4p" componentmode="Hidden" id="40" nodename="MoveImages.v4p">
    <BOUNDS type="Node" left="1545" top="1920" width="100" height="100">
    </BOUNDS>
@@ -453,7 +443,7 @@
    </PIN>
    </NODE>
    <NODE systemname="DeleteTempFiles" filename="DeleteTempFiles.v4p" nodename="DeleteTempFiles.v4p" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="7272" top="8376" width="100" height="100">
+   <BOUNDS type="Node" left="7284" top="8448" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
    </PIN>
@@ -488,18 +478,6 @@
    <LINKPOINT x="2940" y="1388">
    </LINKPOINT>
    <LINKPOINT x="1980" y="1388">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Set 0" linkstyle="VHV">
-   <LINKPOINT x="9195" y="4938">
-   </LINKPOINT>
-   <LINKPOINT x="4785" y="4738">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Do Execute" linkstyle="VHV">
-   <LINKPOINT x="9205" y="1415">
-   </LINKPOINT>
-   <LINKPOINT x="2705" y="1405">
    </LINKPOINT>
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="44">
@@ -561,6 +539,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Completed" dstnodeid="49" dstpinname="Y Input Value">
    </LINK>
@@ -583,23 +563,167 @@
    <LINK srcnodeid="30" srcpinname="Up Edge" dstnodeid="41" dstpinname="Do Execute">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="51">
-   <BOUNDS type="Node" left="2676" top="2388" width="100" height="100">
+   <BOUNDS type="Node" left="2772" top="2376" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Set" visible="1">
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="TempPath" dstnodeid="51" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="41" dstpinname="TempFolder">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="3" dstpinname="InputFileFolder">
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="1" dstpinname="OutputFileFolder">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4176" top="3048" width="1980" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4176" top="3048" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="400x400+150x1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="1" dstpinname="cropSettings">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="10296" top="8712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9564" top="5280" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9564" top="5280" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Completed" dstnodeid="54" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="53" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9744" top="2256" width="1992" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9744" top="2256" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\Data\SessionData\2015.09.19-19.18.46\images\temp">
+   </PIN>
+   </NODE>
+   <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="9804" top="1236" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Time" slicecount="1" values="0.6">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FlipFlop (Animation)" nodename="FlipFlop (Animation)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="10464" top="744" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="11064" top="1524" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Output" dstnodeid="56" dstpinname="Set">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="9804" top="1644" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="59" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Up Edge" dstnodeid="58" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="57" dstpinname="Reset">
+   <LINKPOINT x="12060" y="2184">
+   </LINKPOINT>
+   <LINKPOINT x="12156" y="816">
+   </LINKPOINT>
+   <LINKPOINT x="11280" y="504">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Up Edge" dstnodeid="26" dstpinname="Set 0">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Up Edge" dstnodeid="40" dstpinname="Do Execute">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2988" top="3132" width="10140" height="552">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2988" top="3132" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="60" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output 1" dstnodeid="56" dstpinname="Reset">
+   <LINKPOINT x="12564" y="2076">
+   </LINKPOINT>
+   <LINKPOINT x="11592" y="1068">
+   </LINKPOINT>
    </LINK>
    </PATCH>

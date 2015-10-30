@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\PublishScreen.v4p" scrollx="0" scrolly="0" systemname="PublishScreen" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\PublishScreen.v4p">
    <BOUNDS type="Window" left="2040" top="420" width="10644" height="8928">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2760" top="550" width="800" height="240">
@@ -399,7 +399,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8760" top="4848" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="99999999999999">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

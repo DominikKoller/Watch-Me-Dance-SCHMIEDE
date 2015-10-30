@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="D:\_EVENTS\2015-09-10__SCHMIEDE\Projects\Watch-me-Dance\vvvv\Little_80ies_Patches\Typo_SuperRetro.v4p" locked="0" scrollx="4308" scrolly="-360" systemname="TypoSpread_Disco-Diva" filename="D:\_EVENTS\2015-09-10__SCHMIEDE\Projects\Watch-me-Dance\vvvv\Little_80ies_Patches\TypoSpread_Disco-Diva.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\Maria\Typo_SuperRetro.v4p" locked="0" scrollx="4308" scrolly="-360" systemname="TypoSpread_Disco-Diva" filename="D:\_EVENTS\2015-09-10__SCHMIEDE\Projects\Watch-me-Dance\vvvv\Little_80ies_Patches\TypoSpread_Disco-Diva.v4p">
    <BOUNDS height="11652" left="11748" top="0" type="Window" width="11112">
    </BOUNDS>
    <PACK Name="vvvv.packs_" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE id="33" nodename="HSL (Color Join)" systemname="HSL (Color Join)">
    <BOUNDS height="0" left="1653" top="3966" type="Node" width="0">
@@ -577,7 +577,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|2 - Text|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|2 - Texts|">
    </PIN>
    </NODE>
    <LINK srcnodeid="113" srcpinname="Output String" dstnodeid="112" dstpinname="Text">

@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
    <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\sub\TweetButton.v4p" scrollx="0" scrolly="3756" systemname="TweetButton" filename="C:\Users\Verena\Desktop\SCHMIEDE\Watch-Me-Dance-SCHMIEDE\vvvv\sub\TouchInterface\sub\PublishScreen\sub\TweetButton.v4p">
    <BOUNDS type="Window" left="3640" top="3190" width="9000" height="6000">
    </BOUNDS>
@@ -244,32 +244,16 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Texture Out" dstnodeid="9" dstpinname="Texture" linkstyle="PolyLine">
    </LINK>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="4130" top="4890" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="800">
-   </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="305">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Original Height" dstnodeid="25" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Original Width" dstnodeid="25" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="3870" top="5310" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="26" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
    <BOUNDS type="Node" left="3240" top="4890" width="100" height="100">
    </BOUNDS>
@@ -331,5 +315,25 @@
    <LINK srcnodeid="14" srcpinname="Inverse Output" dstnodeid="16" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="31" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4956" top="4908" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4956" top="4908" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Ignore">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="4130" top="4890" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Original Height" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Original Width" dstnodeid="32" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="26" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output Enum" dstnodeid="32" dstpinname="Error Handling Style">
    </LINK>
    </PATCH>

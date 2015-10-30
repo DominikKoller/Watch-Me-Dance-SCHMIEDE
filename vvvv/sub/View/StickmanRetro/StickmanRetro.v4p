@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\StickmanRetro\StickmanRetro.v4p" systemname="StickmanRetro" filename="C:\Users\Verena\Desktop\___WatchMeDance\subpatches\StickmanRetro.v4p" scrollx="0" scrolly="1800">
-   <BOUNDS type="Window" left="-108" top="-108" width="23256" height="13104">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\View\StickmanRetro\StickmanRetro.v4p" systemname="StickmanRetro" filename="C:\Users\Verena\Desktop\___WatchMeDance\subpatches\StickmanRetro.v4p" scrollx="252" scrolly="0">
+   <BOUNDS type="Window" left="2544" top="312" width="23256" height="13104">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
    <BOUNDS type="Node" left="4554" top="480" width="100" height="100">
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4686" top="10242" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2100" top="5550" width="9000" height="6000">
+   <BOUNDS type="Window" left="2940" top="2016" width="12132" height="8292">
    </BOUNDS>
    <PIN pinname="JointsXYZ" visible="1">
    </PIN>
@@ -183,18 +183,6 @@
    <LINK srcnodeid="53" srcpinname="Layer" dstnodeid="59" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="53" dstpinname="JointsXYZ">
-   </LINK>
-   <NODE systemname="LinesGlitch (EX9 StickmanRetro)" filename="sub\LinesGlitch (EX9 StickmanRetro).v4p" componentmode="Hidden" id="66" nodename="LinesGlitch (EX9 StickmanRetro)">
-   <BOUNDS type="Node" left="6480" top="9312" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6482" top="9314" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1110" top="920" width="13600" height="10520">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="66" srcpinname="Texture Out" dstnodeid="53" dstpinname="Texture">
    </LINK>
    <NODE systemname="Whiteflash (EX9 StickmanRetro)" filename="sub\Whiteflash (EX9 StickmanRetro).v4p" componentmode="Hidden" id="56" nodename="Whiteflash (EX9 StickmanRetro)">
    <BOUNDS type="Node" left="7800" top="10248" width="100" height="100">
@@ -459,7 +447,7 @@
    <LINK srcnodeid="83" srcpinname="Output" dstnodeid="53" dstpinname="BonesMatch">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="13200" top="2328" width="100" height="100">
+   <BOUNDS type="Node" left="13140" top="2364" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|fps ReadDanceMove|">
    </PIN>

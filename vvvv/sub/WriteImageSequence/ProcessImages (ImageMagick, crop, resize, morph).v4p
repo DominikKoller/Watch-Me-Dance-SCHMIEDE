@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" scrollx="0" scrolly="1104">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" systemname="ProcessImages (ImageMagick, crop, resize, morph)" filename="C:\Users\Vorland\Documents\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\sub\WriteImageSequence\ProcessImages (ImageMagick, crop, resize, morph).v4p" scrollx="0" scrolly="720">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="4350" top="6750" width="10305" height="8055">
    </BOUNDS>
@@ -162,7 +162,7 @@
    </LINK>
    <BOUNDS type="Window" left="3444" top="1824" width="16020" height="7824">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="17">
    <BOUNDS type="Node" left="7800" top="3855" width="100" height="100">

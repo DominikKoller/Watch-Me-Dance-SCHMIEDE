@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="1152" top="228" width="12636" height="11556">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\Users\vvvv_2\Documents\DOMINIK\Schmiede15\Watch-Me-Dance-SCHMIEDE\vvvv\WATCHmeDANCE.v4p" systemname="WATCHmeDANCE" filename="D:\vvvv\sketchbook\ideoIDEA\DANCE\WATCHmeDANCE.v4p" scrollx="0" scrolly="2436">
+   <BOUNDS type="Window" left="9744" top="516" width="12636" height="11556">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
    <BOUNDS type="Node" left="447" top="6" width="1275" height="270">
@@ -101,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5199" top="4221" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.04">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -152,16 +152,16 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="Hidden" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
+   <NODE systemname="WatchMeDanceVIEW" filename="sub\View\WatchMeDanceVIEW.v4p" componentmode="InAWindow" id="45" nodename="sub\View\WatchMeDanceVIEW.v4p">
    <BOUNDS type="Node" left="4146" top="8676" width="1680" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="4146" top="8676" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1788" top="120" width="15336" height="10608">
+   <BOUNDS type="Window" left="9492" top="4884" width="18612" height="10608">
    </BOUNDS>
    <PIN pinname="Current User Skeleton" visible="1" slicecount="75" values="-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981,-0.139999985694885,2.24999976158142,-0.0899999961256981">
    </PIN>
-   <PIN pinname="Current Frame Skeleton" visible="1" slicecount="75" values="0.0437,0.9599,1.4827,0.0415,1.2408,1.4468,0.037,1.5242,1.4117,0.0523,1.617,1.4222,-0.1409,1.4427,1.4329,-0.4174,1.4622,1.4781,-0.5688,1.6193,1.387,-0.613,1.6637,1.3583,0.2124,1.3922,1.4331,0.3577,1.1704,1.3686,0.5313,1.1112,1.226,0.5927,1.1407,1.1476,-0.0368,0.9802,1.4641,-0.0552,0.6264,1.3425,-0.0951,0.1685,1.3537,-0.0939,0.154,1.2265,0.1186,0.9812,1.45,0.1936,0.6445,1.3262,0.2493,0.1886,1.3401,0.2462,0.1739,1.2132,0.0387,1.453,1.4226,-0.6551,1.7024,1.2958,-0.6564,1.6656,1.306,0.6148,1.1538,1.0625,0.5743,1.1161,1.1344">
+   <PIN pinname="Current Frame Skeleton" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -179,51 +179,11 @@
    </PIN>
    <PIN pinname="EX9 Layer" visible="1">
    </PIN>
-   </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="Hidden" id="48" stayontop="1">
-   <BOUNDS type="Node" left="3972" top="10608" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3972" top="10608" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="29568" top="2928" width="9516" height="8388">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   <PIN pinname="Skeleton Match" visible="1">
    </PIN>
-   <PIN pinname="Fullscreen" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Projector">
+   <PIN pinname="Session DOne" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4731" top="9927" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4731" top="9927" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Fullscreen">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="48" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="Kinect Runtime" dstnodeid="45" dstpinname="Kinect">
    </LINK>
    <NODE systemname="GLOBALS" filename="GLOBALS.v4p" componentmode="Hidden" id="63" nodename="GLOBALS.v4p">
@@ -235,9 +195,9 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="SaveSession" filename="sub\SaveSession.v4p" nodename="sub\SaveSession.v4p" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="1764" top="9036" width="100" height="100">
+   <BOUNDS type="Node" left="1788" top="9048" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="1536" top="756" width="10176" height="8280">
+   <BOUNDS type="Window" left="3192" top="1404" width="10176" height="8280">
    </BOUNDS>
    <PIN pinname="Session Name" visible="1" slicecount="1" values="0001">
    </PIN>
@@ -284,10 +244,6 @@
    <LINKPOINT x="5740" y="8564">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="45" srcpinname="View" dstnodeid="48" dstpinname="View">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Projection" dstnodeid="48" dstpinname="Projection">
-   </LINK>
    <NODE id="70" componentmode="Hidden" systemname="Events" filename="sub\Events.v4p" nodename="sub\Events.v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="1104" top="0" width="20640" height="7848">
    </BOUNDS>
@@ -305,11 +261,11 @@
    </PIN>
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
-   <PIN pinname="User Skeleton" visible="1" slicecount="75" values="0.0159092377871275,0.843545198440552,1.39616465568542,0.00743703497573733,1.14841949939728,1.39936304092407,-0.00140291440766305,1.45593214035034,1.38750016689301,-0.0104291429743171,1.58196020126343,1.3923807144165,-0.167589277029037,1.3332759141922,1.40143048763275,-0.241895467042923,1.04833805561066,1.37607741355896,-0.309053033590317,0.83994597196579,1.25508010387421,-0.309759527444839,0.799551784992218,1.19761824607849,0.16403266787529,1.33870565891266,1.37223565578461,0.324417561292648,1.15450894832611,1.27770459651947,0.373222380876541,1.39045703411102,1.18013226985931,0.381328076124191,1.43746507167816,1.16308081150055,-0.0652964115142822,0.864016830921173,1.37597048282623,-0.103150829672813,0.554801046848297,1.25019037723541,-0.130646839737892,0.0673019513487816,1.27009093761444,-0.0653439611196518,-0.023078290745616,1.21418344974518,0.0920066460967064,0.870649874210358,1.36611819267273,0.170039802789688,0.53467458486557,1.25812971591949,0.225715458393097,0.0498252771794796,1.27900564670563,0.214056581258774,0.0417926572263241,1.14442384243011,0.00101970124524087,1.37860858440399,1.39301419258118,-0.344037920236588,0.737269163131714,1.12903654575348,-0.244189590215683,0.808616638183594,1.15771675109863,0.402425795793533,1.52023124694824,1.10425329208374,0.368034094572067,1.48990571498871,1.20796120166779">
+   <PIN pinname="User Skeleton" visible="1" slicecount="75" values="0,0.843545198440552,1.39616465568542,0,1.14841949939728,1.39936304092407,0,1.45593214035034,1.38750016689301,0,1.58196020126343,1.3923807144165,0,1.3332759141922,1.40143048763275,0,1.04833805561066,1.37607741355896,0,0.83994597196579,1.25508010387421,0,0.799551784992218,1.19761824607849,0,1.33870565891266,1.37223565578461,0,1.15450894832611,1.27770459651947,0,1.39045703411102,1.18013226985931,0,1.43746507167816,1.16308081150055,0,0.864016830921173,1.37597048282623,0,0.554801046848297,1.25019037723541,0,0,1.27009093761444,0,0,1.21418344974518,0,0.870649874210358,1.36611819267273,0,0.53467458486557,1.25812971591949,0,0,1.27900564670563,0,0,1.14442384243011,0,1.37860858440399,1.39301419258118,0,0.737269163131714,1.12903654575348,0,0.808616638183594,1.15771675109863,0,1.52023124694824,1.10425329208374,0,1.48990571498871,1.20796120166779">
    </PIN>
    <PIN pinname="User Skeleton PositionXYZ" visible="1" slicecount="3" values="0.0159092377871275,0.843545198440552,1.39616465568542">
    </PIN>
-   <PIN pinname="Cam Trigger" visible="1" slicecount="1" values="0">
+   <PIN pinname="Cam Trigger" visible="1">
    </PIN>
    <PIN pinname="Session Active" visible="1">
    </PIN>
@@ -363,7 +319,7 @@
    </PIN>
    <PIN pinname="Bones Error" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="624" top="1260" width="20640" height="8124">
+   <BOUNDS type="Window" left="3840" top="3840" width="20640" height="8124">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="70" srcpinname="User Entered Circle" dstnodeid="74" dstpinname="User Entered Circle">
@@ -385,7 +341,7 @@
    <NODE systemname="Hardware" filename="sub\Hardware.v4p" nodename="sub\Hardware.v4p" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="10800" top="8988" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="2304" top="0" width="15540" height="9276">
+   <BOUNDS type="Window" left="5256" top="1500" width="18936" height="9276">
    </BOUNDS>
    <PIN pinname="User Entered Circle" visible="1">
    </PIN>
@@ -422,30 +378,12 @@
    </LINK>
    <LINK srcnodeid="70" srcpinname="Session Done" dstnodeid="75" dstpinname="Session Done">
    </LINK>
-   <NODE systemname="TouchInterface" filename="sub\TouchInterface\TouchInterface.v4p" nodename="sub\TouchInterface\TouchInterface.v4p" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="264" top="9972" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="3084" top="828" width="9312" height="10488">
-   </BOUNDS>
-   <PIN pinname="Session Done" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Tweet" visible="1">
-   </PIN>
-   <PIN pinname="TweetMessage" visible="1">
-   </PIN>
-   <PIN pinname="Processing Done" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="NewestGIF" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="78">
    <BOUNDS type="Node" left="264" top="10580" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="264" top="10580" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="11640" top="756" width="11400" height="7128">
+   <BOUNDS type="Window" left="1668" top="888" width="11400" height="7128">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -478,14 +416,12 @@
    </LINK>
    <LINK srcnodeid="77" srcpinname="Transform Out" dstnodeid="78" dstpinname="Aspect Ratio">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="78" dstpinname="Layers">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1788" top="9816" width="480" height="480">
+   <BOUNDS type="Box" left="1872" top="9900" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="1788" top="9816" width="0" height="0">
+   <BOUNDS type="Node" left="1872" top="9900" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -495,6 +431,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Fullscreen">
    </LINK>
@@ -503,15 +441,13 @@
    </BOUNDS>
    <PIN pinname="Publish Tweet" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Publish Tweet Text" visible="1" slicecount="1" values="werwerwer">
+   <PIN pinname="Publish Tweet Text" visible="1" slicecount="1" values="|Watch [TYPE YOUR NAME HERE] dance!|">
    </PIN>
    <BOUNDS type="Window" left="9372" top="1164" width="12744" height="9048">
    </BOUNDS>
-   <PIN pinname="Publish Picture" visible="1">
+   <PIN pinname="Publish Picture" visible="1" slicecount="1" values="..\Data\Output\2015.09.19-19.32.28.gif">
    </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="TweetMessage" dstnodeid="82" dstpinname="Publish Tweet Text">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="83" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="5244" top="2532" width="480" height="480">
    </BOUNDS>
@@ -562,16 +498,12 @@
    </NODE>
    <LINK srcnodeid="66" srcpinname="Completed" dstnodeid="91" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="91" srcpinname="Up Edge" dstnodeid="76" dstpinname="Processing Done">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="NewestGIF" dstnodeid="82" dstpinname="Publish Picture">
-   </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="92" stayontop="1">
-   <BOUNDS type="Node" left="6300" top="10620" width="100" height="100">
+   <BOUNDS type="Node" left="4152" top="10416" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6300" top="10620" width="2400" height="1800">
+   <BOUNDS type="Box" left="4152" top="10416" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="29040" top="2376" width="9504" height="7176">
+   <BOUNDS type="Window" left="32520" top="2688" width="9504" height="7176">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -586,16 +518,6 @@
    <PIN pinname="Fullscreen" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="7596" top="9588" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="Inital Distance" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="45" srcpinname="EX9 Layer" dstnodeid="92" dstpinname="Layers">
    </LINK>
    <NODE systemname="Session" filename="Session.v4p" componentmode="Hidden" id="62" nodename="Session.v4p" debug="0">
@@ -603,7 +525,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3894" top="6507" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="768" top="192" width="20628" height="12900">
+   <BOUNDS type="Window" left="1524" top="2232" width="20628" height="12900">
    </BOUNDS>
    <PIN pinname="Session Done" visible="1">
    </PIN>
@@ -648,10 +570,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Bones Error" dstnodeid="74" dstpinname="Bones Error">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="76" dstpinname="Session Done">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3288" top="12108" width="792" height="240">
    </BOUNDS>
@@ -665,11 +583,9 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
+   <PIN pinname="Input String" slicecount="1" values="..\Data\Output\2015.09.19-20.05.45.gif">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="NewestGIF" dstnodeid="94" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Tweet" dstnodeid="82" dstpinname="Publish Tweet">
-   </LINK>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="95">
    <BOUNDS type="Node" left="3084" top="11328" width="100" height="100">
    </BOUNDS>
@@ -695,9 +611,9 @@
    <LINK srcnodeid="95" srcpinname="XY" dstnodeid="97" dstpinname="Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="98" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6612" top="8856" width="480" height="480">
+   <BOUNDS type="Box" left="4956" top="9708" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6612" top="8856" width="0" height="0">
+   <BOUNDS type="Node" left="4956" top="9708" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -713,5 +629,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="98" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Fullscreen">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Skeleton Match" dstnodeid="45" dstpinname="Skeleton Match">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Current Frame Skeleton" dstnodeid="45" dstpinname="Current Frame Skeleton">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="45" dstpinname="Session DOne">
+   </LINK>
+   <NODE systemname="TouchInterface" filename="sub\TouchInterface\TouchInterface.v4p" nodename="sub\TouchInterface\TouchInterface.v4p" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="264" top="9972" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12180" top="684" width="9312" height="10488">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="78" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="TweetMessage" dstnodeid="82" dstpinname="Publish Tweet Text">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Up Edge" dstnodeid="99" dstpinname="Processing Done">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="NewestGIF" dstnodeid="82" dstpinname="Publish Picture">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Session Done" dstnodeid="99" dstpinname="Session Done">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="NewestGIF" dstnodeid="94" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="99" srcpinname="Tweet" dstnodeid="82" dstpinname="Publish Tweet">
    </LINK>
    </PATCH>
